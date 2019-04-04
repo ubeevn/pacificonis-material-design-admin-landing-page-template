@@ -1,0 +1,497 @@
+  @@include('./_head.html', {
+    "title": "Form-components"
+  })
+  <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css">
+  <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Form-components"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Input mask</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="row">
+                <div class="col-md-3">
+                  <label>Date</label>
+                  <input class="form-control m-b-20" type="text" data-mask="00/00/0000" placeholder="12/12/2016" autocomplete="off" maxlength="10">
+                </div>
+                <div class="col-md-3">
+                  <label>IP Adress</label>
+                  <input class="form-control m-b-20" type="text" data-mask="000.000.000.000" placeholder="192.168.0.1" autocomplete="off" maxlength="15">
+                </div>
+                <div class="col-md-3">
+                  <label>Time</label>
+                  <input class="form-control m-b-20" type="text" data-mask="00:00:00" placeholder="17:22:16" autocomplete="off" maxlength="8">
+                </div>
+                <div class="col-md-3">
+                  <label>Credit Card</label>
+                  <input class="form-control m-b-20" type="text" data-mask="0000 0000 0000 0000" placeholder="8392 2414 9301 8402" autocomplete="off" maxlength="19">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Phone Number</label>
+                  <input class="form-control m-b-20" type="text" data-mask="000-00-0000000" placeholder="234-76-2638469" autocomplete="off" maxlength="14">
+                </div>
+                <div class="col-md-3">
+                  <label>Phone with Odd</label>
+                  <input class="form-control m-b-20" type="text" data-mask="(00) 0000-0000" placeholder="(22) 6247-3272" maxlength="14" autocomplete="off">
+                </div>
+                <div class="col-md-3">
+                  <label>US Phone Number</label>
+                  <input class="form-control m-b-20" type="text" data-mask="(000) 000-0000" placeholder="(765) 231-2412" maxlength="14" autocomplete="off">
+                </div>
+                <div class="col-md-3">
+                  <label>Percentage</label>
+                  <input class="form-control m-b-20" type="text" data-mask="00000,00%" placeholder=" 00006,87%" maxlength="9" autocomplete="off">
+                </div>
+
+                <div class="col-md-3">
+                  <label>Post code</label>
+                  <input class="form-control m-b-20" type="text" data-mask="000-0000" placeholder="145-7564" autocomplete="off" maxlength="8">
+                </div>
+                <div class="col-md-3">
+                  <label>CV code</label>
+                  <input class="form-control m-b-20" type="text" data-mask="000" placeholder="930" maxlength="14" autocomplete="off">
+                </div>
+                <div class="col-md-3">
+                  <label>Tax ID</label>
+                  <input class="form-control m-b-20" type="text" data-mask="00 0000000" placeholder="56 0568466" maxlength="10" autocomplete="off">
+                </div>
+                <div class="col-md-3">
+                  <label>Product Key</label>
+                  <input class="form-control m-b-20" type="text" data-mask="0-000-00" placeholder="7-152-55" maxlength="8" autocomplete="off">
+                </div>
+
+                <div class="col-md-3">
+                  <label>US ZIP Code</label>
+                  <input class="form-control m-b-20" type="text" data-mask="00000" placeholder="98110" autocomplete="off" maxlength="5">
+                </div>
+                <div class="col-md-3">
+                  <label>Atomic Radius</label>
+                  <input class="form-control m-b-20" type="text" data-mask="0,000 nanometers" placeholder="0,099 nanometers" maxlength="14" autocomplete="off">
+                </div>
+                <div class="col-md-3">
+                  <label>US Dollars</label>
+                  <input class="form-control m-b-20" type="text" data-mask="$0,000.00" placeholder="$1,234.00" maxlength="9" autocomplete="off">
+                </div>
+                <div class="col-md-3">
+                  <label>Social Security</label>
+                  <input class="form-control m-b-20" type="text" data-mask="000-00-0000" placeholder="382-23-7856" maxlength="12" autocomplete="off">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head danger-bg clearfix">
+              <h5 class="content-title pull-left">Custom select</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="row">
+                <div class="col-md-3">
+                  <h5>Basic Example</h5>
+                  <div class="form-group">
+                    <div class="select">
+                      <select class="form-control selectpicker">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Meat</option>
+                        <option>Milk</option>
+                        <option>Bread</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <h5>Search Option</h5>
+                  <div class="form-group">
+                    <div class="select">
+                      <select class="form-control selectpicker" data-live-search="true">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Meat</option>
+                        <option>Milk</option>
+                        <option>Bread</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <h5>Option Groups</h5>
+                  <div class="form-group">
+                    <div class="select">
+                      <select class="form-control selectpicker">
+                        <optgroup label="Picnic">
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                        </optgroup>
+                        <optgroup label="Camping">
+                          <option>Tent</option>
+                          <option>Flashlight</option>
+                          <option>Toilet Paper</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <h5>Disabled Options</h5>
+                  <div class="form-group">
+                    <div class="select">
+                      <select class="form-control selectpicker" multiple>
+                        <option>Mustard</option>
+                        <option disabled>Ketchup</option>
+                        <option>Relish</option>
+                        <option disabled>Meat</option>
+                        <option disabled>Milk</option>
+                        <option>Bread</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <h5>Multiple Select</h5>
+                  <div class="form-group">
+                    <div class="select">
+                      <select class="form-control selectpicker" multiple>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Meat</option>
+                        <option>Milk</option>
+                        <option>Bread</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <h5>Limit of selections</h5>
+                  <div class="form-group">
+                    <div class="select">
+                      <select class="form-control selectpicker" multiple data-max-options="2">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Meat</option>
+                        <option>Milk</option>
+                        <option>Bread</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <h5>Display Count</h5>
+                  <div class="form-group">
+                    <div class="select">
+                      <select class="form-control selectpicker" multiple data-selected-text-format="count">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                        <option>Meat</option>
+                        <option>Milk</option>
+                        <option>Bread</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <h5>Multiple Group Select</h5>
+                  <div class="form-group">
+                    <div class="select">
+                      <select class="form-control selectpicker" multiple>
+                        <optgroup label="Picnic" data-max-options="2">
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Relish</option>
+                        </optgroup>
+                        <optgroup label="Camping" data-max-options="2">
+                          <option>Tent</option>
+                          <option>Flashlight</option>
+                          <option>Toilet Paper</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head primary-bg clearfix">
+              <h5 class="content-title pull-left">Toggles</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="row">
+                <div class="col-md-12">
+                  <label>
+                    <input class="toggle" type="checkbox" checked>
+                    <i></i>
+                  </label>
+                  <label>
+                    <input class="toggle" type="checkbox" checked disabled>
+                    <i></i>
+                  </label>
+                  <label>
+                    <input class="toggle toggle-primary" type="checkbox" checked>
+                    <i></i>
+                  </label>
+                  <label>
+                    <input class="toggle toggle-success" type="checkbox" checked>
+                    <i></i>
+                  </label>
+                  <label>
+                    <input class="toggle toggle-warning" type="checkbox" checked>
+                    <i></i>
+                  </label>
+                  <label>
+                    <input class="toggle toggle-info" type="checkbox" checked>
+                    <i></i>
+                  </label>
+                  <label>
+                    <input class="toggle toggle-danger" type="checkbox" checked>
+                    <i></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Colorpicker</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="row">
+                <div class="col-md-6">
+                 <div class="cp-container">
+                      <div class="form-group">
+                          <div class="dropdown">
+                              <input type="text" class="form-control cp-value" value="#A6C" data-toggle="dropdown">
+
+                              <div class="dropdown-menu">
+                                  <div class="color-picker" data-cp-default="#A6C"></div>
+                              </div>
+
+                              <i class="cp-value"></i>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                 <div class="cp-container">
+                      <div class="form-group">
+                          <div class="dropdown">
+                              <input type="text" class="form-control cp-value" value="#9C0" data-toggle="dropdown">
+
+                              <div class="dropdown-menu">
+                                  <div class="color-picker" data-cp-default="#9C0"></div>
+                              </div>
+
+                              <i class="cp-value"></i>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                 <div class="cp-container">
+                      <div class="form-group">
+                          <div class="dropdown">
+                              <input type="text" class="form-control cp-value" value="#FF5F5F" data-toggle="dropdown">
+
+                              <div class="dropdown-menu">
+                                  <div class="color-picker" data-cp-default="#FF5F5F"></div>
+                              </div>
+
+                              <i class="cp-value"></i>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                 <div class="cp-container">
+                      <div class="form-group">
+                          <div class="dropdown">
+                              <input type="text" class="form-control cp-value" value="#FFBB33" data-toggle="dropdown">
+
+                              <div class="dropdown-menu">
+                                  <div class="color-picker" data-cp-default="#FFBB33"></div>
+                              </div>
+
+                              <i class="cp-value"></i>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Date Time Picker</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="row">
+                <div class="col-md-4">
+                    <h5>Basic Example</h5>
+                    <div class="form-group">
+                        <div class="input-group date">
+                            <span class="input-group-addon">
+                                <span class="zmdi zmdi-calendar"></span>
+                            </span>
+                            <input id="datetimepicker1" type="text" class="form-control" placeholder="Click here..."/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Enabled/Disabled Dates</h5>
+                    <div class="form-group">
+                        <div class="input-group date">
+                            <span class="input-group-addon">
+                                <span class="zmdi zmdi-calendar"></span>
+                            </span>
+                            <input id="datetimepicker2" type="text" class="form-control" placeholder="Click here..."/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Time Picker</h5>
+                    <div class="form-group">
+                        <div class="input-group date">
+                            <span class="input-group-addon">
+                                <span class="zmdi zmdi-time"></span>
+                            </span>
+                            <input id="datetimepicker3" type="text" class="form-control" placeholder="Click here..."/>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     </div>
+     <footer class="page-footer">© 2016 Copyright</footer>
+    </div>
+
+
+  @@include("./_footer.html")
+
+  <script src="js/input-mask.min.js"></script>
+  <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="js/farbtastic.js"></script>
+
+  <script>
+    $(".color-picker").each(function(){
+      var colorOutput = $(this).closest(".cp-container").find(".cp-value");
+      $(this).farbtastic(colorOutput);
+    });
+
+    $("#datetimepicker1").datetimepicker({
+        icons: {
+            time: "zmdi zmdi-time",
+            date: "zmdi zmdi-calendar",
+            up: "zmdi zmdi-chevron-up",
+            down: "zmdi zmdi-chevron-down",
+            previous: "zmdi zmdi-chevron-left",
+            next: "zmdi zmdi-chevron-right"
+        }
+    });
+
+    $("#datetimepicker2").datetimepicker({
+        icons: {
+            time: "zmdi zmdi-time",
+            date: "zmdi zmdi-calendar",
+            up: "zmdi zmdi-chevron-up",
+            down: "zmdi zmdi-chevron-down",
+            previous: "zmdi zmdi-chevron-left",
+            next: "zmdi zmdi-chevron-right"
+        },
+        defaultDate: "02/10/2016",
+        disabledDates: [
+            moment("02/19/2016"),
+            moment("02/20/2016")
+        ]
+    });
+
+    $("#datetimepicker3").datetimepicker({
+        format: "LT",
+        icons: {
+            time: "zmdi zmdi-time",
+            date: "zmdi zmdi-calendar",
+            up: "zmdi zmdi-chevron-up",
+            down: "zmdi zmdi-chevron-down",
+            previous: "zmdi zmdi-chevron-left",
+            next: "zmdi zmdi-chevron-right"
+        }
+    });
+  </script>
+
+  @@include("./_commonjs.html")
+</body>
+</html>

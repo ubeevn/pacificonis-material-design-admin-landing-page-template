@@ -1,0 +1,161 @@
+  @@include('./_head.html', {
+    "title": "Range Slider"
+  })
+  <link rel="stylesheet" href="bower_components/nouislider/distribute/nouislider.min.css">
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Range Slider"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Range Slider</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="text-muted m-b-20">noUiSlider offers a ton off features, and it is as small, lightweight and minimal as possible, which is great for mobile use on the many supported devices.</p>
+              <h5 class="m-b-15">Basic Example</h5>
+              <div id="basic-slider" class="m-b-40"></div>
+
+              <h5 class="m-b-15">Range Slider</h5>
+              <div id="range-slider" class="m-b-40" data-range></div>
+
+              <h5 class="m-b-15">Output value with tap and drag</h5>
+              <div class="clearfix m-b-40">
+                <div id="value-slider" class="m-b-10" data-range></div>
+                <strong class="pull-left text-muted" id="value-upper"></strong>
+                <strong class="pull-right text-muted" id="value-lower"></strong>
+              </div>
+
+              <h5 class="m-b-5">Optional colors</h5>
+              <p class="m-b-15">Use the different color scheme via setting <code>data-color</code> attribute</p>
+              <div id="range-primary" data-color="primary" class="m-b-40"></div>
+              <div id="range-success" data-color="success" class="m-b-40"></div>
+              <div id="range-info" data-color="info" class="m-b-40"></div>
+              <div id="range-warning" data-color="warning" class="m-b-40"></div>
+              <div id="range-danger" data-color="danger" class="m-b-40"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  <script src="bower_components/nouislider/distribute/nouislider.js"></script>
+  @@include('./_commonjs.html')
+
+  <script>
+    var basicSlider = document.getElementById('basic-slider');
+
+    noUiSlider.create(basicSlider, {
+      start: [3500],
+      range: {
+          'min': 0,
+          'max': 10000
+      }
+    });
+
+    var rangeSlider = document.getElementById('range-slider');
+
+    noUiSlider.create(rangeSlider, {
+      start: [20, 80],
+      connect: true,
+      range: {
+          'min': 0,
+          'max': 100
+      }
+    });
+
+    var valueSlider = document.getElementById('value-slider');
+
+    noUiSlider.create(valueSlider, {
+      start: [ 35, 77 ],
+      connect: true,
+      direction: 'rtl',
+      behaviour: 'tap-drag',
+      range: {
+        'min': 0,
+        'max': 100
+      }
+    });
+
+    var snapValues = [
+        document.getElementById('value-lower'),
+        document.getElementById('value-upper')
+    ];
+
+    valueSlider.noUiSlider.on('update', function( values, handle ) {
+        snapValues[handle].innerHTML = values[handle];
+    });
+
+
+
+    var primarySlider = document.getElementById('range-primary');
+
+    noUiSlider.create(primarySlider, {
+      start: [5900],
+      range: {
+          'min': 0,
+          'max': 10000
+      }
+    });
+
+    var successSlider = document.getElementById('range-success');
+
+    noUiSlider.create(successSlider, {
+      start: [3500],
+      range: {
+          'min': 0,
+          'max': 10000
+      }
+    });
+
+    var infoSlider = document.getElementById('range-info');
+
+    noUiSlider.create(infoSlider, {
+      start: [6700],
+      range: {
+          'min': 0,
+          'max': 10000
+      }
+    });
+
+    var warningSlider = document.getElementById('range-warning');
+
+    noUiSlider.create(warningSlider, {
+      start: [5200],
+      range: {
+          'min': 0,
+          'max': 10000
+      }
+    });
+
+    var dangerSlider = document.getElementById('range-danger');
+
+    noUiSlider.create(dangerSlider, {
+      start: [7700],
+      range: {
+          'min': 0,
+          'max': 10000
+      }
+    });
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+  @@include('./_head.html', {
+    "title": "Create Order"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Create Order"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Create Order</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 create-order">
+                <div class="table-responsive">
+                  <table class="table m-0">
+                    <thead>
+                      <tr>
+                        <th class="p-l-20"># of Order</th>
+                        <th>Details</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="p-l-20" scope="row">00001</th>
+                        <td>Mens goods</td>
+                        <td>26.04.2016</td>
+                        <td><span class="label label-primary">Paid</span></td>
+                        <td>$ 615.50</td>
+                      </tr>
+                      <tr>
+                        <th class="p-l-20" scope="row">00002</th>
+                        <td>Games</td>
+                        <td>26.04.2016</td>
+                        <td><span class="label label-primary">Paid</span></td>
+                        <td>$ 260.00</td>
+                      </tr>
+                      <tr>
+                        <th class="p-l-20" scope="row">00003</th>
+                        <td>Software</td>
+                        <td>26.04.2016</td>
+                        <td><span class="label label-primary">Paid</span></td>
+                        <td>$ 837.70</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="content">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <h6>Order Details</h6>
+                      <p>He moonlight difficult engrossed an it sportsmen. Interested has all devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to.</p>
+                    </div>
+                    <div class="col-md-4">
+                      <h6>Delivery Address</h6>
+                      <address>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                      </address>
+                    </div>
+                    <div class="col-md-4">
+                      <h6>Delivery Method</h6>
+                      <p>By Mail</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-20 text-right">
+                  <button type="button" class="btn btn-primary raised">Confirm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+</body>
+</html>

@@ -1,0 +1,227 @@
+  @@include('./_head.html', {
+    "title": "Task list"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Task list"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box task-list">
+            <div class="head head-with-btns success-bg clearfix">
+              <h5 class="content-title pull-left">Task List</h5>
+              <div class="functions-btns pull-right">
+                <form action="#" id="add_todo" class="form-inline">
+                  <div class="form-group">
+                    <input type="text" class="form-control name-of-todo" placeholder="New task">
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-info raised">Add task</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="panel zero-m">
+                <div class="panel-body todo p-0">
+                  <ul class="list-group zero-m">
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Searches
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Advertising
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Links
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Advertising
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Links
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Social media
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Searches
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Links
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Links
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="checkbox checkbox-success">
+                        <label>
+                          <input type="checkbox">
+                          <i></i>
+                          Advertising
+                        </label>
+                      </div>
+                      <a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav>
+            <ul class="pagination m-t-0">
+              <li class="disabled">
+                <a href="#" aria-label="Prev">
+                  <span aria-hidden="true">«</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li class="active"><a href="#">3</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">»</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+
+  <script src="js/jqueri_ui_custom/jquery-ui.min.js"></script>
+
+  @@include('./_commonjs.html')
+
+  <script>
+    //Todo
+    $(".todo ul").sortable();
+
+    $(document).on('mouseover', '.list-group .checkbox', function () {
+      $('.list-group input:checkbox').each(function () {
+        $(this).on("change", function () {
+          if ($(this).is(":checked")) {
+            $(this).closest(".list-group-item").addClass("checked-todo");
+          } else {
+            $(this).closest(".list-group-item").removeClass("checked-todo");
+          }
+        });
+      });
+    });
+
+    $("#add_todo").on('submit', function (e) {
+        e.preventDefault();
+
+        var $toDo = $(this).find('.name-of-todo'),
+          toDo_name = $toDo.val();
+
+
+        if (toDo_name.length >= 3) {
+
+          var newid = "new" + "" + Math.random().toString(36).substring(11);
+          // Create Event Entry
+          $(".todo ul").append(
+            '<li id="' + 'item-' + newid + '" class="list-group-item"><div class="checkbox checkbox-success"><label><input type="checkbox"><i></i>' + toDo_name + '</label></div><a class="trash pull-right"><span class="zmdi zmdi-close f-s-16"></span></a></li>'
+          );
+
+
+          var eventObject = {
+            title: $.trim($("#" + newid).text()),
+            className: $("#" + newid).attr("data-bg"), // use the element's text as the event title
+            stick: true
+          };
+
+          // store the Event Object in the DOM element so we can get to it later
+          $("#" + newid).data('eventObject', eventObject);
+
+          // Reset input
+          $toDo.val('').focus();
+        } else {
+          $toDo.focus();
+        }
+      });
+
+    $(document).on('click', '.trash', function (e) {
+      var clearedCompItem = $(this).closest(".list-group-item").remove();
+      e.preventDefault();
+    });
+  </script>
+</body>
+</html>

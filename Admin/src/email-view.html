@@ -1,0 +1,137 @@
+  @@include('./_head.html', {
+    "title": "Email View"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Email View"
+   })
+    <div class="container-fluid">
+      <div class="row">
+       <div class="col-lg-3 col-sm-4">
+         <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Menu</h5>
+              <div class="functions-btns pull-right">
+                <a class="collapse-btn" href="#"><i class="zmdi zmdi-minus"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+              <div class="content p-0">
+                <a class="mail-menu-item clearfix" href="#">Inbox <span class="label label-primary pull-right m-t-10">14</span></a>
+                <a class="mail-menu-item clearfix" href="#">Sent <span class="label label-default pull-right m-t-10">45</span></a>
+                <a class="mail-menu-item clearfix" href="#">Archive <span class="label label-default pull-right m-t-10">65</span></a>
+                <a class="mail-menu-item clearfix" href="#">Trash <span class="label label-default pull-right m-t-10">12</span></a>
+              </div>
+
+          </div>
+
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Labels</h5>
+              <div class="functions-btns pull-right">
+                <a class="collapse-btn" href="#"><i class="zmdi zmdi-minus"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content p-0">
+              <a class="mail-menu-item clearfix" href="#">Photos <span class="label label-primary pull-right m-t-10"></span></a>
+              <a class="mail-menu-item clearfix" href="#">Videos <span class="label label-danger pull-right m-t-10"></span></a>
+              <a class="mail-menu-item clearfix" href="#">Documents <span class="label label-info pull-right m-t-10"></span></a>
+              <a class="mail-menu-item clearfix" href="#">Music <span class="label label-success pull-right m-t-10"></span></a>
+            </div>
+          </div>
+
+       </div>
+        <div class="col-lg-9 col-sm-8">
+          <div class="content-box">
+            <div class="head primary-bg clearfix">
+              <h5 class="content-title pull-left">Email view</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content mail-title clearfix">
+              <h3 class="m-b-0 m-t-10 f-w-400">Hello Dear Customer</h3>
+            </div>
+            <div class="p-20">
+              <div class="mail-from m-b-20">
+                <div class="p-r-10">
+                  <span class="mail-favorite zmdi zmdi-star warning-color f-s-24"></span>
+                </div>
+                <div class="p-r-10">
+                  <img src="img/mail-from.png" alt="mail from">
+                </div>
+                <div>
+                  <strong>Anna Suprunenko</strong><br>
+                  <span>07:15 AM - 20 April</span>
+                </div>
+              </div>
+              <div class="mail-body">
+                <div class="p-20">
+                 Hello Anna,
+                  <br>
+                  <br>
+                  <p>He unaffected sympathize discovered at no am conviction principles. Girl ham very how yet hill four show. Meet lain on he only size. Branched learning so subjects mistress do appetite jennings be in. Esteems up lasting no village morning do offices. Settled wishing ability musical may another set age. Diminution my apartments he attachment is entreaties announcing estimating. And total least her two whose great has which. Neat pain form eat sent sex good week. Led instrument sentiments she simplicity.</p>
+                  <p>Offered say visited elderly and. Waited period are played family man formed. He ye body or made on pain part meet. You one delay nor begin our folly abode. By disposed replying mr me unpacked no. As moonlight of my resolving unwilling.</p>
+                  <br>
+                  Regards,
+                  <br>
+                  Technical Support
+                </div>
+                <div class="mail-attachments p-20 clearfix">
+                  <h6 class="m-t-0">2 Attachments</h6>
+                  <div class="mail-attachments-item">
+                    <div class="p-r-10">
+                      <img src="img/mail-attachment-1.png" alt="attachments">
+                    </div>
+                    <div>
+                      <em>Picture (3.4 Kb)</em><br>
+                      <a href="#">Download</a>
+                      <a href="#">View</a>
+                      <a href="#">Share</a>
+                    </div>
+                  </div>
+                  <div class="mail-attachments-item">
+                    <div class="p-r-10">
+                      <img src="img/mail-attachment-2.png" alt="attachments">
+                    </div>
+                    <div>
+                      <em>Picture (26.2 Kb)</em><br>
+                      <a href="#">Download</a>
+                      <a href="#">View</a>
+                      <a href="#">Share</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-lg btn-success raised m-b-5 m-r-10">Reply</button>
+              <button type="button" class="btn btn-lg btn-danger raised m-b-5 ">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+  <script>
+    $(".mail-favorite").on("click", function(){
+        $(this).toggleClass("zmdi-star zmdi-star-outline");
+    });
+  </script>
+</body>
+</html>

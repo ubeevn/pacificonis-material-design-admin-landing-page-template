@@ -1,0 +1,53 @@
+  @@include('./_head.html', {
+    "title": "Lock Screen"
+  })
+  @@include('./_head-end.html')
+</head>
+
+<body class="user-page lock-screen">
+  @@include('./_preloader.html')
+  <div class="wrapper">
+     <div class="bg"></div>
+     <div class="overlay"></div>
+      <div class="table-wrapper text-center">
+        <div class="table-row">
+          <div class="table-cell">
+            <div class="animated fadeInDown">
+              <div class="pagenotfound shadow-1">
+
+                    <img src="img/profile_user.jpg" alt="user" class="img-circle m-b-20">
+
+                    <p class="white">Enter the password to access the admin.</p>
+
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Password">
+                        <div class="input-group-addon p-0"><button type="button" class="btn btn-info">Log in</button></div>
+                      </div>
+                    </div>
+
+                    <a class="white f-16" href="index.html"><u>Back to Homepage</u></a>
+
+                    <p class="white m-t-10">Not your account? <a href="login.html">Sign in</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+  $('#preloader').height($(window).height() + "px");
+  $(window).on('load', function(){
+      setTimeout(function(){
+          $('body').css("overflow-y","visible");
+          $('#preloader').fadeOut(400);
+      }, 800);
+  });
+</script>
+
+</body>
+</html>

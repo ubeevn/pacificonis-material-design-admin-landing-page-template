@@ -1,0 +1,339 @@
+  @@include('./_head.html', {
+    "title": "Colors"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Colors"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Colors</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="row">
+                <div class="col-md-4 col-xs-6">
+                  <div class="color-container default-bg" data-toggle="modal" data-target="#default-modal" data-toggle-tooltip data-placement="top" title="Click to view demos for this color">
+                    <span class="color">Default</span>
+                    <span class="code">#cccccc</span>
+                    <span class="sass">$default-color</span>
+                  </div>
+                  <div class="modal fade" id="default-modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close f-s-26" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
+                          <h4 class="modal-title">Default</h4>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Typography</h5>
+                          <p class="default-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe deleniti consequatur mollitia ea voluptatem voluptate nihil officia reiciendis illo!
+                          </p>
+                          <code>class="default-color"</code>
+
+                          <h5 class="m-t-20">Icons</h5>
+                          <p class="default-color">
+                            <i class="zmdi zmdi-facebook f-s-22"></i>
+                            <i class="zmdi zmdi-twitter f-s-22"></i>
+                            <i class="zmdi zmdi-google f-s-22"></i>
+                            <i class="zmdi zmdi-github f-s-22"></i>
+                            <i class="zmdi zmdi-spotify f-s-22"></i>
+                            <br>
+                            <code>class="default-color"</code>
+                          </p>
+
+                          <h5 class="m-t-20">Background</h5>
+                          <div class="color-example default-bg"></div>
+                          <code>class="default-bg"</code>
+
+                          <h5 class="m-t-20">Buttons</h5>
+                          <button type="button" class="btn btn-lg btn-default m-b-5">Button</button>
+                          <button type="button" class="btn btn-default m-b-5">Button</button>
+                          <button type="button" class="btn btn-sm btn-default m-b-5">Button</button>
+                          <br>
+                          <code>class="btn-default"</code>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                  <div class="color-container primary-bg" data-toggle="modal" data-target="#primary-modal" data-toggle-tooltip data-placement="top" title="Click to view demos for this color">
+                    <span class="color">Primary</span>
+                    <span class="code">#aa66cc</span>
+                    <span class="sass">$primary-color</span>
+                  </div>
+                  <div class="modal fade" id="primary-modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close f-s-26" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
+                          <h4 class="modal-title">Primary</h4>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Typography</h5>
+                          <p class="primary-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe deleniti consequatur mollitia ea voluptatem voluptate nihil officia reiciendis illo!
+                          </p>
+                          <code>class="primary-color"</code>
+
+                          <h5 class="m-t-20">Icons</h5>
+                          <p class="primary-color">
+                            <i class="zmdi zmdi-facebook f-s-22"></i>
+                            <i class="zmdi zmdi-twitter f-s-22"></i>
+                            <i class="zmdi zmdi-google f-s-22"></i>
+                            <i class="zmdi zmdi-github f-s-22"></i>
+                            <i class="zmdi zmdi-spotify f-s-22"></i>
+                            <br>
+                            <code>class="primary-color"</code>
+                          </p>
+
+                          <h5 class="m-t-20">Background</h5>
+                          <div class="color-example primary-bg"></div>
+                          <code>class="primary-bg"</code>
+
+                          <h5 class="m-t-20">Buttons</h5>
+                          <button type="button" class="btn btn-lg btn-primary m-b-5">Button</button>
+                          <button type="button" class="btn btn-primary m-b-5">Button</button>
+                          <button type="button" class="btn btn-sm btn-primary m-b-5">Button</button>
+                          <br>
+                          <code>class="btn-primary"</code>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                  <div class="color-container success-bg" data-toggle="modal" data-target="#success-modal" data-toggle-tooltip data-placement="top" title="Click to view demos for this color">
+                    <span class="color">Success</span>
+                    <span class="code">#99cc00</span>
+                    <span class="sass">$success-color</span>
+                  </div>
+                  <div class="modal fade" id="success-modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close f-s-26" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
+                          <h4 class="modal-title">Success</h4>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Typography</h5>
+                          <p class="success-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe deleniti consequatur mollitia ea voluptatem voluptate nihil officia reiciendis illo!
+                          </p>
+                          <code>class="success-color"</code>
+
+                          <h5 class="m-t-20">Icons</h5>
+                          <p class="success-color">
+                            <i class="zmdi zmdi-facebook f-s-22"></i>
+                            <i class="zmdi zmdi-twitter f-s-22"></i>
+                            <i class="zmdi zmdi-google f-s-22"></i>
+                            <i class="zmdi zmdi-github f-s-22"></i>
+                            <i class="zmdi zmdi-spotify f-s-22"></i>
+                            <br>
+                            <code>class="success-color"</code>
+                          </p>
+
+                          <h5 class="m-t-20">Background</h5>
+                          <div class="color-example success-bg"></div>
+                          <code>class="success-bg"</code>
+
+                          <h5 class="m-t-20">Buttons</h5>
+                          <button type="button" class="btn btn-lg btn-success m-b-5">Button</button>
+                          <button type="button" class="btn btn-success m-b-5">Button</button>
+                          <button type="button" class="btn btn-sm btn-success m-b-5">Button</button>
+                          <br>
+                          <code>class="btn-success"</code>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                  <div class="color-container info-bg" data-toggle="modal" data-target="#info-modal" data-toggle-tooltip data-placement="top" title="Click to view demos for this color">
+                    <span class="color">Info</span>
+                    <span class="code">#49ceff</span>
+                    <span class="sass">$info-color</span>
+                  </div>
+                  <div class="modal fade" id="info-modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close f-s-26" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
+                          <h4 class="modal-title">Info</h4>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Typography</h5>
+                          <p class="info-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe deleniti consequatur mollitia ea voluptatem voluptate nihil officia reiciendis illo!
+                          </p>
+                          <code>class="info-color"</code>
+
+                          <h5 class="m-t-20">Icons</h5>
+                          <p class="info-color">
+                            <i class="zmdi zmdi-facebook f-s-22"></i>
+                            <i class="zmdi zmdi-twitter f-s-22"></i>
+                            <i class="zmdi zmdi-google f-s-22"></i>
+                            <i class="zmdi zmdi-github f-s-22"></i>
+                            <i class="zmdi zmdi-spotify f-s-22"></i>
+                            <br>
+                            <code>class="info-color"</code>
+                          </p>
+
+                          <h5 class="m-t-20">Background</h5>
+                          <div class="color-example info-bg"></div>
+                          <code>class="info-bg"</code>
+
+                          <h5 class="m-t-20">Buttons</h5>
+                          <button type="button" class="btn btn-lg btn-info m-b-5">Button</button>
+                          <button type="button" class="btn btn-info m-b-5">Button</button>
+                          <button type="button" class="btn btn-sm btn-info m-b-5">Button</button>
+                          <br>
+                          <code>class="btn-info"</code>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                  <div class="color-container warning-bg" data-toggle="modal" data-target="#warning-modal" data-toggle-tooltip data-placement="top" title="Click to view demos for this color">
+                    <span class="color">Warning</span>
+                    <span class="code">#ffbb33</span>
+                    <span class="sass">$warning-color</span>
+                  </div>
+                  <div class="modal fade" id="warning-modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close f-s-26" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
+                          <h4 class="modal-title">Warning</h4>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Typography</h5>
+                          <p class="warning-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe deleniti consequatur mollitia ea voluptatem voluptate nihil officia reiciendis illo!
+                          </p>
+                          <code>class="warning-color"</code>
+
+                          <h5 class="m-t-20">Icons</h5>
+                          <p class="warning-color">
+                            <i class="zmdi zmdi-facebook f-s-22"></i>
+                            <i class="zmdi zmdi-twitter f-s-22"></i>
+                            <i class="zmdi zmdi-google f-s-22"></i>
+                            <i class="zmdi zmdi-github f-s-22"></i>
+                            <i class="zmdi zmdi-spotify f-s-22"></i>
+                            <br>
+                            <code>class="warning-color"</code>
+                          </p>
+
+                          <h5 class="m-t-20">Background</h5>
+                          <div class="color-example warning-bg"></div>
+                          <code>class="warning-bg"</code>
+
+                          <h5 class="m-t-20">Buttons</h5>
+                          <button type="button" class="btn btn-lg btn-warning m-b-5">Button</button>
+                          <button type="button" class="btn btn-warning m-b-5">Button</button>
+                          <button type="button" class="btn btn-sm btn-warning m-b-5">Button</button>
+                          <br>
+                          <code>class="btn-warning"</code>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                  <div class="color-container danger-bg" data-toggle="modal" data-target="#danger-modal" data-toggle-tooltip data-placement="top" title="Click to view demos for this color">
+                    <span class="color">Danger</span>
+                    <span class="code">#ff5f5f</span>
+                    <span class="sass">$danger-color</span>
+                  </div>
+                  <div class="modal fade" id="danger-modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close f-s-26" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
+                          <h4 class="modal-title">Danger</h4>
+                        </div>
+                        <div class="modal-body">
+                          <h5>Typography</h5>
+                          <p class="danger-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt saepe deleniti consequatur mollitia ea voluptatem voluptate nihil officia reiciendis illo!
+                          </p>
+                          <code>class="danger-color"</code>
+
+                          <h5 class="m-t-20">Icons</h5>
+                          <p class="danger-color">
+                            <i class="zmdi zmdi-facebook f-s-22"></i>
+                            <i class="zmdi zmdi-twitter f-s-22"></i>
+                            <i class="zmdi zmdi-google f-s-22"></i>
+                            <i class="zmdi zmdi-github f-s-22"></i>
+                            <i class="zmdi zmdi-spotify f-s-22"></i>
+                            <br>
+                            <code>class="danger-color"</code>
+                          </p>
+
+                          <h5 class="m-t-20">Background</h5>
+                          <div class="color-example danger-bg"></div>
+                          <code>class="danger-bg"</code>
+
+                          <h5 class="m-t-20">Buttons</h5>
+                          <button type="button" class="btn btn-lg btn-danger m-b-5">Button</button>
+                          <button type="button" class="btn btn-danger m-b-5">Button</button>
+                          <button type="button" class="btn btn-sm btn-danger m-b-5">Button</button>
+                          <br>
+                          <code>class="btn-danger"</code>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+  <script>
+    $(function () {
+      if($(window).width() > 768){
+        $('[data-toggle-tooltip]').tooltip({
+          trigger: "hover"
+        })
+      }
+    })
+  </script>
+</body>
+</html>

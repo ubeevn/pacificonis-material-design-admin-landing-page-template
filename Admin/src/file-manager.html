@@ -1,0 +1,418 @@
+  @@include('./_head.html', {
+    "title": "File Manager"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "File Manager"
+   })
+    <div class="container-fluid">
+      <div class="row">
+       <div class="col-lg-3">
+          <div class="content-box">
+            <div class="head primary-bg">
+              <h5 class="content-title">Menu</h5>
+            </div>
+
+            <div class="content">
+              <h5>Show:</h5>
+              <a href="#" class="file-sort active">All</a>
+              <a href="#" class="file-sort">Documents</a>
+              <a href="#" class="file-sort">Images</a>
+              <a href="#" class="file-sort">Audio</a>
+              <a href="#" class="file-sort">Video</a>
+              <a href="#" class="file-sort">Deleted</a>
+              <hr>
+               
+              <button type="button" class="btn btn-success btn-block">Upload file</button>
+              
+              <hr>
+             
+              <h5>Folders:</h5>
+              <ul class="nav">
+                <li><a href="#"><i class="zmdi zmdi-folder m-r-10"></i>Files</a></li>
+                <li><a href="#"><i class="zmdi zmdi-folder m-r-10"></i>Pictures</a></li>
+                <li><a href="#"><i class="zmdi zmdi-folder m-r-10"></i>Illustrations</a></li>
+                <li><a href="#"><i class="zmdi zmdi-folder m-r-10"></i>Books</a></li>
+                <li><a href="#"><i class="zmdi zmdi-folder m-r-10"></i>Documents</a></li>
+                <li><a href="#"><i class="zmdi zmdi-folder m-r-10"></i>Games</a></li>
+                <li><a href="#"><i class="zmdi zmdi-folder m-r-10"></i>Soft</a></li>
+              </ul>
+              <hr>
+              <h5>Tags:</h5>
+              <span class="label label-default m-b-5">Films</span>
+              <span class="label label-default m-b-5">Audio</span>
+              <span class="label label-default m-b-5">Photos</span>
+              <span class="label label-default m-b-5">Videos</span>
+              <span class="label label-default m-b-5">Docs</span>
+              <span class="label label-default m-b-5">Work</span>
+              <span class="label label-default m-b-5">Home</span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="content-box">
+            <div class="head primary-bg clearfix">
+              <h5 class="content-title pull-left">Files</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content clearfix">
+            <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-playlist-audio"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">My_new_mix.mp3</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="image">
+                              <img alt="image" class="img-responsive" src="img/400.jpg">
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Vacation.jpg</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="image">
+                              <img alt="image" class="img-responsive" src="img/404.jpg">
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Vacation2.jpg</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+
+                  </div>
+              </div>
+             <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="image">
+                              <img alt="image" class="img-responsive" src="img/401.jpg">
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Vacation3.jpg</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-videocam"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Spain.mp4</span>
+                              <br>
+                              <small class="text-muted">Added: May 10, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-file"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Document_work.docx</span>
+                              <br>
+                              <small class="text-muted">Added: May 17, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-videocam"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Spain.mp4</span>
+                              <br>
+                              <small class="text-muted">Added: May 10, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-file"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Document_work.docx</span>
+                              <br>
+                              <small class="text-muted">Added: May 17, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-playlist-audio"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">My_new_mix.mp3</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-playlist-audio"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">My_new_mix.mp3</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="image">
+                              <img alt="image" class="img-responsive" src="img/500.jpg">
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Vacation4.jpg</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-file"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Document_work.docx</span>
+                              <br>
+                              <small class="text-muted">Added: May 17, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-playlist-audio"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">My_new_mix.mp3</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-file"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Document_work.docx</span>
+                              <br>
+                              <small class="text-muted">Added: May 17, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-playlist-audio"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">My_new_mix.mp3</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="image">
+                              <img alt="image" class="img-responsive" src="img/503.jpg">
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Vacation5.jpg</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="image">
+                              <img alt="image" class="img-responsive" src="img/403.jpg">
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Vacation6.jpg</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-videocam"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Spain.mp4</span>
+                              <br>
+                              <small class="text-muted">Added: May 10, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-file"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Document_work.docx</span>
+                              <br>
+                              <small class="text-muted">Added: May 17, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="image">
+                              <img alt="image" class="img-responsive" src="img/404.jpg">
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Vacation7.jpg</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+
+                  </div>
+              </div>
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="image">
+                              <img alt="image" class="img-responsive" src="img/400.jpg">
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Vacation.jpg</span>
+                              <br>
+                              <small class="text-muted">Added: May 11, 2016</small>
+                          </div>
+                      </a>
+
+                  </div>
+              </div>
+              
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-videocam"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Spain.mp4</span>
+                              <br>
+                              <small class="text-muted">Added: May 10, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              
+              <div class="file-box">
+                  <div class="file">
+                      <a href="#">
+                          <div class="icon">
+                              <i class="zmdi zmdi-videocam"></i>
+                          </div>
+                          <div class="file-name">
+                              <span class="info-color">Spain.mp4</span>
+                              <br>
+                              <small class="text-muted">Added: May 10, 2016</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+</body>
+</html>

@@ -1,0 +1,100 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no" />
+  
+  
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#49CEFF">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#49CEFF" />
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>Pacificonis - Registration</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
+  <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="bower_components/Waves/dist/waves.min.css">
+  <link rel="stylesheet" href="bower_components/toastr/toastr.css">
+
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+<!--
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+-->
+    <!--[if lt IE 9]>
+      <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
+      <script src="bower_components/respondJs/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="user-page">
+  <!--Preloader-->
+<div id="preloader">
+      <div class="refresh-preloader"><div class="preloader"><i>.</i><i>.</i><i>.</i></div></div>
+</div>
+
+
+  <div class="wrapper primary-bg">
+      <div class="table-wrapper text-center">
+        <div class="table-row">
+          <div class="table-cell">
+            <div class="login">
+
+                  <h4 class="text-center">Registration</h4>
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+
+                    <div class="form-group text-left">
+                      <div class="checkbox checkbox-info">
+                        <label><input type="checkbox">
+                          <i></i></label>
+                          <span class="white f-s-16 m-l-5">I accept the terms</span>
+                      </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-block btn-lg btn-info">Register</button>
+
+                  </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+  $('#preloader').height($(window).height() + "px");
+  $(window).on('load', function(){
+      setTimeout(function(){
+          $('body').css("overflow-y","visible");
+          $('#preloader').fadeOut(400);
+      }, 800);
+  });
+</script>
+
+</body>
+</html>

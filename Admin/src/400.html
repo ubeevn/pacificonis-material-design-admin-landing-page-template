@@ -1,0 +1,41 @@
+  @@include('./_head.html', {
+    "title": "400"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body class="user-page">
+  @@include('./_preloader.html')
+  <div class="wrapper">
+     <div class="bg error-400"></div>
+     <div class="overlay"></div>
+      <div class="table-wrapper text-center">
+        <div class="table-row">
+          <div class="table-cell">
+            <div class="pagenotfound">
+
+                  <h4 class="text-center">400</h4>
+                  <p class="f-16 white"><i class="zmdi zmdi-info-outline f-20 m-r-10"></i>Your browser sent an invalid request.</p>
+                  <a class="white f-16" href="index.html"><u>Back to Homepage</u></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+  $('#preloader').height($(window).height() + "px");
+  $(window).on('load', function(){
+      setTimeout(function(){
+          $('body').css("overflow-y","visible");
+          $('#preloader').fadeOut(400);
+      }, 800);
+  });
+</script>
+
+</body>
+</html>

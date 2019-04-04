@@ -1,0 +1,180 @@
+  @@include('./_head.html', {
+    "title": "Modals"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Modals"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+         <div class="clearfix modal-preview-demo m-b-20">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Modal title example</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-lg btn-info m-b-5">Save changes</button>
+                            <button type="button" class="btn btn-lg btn-default m-b-5" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+       </div>
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Live demo</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <h5>Additional Sizes</h5>
+              <p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code></p>
+              <button type="button" class="btn btn-primary btn-lg m-b-5" data-toggle="modal" data-target="#modal-dafault">
+                Modal Default
+              </button>
+              <button type="button" class="btn btn-success btn-lg m-b-5" data-toggle="modal" data-target="#modal-small">
+                Modal Small
+              </button>
+              <button type="button" class="btn btn-warning btn-lg m-b-5" data-toggle="modal" data-target="#modal-large">
+                Modal Large
+              </button>
+
+              <!-- Modal Default -->
+              <div class="modal fade" id="modal-dafault" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title">Modal title</h4>
+                          </div>
+                          <div class="modal-body">
+                              <p>By so delight of showing neither believe he present. Deal sigh up in shew away when. Pursuit express no or prepare replied. Wholly formed old latter future but way she. Day her likewise smallest expenses judgment building man carriage gay. Considered introduced themselves mr to discretion at. Means among saw hopes for. Death mirth in oh learn he equal on.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-lg btn-info m-b-5">Save changes</button>
+                              <button type="button" class="btn btn-lg btn-default m-b-5" data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Modal Small -->
+              <div class="modal fade" id="modal-small" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title">Modal title</h4>
+                          </div>
+                          <div class="modal-body">
+                              <p>She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down. For request general express unknown are. He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but. Questions am sincerity zealously concluded consisted or no gentleman it.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-info m-b-5">Save changes</button>
+                              <button type="button" class="btn btn-default m-b-5" data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Modal Large -->
+              <div class="modal fade" id="modal-large" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title">Modal title</h4>
+                          </div>
+                          <div class="modal-body">
+                              <p>Merry alone do it burst me songs. Sorry equal charm joy her those folly ham. In they no is many both. Recommend new contented intention improving bed performed age. Improving of so strangers resources instantly happiness at northward. Danger nearer length oppose really add now either. But ask regret eat branch fat garden. Become am he except wishes. Past so at door we walk want such sang. Feeling colonel get her garrets own.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-lg btn-info m-b-5">Save changes</button>
+                              <button type="button" class="btn btn-lg btn-default m-b-5" data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <br>
+              <br>
+
+              <h5>Other Examples</h5>
+              <p>Additionals options for modals</p>
+
+              <button type="button" class="btn btn-info btn-lg m-b-5" data-toggle="modal" data-target="#modal-anim">
+                Without Animation
+              </button>
+              <button type="button" class="btn btn-danger btn-lg m-b-5" data-toggle="modal" data-target="#modal-click">
+                Prevent Outside Click
+              </button>
+
+              <!-- Modal without animation -->
+              <div class="modal" id="modal-anim" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title">Modal title</h4>
+                          </div>
+                          <div class="modal-body">
+                              <p>Seen you eyes son show. Far two unaffected one alteration apartments celebrated but middletons interested. Described deficient applauded consisted my me do. Passed edward two talent effect seemed engage six. On ye great do child sorry lived. Proceed cottage far letters ashamed get clothes day. Stairs regret at if matter to. On as needed almost at basket remain. By improved sensible servants children striking in surprise.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-lg btn-info m-b-5">Save changes</button>
+                              <button type="button" class="btn btn-lg btn-default m-b-5" data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Modal prevent outside click -->
+              <div class="modal fade" id="modal-click" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title">Modal title</h4>
+                          </div>
+                          <div class="modal-body">
+                              <p>So if on advanced addition absolute received replying throwing he. Delighted consisted newspaper of unfeeling as neglected so. Tell size come hard mrs and four fond are. Of in commanded earnestly resources it. At quitting in strictly up wandered of relation answered felicity. Side need at in what dear ever upon if. Same down want joy neat ask pain help she. Alone three stuff use law walls fat asked. Near do that he help.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-lg btn-info m-b-5">Save changes</button>
+                              <button type="button" class="btn btn-lg btn-default m-b-5" data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+</body>
+</html>

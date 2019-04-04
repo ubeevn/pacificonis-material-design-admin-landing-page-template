@@ -1,0 +1,239 @@
+  @@include('./_head.html', {
+    "title": "X-editable"
+  })
+<link rel="stylesheet" href="bower_components/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css">
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "X-editable"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">X-editable</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+             <div class="row">
+              <div class="col-sm-12">
+                <p>The X-Editable plugin allows you to create editable elements on your page. It can be used in both popup and inline modes.</p>
+              </div>
+               <div class="col-sm-6">
+                 <h5>Popup mode</h5>
+                 <p>Editable elements with popups</p>
+                 <form class="form-horizontal row-x-editable">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Simple Text Field</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username" class="editable editable-click">superuser</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Empty text field, required</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname" class="editable editable-click editable-empty">Empty</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Select, local array, custom display</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: rgb(128, 128, 128);">not selected</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Select, error while loading</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="status" data-type="select" data-pk="1" data-value="0" data-source="/status" data-title="Select status" class="editable editable-click">Active</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Combodate</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth" class="editable editable-click">15/05/1984</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Textarea, buttons below. Submit by <i>ctrl+enter</i></label>
+                        <div class="col-sm-6">
+                            <a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments" class="editable editable-pre-wrapped editable-click">awesome user!</a>
+                        </div>
+                    </div>
+                 </form>
+               </div>
+
+               <div class="col-sm-6">
+                 <h5>Inline mode</h5>
+                 <p>Editable elements with inline editor</p>
+                 <form class="form-horizontal row-x-editable">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Simple Text Field</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username" class="editable editable-click" style="display: inline-block;">superuser</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Empty text field, required</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname" class="editable editable-click editable-empty">Empty</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Select, local array, custom display</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="inline-sex" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: rgb(128, 128, 128);">not selected</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Select, error while loading</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="inline-status" data-type="select" data-pk="1" data-value="0" data-source="/status" data-title="Select status" class="editable editable-click">Active</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Combodate</label>
+                        <div class="col-sm-6">
+                            <a href="#" id="inline-dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth" class="editable editable-click">15/05/1984</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Textarea, buttons below. Submit by <i>ctrl+enter</i></label>
+                        <div class="col-sm-6">
+                            <a href="#" id="inline-comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments" class="editable editable-pre-wrapped editable-click">awesome user!</a>
+                        </div>
+                    </div>
+                  </form>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="bower_components/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+  @@include('./_commonjs.html')
+  <script>
+  $(function(){
+    $.fn.editableform.buttons =
+  '<button type="submit" class="btn btn-success editable-submit"><i class="zmdi zmdi-check"></i></button>' +
+ '<button type="button" class="btn btn-danger editable-cancel"><i class="zmdi zmdi-close"></i></button>';
+
+
+    //editables
+    $('#username').editable({
+     type: 'text',
+     pk: 1,
+     name: 'username',
+     title: 'Enter username'
+   });
+
+    $('#firstname').editable({
+      validate: function(value) {
+       if($.trim(value) == '') return 'This field is required';
+     }
+   });
+
+    $('#sex').editable({
+      prepend: "not selected",
+      source: [
+      {value: 1, text: 'Male'},
+      {value: 2, text: 'Female'}
+      ],
+      display: function(value, sourceData) {
+       var colors = {"": "gray", 1: "#aa66cc", 2: "#ffbb33"},
+       elem = $.grep(sourceData, function(o){return o.value == value;});
+
+       if(elem.length) {
+         $(this).text(elem[0].text).css("color", colors[value]);
+       } else {
+         $(this).empty();
+       }
+     }
+   });
+
+    $('#status').editable();
+
+    $('#group').editable({
+      showbuttons: false
+    });
+
+    $('#dob').editable();
+
+    $('#comments').editable({
+      showbuttons: 'bottom'
+    });
+
+
+
+    //inline
+
+
+  $('#inline-username').editable({
+     type: 'text',
+     pk: 1,
+     name: 'username',
+     title: 'Enter username',
+     mode: 'inline'
+   });
+
+    $('#inline-firstname').editable({
+      validate: function(value) {
+       if($.trim(value) == '') return 'This field is required';
+     },
+     mode: 'inline'
+   });
+
+    $('#inline-sex').editable({
+      prepend: "not selected",
+      mode: 'inline',
+      source: [
+      {value: 1, text: 'Male'},
+      {value: 2, text: 'Female'}
+      ],
+      display: function(value, sourceData) {
+       var colors = {"": "gray", 1: "#aa66cc", 2: "#ffbb33"},
+       elem = $.grep(sourceData, function(o){return o.value == value;});
+
+       if(elem.length) {
+         $(this).text(elem[0].text).css("color", colors[value]);
+       } else {
+         $(this).empty();
+       }
+     }
+   });
+
+    $('#inline-status').editable({mode: 'inline'});
+
+    $('#inline-group').editable({
+      showbuttons: false,
+      mode: 'inline'
+    });
+
+    $('#inline-dob').editable({mode: 'inline'});
+
+    $('#inline-comments').editable({
+      showbuttons: 'bottom',
+      mode: 'inline'
+    });
+
+
+  });
+  </script>
+</body>
+</html>

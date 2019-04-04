@@ -1,0 +1,195 @@
+  @@include('./_head.html', {
+    "title": "Payments"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Payments"
+   })
+    <div class="container-fluid">
+     <div class="row">
+       <div class="col-md-4">
+         <div class="content-box p-20">   
+              <img src="img/credit-card1.png" class="img-responsive" alt="credit card">
+              <h2>
+                  **** **** **** 8300
+              </h2>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <strong>Expiry date:</strong> 12/22                
+                  </div>
+                  <div class="col-sm-6 text-right">   
+                      <strong>Name:</strong> Helen Doe                  
+                  </div>
+              </div>
+         </div>
+       </div>
+       <div class="col-md-4">
+         <div class="content-box p-20">   
+              <img src="img/credit-card2.png" class="img-responsive" alt="credit card">
+              <h2>
+                  **** **** **** 1163
+              </h2>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <strong>Expiry date:</strong> 09/18                
+                  </div>
+                  <div class="col-sm-6 text-right">   
+                      <strong>Name:</strong> Helen Doe                  
+                  </div>
+              </div>
+         </div>
+       </div>
+       <div class="col-md-4">
+         <div class="content-box p-20">   
+              <img src="img/credit-card3.png" class="img-responsive" alt="credit card">
+              <h2>
+                  **** **** **** 4638
+              </h2>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <strong>Expiry date:</strong> 06/18                
+                  </div>
+                  <div class="col-sm-6 text-right">   
+                      <strong>Name:</strong> Helen Doe                  
+                  </div>
+              </div>
+         </div>
+       </div>
+     </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Payment Method</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel">
+                  <div class="panel-heading active" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+                        PayPal
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+                    <div class="panel-body">
+                      <h4 class="m-t-0">Summary</h4>
+                      <strong>Product:</strong>: Name of product <br>
+                      <strong>Price:</strong>: <strong class="text-info">$800.00</strong>
+
+                      <p class="m-t-10">
+                          Warmly little before cousin sussex entire men set. Blessing it ladyship on sensible judgment settling outweigh. Worse linen an of civil jokes leave offer. Parties all clothes removal cheered calling prudent her. And residence for met the estimable disposing.
+
+                      </p>
+
+                      <button type="button" class="btn btn-success btn-lg">
+                          Purchase via PayPal
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                       Credit Card
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="m-t-0">Summary</h4>
+                            <strong>Product:</strong>: Name of product <br>
+                            <strong>Price:</strong>: <strong class="text-info">$800.00</strong>
+
+                            <p class="m-t-10">
+                                Greatest properly off ham exercise all. Unsatiable invitation its possession nor off. All difficulty estimating unreserved increasing the solicitude. Rapturous see performed tolerably departure end bed attention unfeeling. On unpleasing principles alteration of. 
+
+                            </p>
+                            <p>
+                                Be at performed preferred determine collected. Him nay acuteness discourse listening estimable our law. Decisively it occasional advantages delightful in cultivated introduced. Like law mean form are sang loud lady put.
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+
+                            <form id="payment-form">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label>CARD NUMBER</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="Number" data-mask="0000-0000-0000-0000" placeholder="0000-0000-0000-0000" autocomplete="off" maxlength="17" required>
+                                                <span class="input-group-addon"><i class="zmdi zmdi-card"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-7 col-md-7">
+                                        <div class="form-group">
+                                            <label>EXPIRATION DATE</label>
+                                            <input type="text" class="form-control" name="Expiry" data-mask="00/00" placeholder="00/00" autocomplete="off" maxlength="5" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5 col-md-5 pull-right">
+                                        <div class="form-group">
+                                            <label>CV CODE</label>
+                                            <input type="text" class="form-control" name="CVC" data-mask="000" placeholder="000" autocomplete="off" maxlength="3" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label>NAME OF CARD</label>
+                                            <input type="text" class="form-control" name="nameCard" placeholder="NAME AND SURNAME">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <button class="btn btn-success btn-lg" type="submit">Make a payment!</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  
+  <script src="js/input-mask.min.js"></script>
+  
+  
+  @@include('./_commonjs.html')
+</body>
+</html>

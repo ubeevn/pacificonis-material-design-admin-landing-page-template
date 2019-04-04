@@ -1,0 +1,122 @@
+  @@include('./_head.html', {
+    "title": "Notifications"
+  })
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Notifications"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Notifications</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5><strong>Bootstrap Alerts</strong></h5>
+                  <div class="alert alert-warning" role="alert">
+                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                  </div>
+                  <div class="alert alert-success" role="alert">
+                    <strong>Well done!</strong> You successfully read this important alert message.
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h5><strong>Bootstrap Dismissable Alerts</strong></h5>
+                  <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                  </div>
+                  <div class="alert alert-success alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Well done!</strong> You successfully read this important alert message.
+                  </div>
+                  <div class="alert alert-info alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                  </div>
+                  <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <h5><strong>Alerts with buttons</strong></h5>
+                </div>
+                <div class="col-md-6">
+                  <div class="alert alert-dismissible alert-info fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="text-uppercase info-color">Heads up! You got an message!</h5>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nam, voluptatum aspernatur, quibusdam in quo, expedita sunt architecto non quae tempore provident doloremque? Vel, culpa.</p>
+
+                    <button type="button" class="btn btn-lg btn-info">Take the action</button>
+                    <button type="button" class="btn btn-lg btn-no-bg info-color m-l-20">Or do this</button>
+                  </div>
+
+                  <div class="alert alert-dismissible alert-success fade in zero-m" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="text-uppercase success-color">Well Done! You got an message!</h5>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nam, voluptatum aspernatur, quibusdam in quo, expedita sunt architecto non quae tempore provident doloremque? Vel, culpa.</p>
+
+                    <button type="button" class="btn btn-lg btn-success">Take the action</button>
+                    <button type="button" class="btn btn-lg btn-no-bg success-color m-l-20">Or do this</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="alert alert-dismissible alert-danger fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="text-uppercase danger-color">Oh snap! You got an message!</h5>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nam, voluptatum aspernatur, quibusdam in quo, expedita sunt architecto non quae tempore provident doloremque? Vel, culpa.</p>
+
+                    <button type="button" class="btn btn-lg btn-danger">Take the action</button>
+                    <button type="button" class="btn btn-lg btn-no-bg danger-color m-l-20">Or do this</button>
+                  </div>
+
+                  <div class="alert alert-dismissible alert-warning fade in zero-m" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="text-uppercase warning-color">Well Done! You got an message!</h5>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nam, voluptatum aspernatur, quibusdam in quo, expedita sunt architecto non quae tempore provident doloremque? Vel, culpa.</p>
+
+                    <button type="button" class="btn btn-lg btn-warning">Take the action</button>
+                    <button type="button" class="btn btn-lg btn-no-bg warning-color m-l-20">Or do this</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+
+  @@include('./_commonjs.html')
+</body>
+</html>

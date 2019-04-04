@@ -1,0 +1,394 @@
+  @@include('./_head.html', {
+    "title": "Material Form Elements"
+  })
+  <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css">
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Material Form Elements"
+   })
+    <div class="container-fluid">
+     <div class="row">
+        <div class="col-lg-12">
+         <div class="alert alert-info">Add <code>.material</code> class to your inputs to get material styles</div>
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Input types</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="row">
+                <div class="col-md-6">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="inputText" class="col-sm-2 control-label">Text</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control material" id="inputText" placeholder="Some text here">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPlaceholder" class="col-sm-2 control-label">Placeholder</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control material" id="inputPlaceholder" placeholder="Placeholder">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control material" id="inputEmail3" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control material" id="inputPassword3" value="password">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Textarea</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control material" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <form class="form-horizontal">
+                      <div class="form-group">
+                        <label for="inputFocus" class="col-sm-2 control-label">Focused</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control material" id="inputFocus" placeholder="Focused" autofocus>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputDisabled" class="col-sm-2 control-label">Disabled</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control material" id="inputDisabled" placeholder="Disabled input here..." disabled>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputHelped" class="col-sm-2 control-label">Help</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control material" id="inputHelped" placeholder="Helping text">
+                          <span class="help-block"><small>A block of help text that breaks onto a new line and may extend beyond one line.</small></span>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Selects</label>
+                        <div class="col-sm-10">
+                            <select class="form-control material">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <select class="form-control material">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <select class="form-control material">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box">
+            <div class="head danger-bg clearfix">
+              <h5 class="content-title pull-left">Input States</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="form-group">
+                <label class="control-label warning-color">Input warning</label>
+                <input type="text" class="form-control material input-warning">
+              </div>
+              <div class="form-group">
+                <label class="control-label danger-color">Input error</label>
+                <input type="text" class="form-control material input-danger">
+              </div>
+              <div class="form-group">
+                <label class="control-label success-color">Input success</label>
+                <input type="text" class="form-control material input-success">
+              </div>
+              <div class="form-group">
+                <label class="control-label primary-color">Input primary</label>
+                <input type="text" class="form-control material input-primary">
+              </div>
+              <div class="form-group">
+                <label class="control-label info-color">Input info</label>
+                <input type="text" class="form-control material input-info">
+              </div>
+              <div class="form-group has-icon">
+                <label class="control-label success-color">Input success with icon</label>
+                <div class="p-relative">
+                  <input type="text" class="form-control material input-success">
+                  <span class="zmdi zmdi-check success-color f-s-24 form-icon"></span>
+                </div>
+              </div>
+              <div class="form-group has-icon">
+                <label class="control-label warning-color">Input warning with icon</label>
+                <div class="p-relative">
+                  <input type="text" class="form-control material input-warning">
+                  <span class="zmdi zmdi-alert-triangle warning-color f-s-24 form-icon"></span>
+                </div>
+              </div>
+              <div class="form-group has-icon">
+                <label class="control-label danger-color">Input danger with icon</label>
+                <div class="p-relative">
+                  <input type="text" class="form-control material input-danger">
+                  <span class="zmdi zmdi-close danger-color f-s-24 m-r-5 form-icon"></span>
+                </div>
+              </div>
+              <div class="form-group has-icon">
+                <label class="control-label">Input with custom icon</label>
+                <div class="p-relative">
+                  <input type="text" class="form-control material">
+                  <span class="zmdi zmdi-car f-s-24 form-icon"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Input sizes</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="form-group">
+                <label class="control-label">Large Input</label>
+                <input type="email" class="form-control material input-lg">
+              </div>
+              <div class="form-group">
+                <label class="control-label">Default Input</label>
+                <input type="email" class="form-control material">
+              </div>
+              <div class="form-group">
+                <label class="control-label">Small input</label>
+                <input type="email" class="form-control material input-sm">
+              </div>
+              <div class="form-group">
+                <label class="control-label">Grid sizes</label>
+                <div class="row">
+                  <div class="col-md-3">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-3">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-5">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-8">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-10">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-4">
+                  </div>
+                  <div class="col-md-8">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-8">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-6">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-6">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-9">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-9">
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" class="form-control material m-b-20" placeholder=".col-md-3">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <input type="text" class="form-control material" placeholder=".col-md-12">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box">
+            <div class="head primary-bg clearfix">
+              <h5 class="content-title pull-left">Floating Labels</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="form-group fg">
+                  <div class="fg-line">
+                      <input type="text" class="form-control fg-line-input js-input">
+                      <label class="fg-line-label">Default</label>
+                  </div>
+              </div>
+              <div class="form-group fg">
+                  <div class="fg-line success">
+                      <input type="text" class="form-control fg-line-input js-input">
+                      <label class="fg-line-label">Success</label>
+                  </div>
+              </div>
+              <div class="form-group fg">
+                  <div class="fg-line warning">
+                      <input type="text" class="form-control fg-line-input js-input">
+                      <label class="fg-line-label">Warning</label>
+                  </div>
+              </div>
+              <div class="form-group fg">
+                  <div class="fg-line danger">
+                      <input type="text" class="form-control fg-line-input js-input">
+                      <label class="fg-line-label">Danger</label>
+                  </div>
+              </div>
+              <div class="form-group fg">
+                  <div class="fg-line info">
+                      <input type="text" class="form-control fg-line-input js-input">
+                      <label class="fg-line-label">Info</label>
+                  </div>
+              </div>
+              <div class="form-group fg">
+                  <div class="fg-line warning">
+                      <input type="text" class="form-control input-lg fg-line-input js-input">
+                      <label class="fg-line-label">Input large</label>
+                  </div>
+              </div>
+              <div class="form-group fg">
+                  <div class="fg-line danger">
+                      <input type="text" class="form-control input-sm fg-line-input js-input">
+                      <label class="fg-line-label">Input small</label>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Input addons</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="control-label">Static</label>
+                    <div class="input-group material">
+                      <div class="input-group-addon"><span class="zmdi zmdi-twitter"></span></div>
+                      <input type="text" class="form-control material" placeholder="Twitter">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group material">
+                      <input type="email" class="form-control material" placeholder="Email">
+                      <div class="input-group-addon"><span class="zmdi zmdi-email"></span></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group material">
+                      <div class="input-group-addon"><span class="zmdi zmdi-edit"></span></div>
+                      <input type="text" class="form-control material" placeholder="Username">
+                      <div class="input-group-addon">Profile</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="control-label">Buttons</label>
+                    <div class="input-group material">
+                      <div class="input-group-addon p-0"><button type="button" class="btn text-color btn-no-bg btn-default">$</button></div>
+                      <input type="text" class="form-control material" placeholder="Amount">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group material">
+                      <input type="email" class="form-control material" placeholder="Email">
+                      <div class="input-group-addon p-0"><button type="button" class="btn text-color btn-no-bg btn-info">Submit</button></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group material">
+                      <div class="input-group-addon p-0"><button type="button" class="btn text-color btn-no-bg btn-success"><span class="zmdi zmdi-facebook"></span></button></div>
+                      <input type="text" class="form-control material" placeholder="http://facebook.com">
+                      <div class="input-group-addon p-0"><button type="button" class="btn text-color btn-no-bg btn-warning"><span class="zmdi zmdi-edit m-r-5"></span>Edit</button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+     </div>
+     <footer class="page-footer">© 2016 Copyright</footer>
+    </div>
+
+
+  @@include('./_footer.html')
+
+  <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+
+  @@include('./_commonjs.html')
+</body>
+</html>

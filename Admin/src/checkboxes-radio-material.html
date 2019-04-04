@@ -1,0 +1,152 @@
+  @@include('./_head.html', {
+    "title": "Checkboxes & Radio"
+  })
+<!--  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.1.6/css/material.min.css">-->
+<!--  <link rel="stylesheet" href="js/ripples.min.css">-->
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Checkboxes & Radio"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Material checkboxes</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="m-b-0 m-t-10">Default checkbox</p>
+              
+              <div class="form-group">
+                <div class="checkbox material">
+                  <label><input type="checkbox">
+                    <i></i></label>
+                </div>
+              </div>
+        
+              <p class="m-b-0 m-t-10">Add <code>checkbox-primary</code> class to get primary checkbox</p>
+              <div class="checkbox  material checkbox-primary">
+                <label><input type="checkbox">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>checkbox-success</code> class to get success checkbox</p>
+              <div class="checkbox  material checkbox-success">
+                <label><input type="checkbox">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>checkbox-info</code> class to get info checkbox</p>
+              <div class="checkbox  material checkbox-info">
+                <label><input type="checkbox">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>checkbox-warning</code> class to get warning checkbox</p>
+              <div class="checkbox  material checkbox-warning">
+                <label><input type="checkbox">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>checkbox-danger</code> class to get danger checkbox</p>
+              <div class="checkbox  material checkbox-danger">
+                <label><input type="checkbox">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>checked</code> attribute to check this element</p>
+              <div class="checkbox  material checkbox-primary">
+                <label><input type="checkbox" checked>
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>disabled</code> attribute to disable this checkbox</p>
+              <div class="checkbox  material checkbox-success">
+                <label><input type="checkbox" disabled>
+                  <i></i></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+         <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Material radio buttons</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <p class="m-b-0 m-t-10">Default radio button</p>
+              <div class="radio material">
+                <label><input type="radio" name="radio"  value="option1">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>radio-primary</code> class get primary radio</p>
+              <div class="radio  material radio-primary">
+                <label><input type="radio" name="radio"  value="option2">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>radio-success</code> class get success radio</p>
+              <div class="radio  material radio-success">
+                <label><input type="radio" name="radio"  value="option3">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>radio-info</code> class get info radio</p>
+              <div class="radio  material radio-info">
+                <label><input type="radio" name="radio"  value="option4">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>radio-warning</code> class get warning radio</p>
+              <div class="radio  material radio-warning">
+                <label><input type="radio" name="radio"  value="option5">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>radio-danger</code> class get danger radio</p>
+              <div class="radio  material radio-danger">
+                <label><input type="radio" name="radio"  value="option6">
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>checked</code> attribute to check this element </p>
+              <div class="radio  material radio-success">
+                <label><input type="radio" name="radio"  value="option7" checked>
+                  <i></i></label>
+              </div>
+              <p class="m-b-0 m-t-10">Add <code>disabled</code> attribute to disable this checkbox</p>
+              <div class="radio material">
+                <label><input type="radio" name="radio"  value="option8" disabled>
+                  <i></i></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+  
+  <script src="js/material.min.js"></script>
+<!--  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.1.6/js/ripples.min.js"></script>-->
+  <script>
+    $.material.init();
+  </script>
+
+</body>
+</html>

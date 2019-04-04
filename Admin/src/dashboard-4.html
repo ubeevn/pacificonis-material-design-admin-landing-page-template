@@ -1,0 +1,774 @@
+  @@include('./_head.html', {
+    "title": "Dashboard 4"
+  })
+
+  <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.min.css">
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Dashboard 4"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="data-info">
+            <table id="table" class="display datatable">
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Country</th>
+                  <th>Number of Orders</th>
+                  <th>Number of goods</th>
+                  <th>Total Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="info-color">Tony Lester</td>
+                  <td>USA</td>
+                  <td>3.324</td>
+                  <td>4.587</td>
+                  <td>$24.595</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Katerina Pauls</td>
+                  <td>Australia</td>
+                  <td>1.683</td>
+                  <td>2.909</td>
+                  <td>$12.200</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Petro Shchur</td>
+                  <td>Ukraine</td>
+                  <td>5.230</td>
+                  <td>8.729</td>
+                  <td>$75.150</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Cristiano Ronaldo</td>
+                  <td>Portugal</td>
+                  <td>609</td>
+                  <td>1.389</td>
+                  <td>$34.600</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Robert Kennedy</td>
+                  <td>Great Britain</td>
+                  <td>304</td>
+                  <td>817</td>
+                  <td>$5.870</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Trevor Philips</td>
+                  <td>USA</td>
+                  <td>2.701</td>
+                  <td>6.450</td>
+                  <td>$45.269</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-box warning-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Orders</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-3" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total orders</p>
+              <p class="zero-m f-30">45,245,659</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box">
+            <div class="head clearfix">
+              <h5 class="content-title text-color pull-left">Implementation of a plan</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn text-color" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn text-color" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn text-color" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="p-l-20">
+              <button type="button" class="btn btn-info m-b-5">
+               Week
+              </button>
+              <button type="button" class="btn btn-warning m-b-5">
+               Month
+              </button>
+            </div>
+            <div class="content">
+              <div class="easychart text-right" data-percent="55"></div>
+              <div class="p-absolute b-20 l-20">
+                <p class="text-uppercase zero-m">Profit</p>
+                <p class="zero-m danger-color f-30">254,395</p>
+              </div>
+            </div>
+            <!-- Used for demo purposes. Remove if it is needed-->
+            <div class="visible-lg visible-md" style="height: 6px;"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box success-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Visitors</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-4" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total visitors</p>
+              <p class="zero-m f-30">15,654,700</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head head-with-btns clearfix">
+              <h5 class="content-title text-color pull-left">Total sales statistics</h5>
+              <div class="functions-btns pull-right">
+                <button type="button" class="btn btn-warning">
+                 Week
+                </button>
+                <button type="button" class="btn btn-default">
+                 Month
+                </button>
+                <button type="button" class="btn btn-default">
+                 Year
+                </button>
+              </div>
+            </div>
+           <div class="content">
+             <div id="js-legend" class="chart-legend"></div>
+             <div class="chartjs-container full-page-chart">
+              <canvas id="chart-line"></canvas>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="data-white">
+            <table id="table3" class="display widget datatable">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Left</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="info-color">Coats Tony Tailor</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Jeans</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td class="info-color">T-shirts</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Shoes</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Sandals</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Bags</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Underwear</td>
+                  <td>14</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="data-white">
+            <table id="table4" class="display widget datatable">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="info-color">Coats Tony Tailor</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Jeans</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td class="info-color">T-shirts</td>
+                  <td>97</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Shoes</td>
+                  <td>65</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Sandals</td>
+                  <td>213</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Bags</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td class="info-color">Underwear</td>
+                  <td>70</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="data-info">
+            <table id="table2" class="display widget datatable">
+              <thead>
+                <tr>
+                  <th>Currency</th>
+                  <th>Buy</th>
+                  <th>Sell</th>
+                  <th>Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>UAH</td>
+                  <td>22.35</td>
+                  <td>23.30</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+                <tr>
+                  <td>EUR</td>
+                  <td>1.13</td>
+                  <td>1.16</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>AUD</td>
+                  <td>22.35</td>
+                  <td>23.30</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>JPY</td>
+                  <td>32.30</td>
+                  <td>33.90</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>JPY</td>
+                  <td>32.30</td>
+                  <td>33.90</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+                <tr>
+                  <td>CAD</td>
+                  <td>0.86</td>
+                  <td>0.91</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>UAH</td>
+                  <td>22.35</td>
+                  <td>23.30</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>EUR</td>
+                  <td>1.13</td>
+                  <td>1.16</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>AUD</td>
+                  <td>22.35</td>
+                  <td>23.30</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+                <tr>
+                  <td>JPY</td>
+                  <td>32.30</td>
+                  <td>33.90</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+                <tr>
+                  <td>CAD</td>
+                  <td>0.86</td>
+                  <td>0.91</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>JPY</td>
+                  <td>32.30</td>
+                  <td>33.90</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box">
+            <div class="head clearfix">
+              <h5 class="content-title text-color pull-left">Using the methods of payment</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn text-color" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn text-color" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn text-color" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="p-l-20">
+              <button type="button" class="btn btn-info m-b-5">
+               Week
+              </button>
+              <button type="button" class="btn btn-default m-b-5">
+               Month
+              </button>
+              <button type="button" class="btn btn-default m-b-5">
+               Year
+              </button>
+            </div>
+           <!-- Inline styles used only for demo-->
+           <div class="content" style="min-height: 472px;">
+             <div class="chartjs-container">
+               <canvas id="chart-radar" height="223"></canvas>
+             </div>
+           </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box o-hidden">
+           <div class="head clearfix">
+             <h5 class="content-title text-color pull-left">To do list</h5>
+             <div class="functions-btns pull-right">
+                <a class="refresh-btn text-color" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn text-color" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn text-color" href="#"><i class="zmdi zmdi-close"></i></a>
+             </div>
+           </div>
+            <div class="panel zero-m">
+              <div class="panel-body todo">
+                <ul class="list-group zero-m">
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Searches
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Advertising
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Links
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Advertising
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Links
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Social media
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Searches
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Links
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Links
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Advertising
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Used for demo purposes. Remove if it is needed-->
+            <div class="visible-lg visible-md" style="height: 2px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+
+  <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-responsive/js/dataTables.responsive.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+
+  <script src="bower_components/Chart.js/Chart.js"></script>
+  <script src="bower_components/flot/jquery.flot.js"></script>
+  <script src="bower_components/flot/jquery.flot.resize.js"></script>
+  <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
+  <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.js"></script>
+
+  <script>
+    var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+    var lineChartData = {
+        labels : ["MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY"],
+        datasets : [
+            {
+                label: "Mens goods",
+                fillColor : "rgba(73, 206, 255, 0.5)",
+                strokeColor : "rgba(73, 206, 255, 0.7)",
+                pointColor : "rgba(73, 206, 255, 0.9)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(255, 193, 7, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+            {
+                label: "Children goods",
+                fillColor : "rgba(153, 204, 0, 0.5)",
+                strokeColor : "rgba(153, 204, 0, 0.7)",
+                pointColor : "rgba(153, 204, 0, 0.9)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(33, 150, 243, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            }
+        ]
+
+    };
+
+    var radarChartData = {
+      labels: ["YANDEX MONEY", "VISA", "PAYPAL", "MASTERCARD", "WEBMONEY", "QIWI"],
+      datasets: [
+        {
+          fillColor: "#8BC34A",
+          pointColor: "#8BC34A",
+          strokeColor: "#72a13d",
+          data: [65,59,90,81,56,55]
+        },
+        {
+          fillColor: "#673AB7",
+          pointColor: "#673AB7",
+          strokeColor: "#563098",
+          data: [28,48,40,19,96,27]
+        }
+      ]
+    };
+
+
+
+  window.onload = function(){
+
+
+      var ctx = document.getElementById("chart-line").getContext("2d");
+      var myLine = new Chart(ctx).Line(lineChartData, {
+        scaleShowVerticalLines: false,
+//        scaleShowLabels: false,
+//        maintainAspectRatio: true,
+        datasetStrokeWidth : 6,
+        pointDotRadius : 6,
+        responsive: true,
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].pointColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+      });
+
+      document.getElementById('js-legend').innerHTML = myLine.generateLegend();
+
+      window.myRadar = new  Chart(document.getElementById("chart-radar").getContext("2d")).Radar(radarChartData, {
+            responsive: true,
+            datasetStrokeWidth : 5,
+            pointDot : false,
+      });
+  }
+
+  </script>
+
+  <script>
+  $(function () {
+  /* Make some random data for the Chart*/
+
+      var d1 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d1.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d2 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d2.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d3 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d3.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d4 = [];
+      for (var i = 0; i <= 50; i += 1) {
+          d4.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      /* Chart Options */
+
+      var options = {
+          series: {
+            shadowSize: 0,
+            label: "Qty",
+            lines: {
+                show: true,
+                lineWidth: 2
+            },
+            points: {
+              show: true
+            }
+          },
+          grid: {
+            margin: 10,
+            show: false,
+            hoverable: true,
+            clickable: true
+          },
+          yaxis: {
+              max: 100,
+              min: 0
+          },
+          legend: {
+            show: false
+          },
+          tooltip: {
+            show: true,
+            cssClass: "flot-tooltip",
+            defaultTheme: false,
+            content: '%y.2',
+            shifts: {
+                x: 1,
+                y: -45
+            }
+          }
+      };
+
+      var options2 = {
+          series: {
+            shadowSize: 5,
+            label: "Qty",
+            lines: {
+                show: true,
+                lineWidth: 2
+            }
+          },
+          grid: {
+            margin: 10,
+            show: false,
+            hoverable: true,
+            clickable: false
+          },
+          legend: {
+            show: false
+          },
+          tooltip: {
+            show: true,
+            cssClass: "flot-tooltip",
+            defaultTheme: false,
+            content: '%y.2',
+            shifts: {
+                x: 1,
+                y: -45
+            }
+          }
+      };
+
+
+      /* Let's create the chart */
+     if ($("#line-chart-2")[0]) {
+          $.plot($("#line-chart-2"), [
+              {data: d2, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-3")[0]) {
+          $.plot($("#line-chart-3"), [
+              {data: d3, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-4")[0]) {
+          $.plot($("#line-chart-4"), [
+              {data: d4, color: '#fff' }
+          ], options2);
+      }
+
+  });
+  </script>
+
+  <script>
+  $(function() {
+      $('.easychart').easyPieChart({
+        barColor: "#F44336",
+        trackColor: '#cccccc',
+        size: 115,
+        lineWidth: 15,
+        scaleLength: 0
+      });
+  });
+  </script>
+
+    <script>
+    $('#table').DataTable({
+     "dom": '<"toolbar tool"><"clear-filter">frtip',
+      info: false,
+      paging: false,
+      responsive: true,
+      "oLanguage": { "sSearch": "" }
+    });
+
+    $("div.tool").css("padding", "7px 20px").html('<h5 class="content-title">Best buyers</h5>');
+
+    $('.dataTables_filter input').attr("placeholder", "Search");
+
+    $('#table2').DataTable({
+     "dom": '<"toolbar tool2">rtip',
+      info: false,
+      paging: false,
+      responsive: true,
+    });
+
+    $("div.tool2").css("padding", "7px 20px").html('<h5 class="content-title">Exchange rates</h5>');
+
+    $('#table3').DataTable({
+     "dom": '<"toolbar tool3">rtip',
+      info: false,
+      paging: false,
+      responsive: true,
+    });
+
+    $("div.tool3").css("padding", "7px 20px").html('<h5 class="content-title text-color">Ends in stock</h5>');
+
+    $('#table4').DataTable({
+     "dom": '<"toolbar tool4">rtip',
+      info: false,
+      paging: false,
+      responsive: true,
+    });
+
+    $("div.tool4").css("padding", "7px 20px").html('<h5 class="content-title text-color">New Arrivals</h5>');
+
+    //Todo
+    $(document).on('mouseover', '.list-group .checkbox', function () {
+      $('.list-group input:checkbox').each(function () {
+        $(this).on("change", function () {
+          if ($(this).is(":checked")) {
+            $(this).closest(".list-group-item").addClass("checked-todo").removeClass("list-item");
+          } else {
+            $(this).closest(".list-group-item").removeClass("checked-todo");
+          }
+        });
+      });
+    });
+
+    $(document).on('click', '.trash', function (e) {
+      var clearedCompItem = $(this).closest(".list-group-item").remove();
+      e.preventDefault();
+    });
+
+  </script>
+
+  @@include('./_commonjs.html')
+</body>
+</html>

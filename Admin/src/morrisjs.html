@@ -1,0 +1,174 @@
+  @@include('./_head.html', {
+    "title": "Morris.js"
+  })
+  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Morris.js"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head head-with-btns clearfix">
+              <h5 class="content-title text-color pull-left">Total sales statistics</h5>
+              <div class="functions-btns pull-right">
+                <button type="button" class="btn btn-default">
+                 Week
+                </button>
+                <button type="button" class="btn btn-default">
+                 Month
+                </button>
+                <button type="button" class="btn btn-info">
+                 Year
+                </button>
+              </div>
+            </div>
+             <div class="content">
+               <div id="morris-bar" class="morris-container"></div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-box">
+             <div class="head primary-bg clearfix">
+               <h5 class="content-title pull-left">Currency</h5>
+               <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+             </div>
+             <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, mollitia quasi quibusdam.</p>
+               <div id="morris-area" class="morris-container"></div>
+             </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box">
+             <div class="head success-bg clearfix">
+               <h5 class="content-title pull-left">Statistics orders and returns</h5>
+               <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+             </div>
+             <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, mollitia quasi quibusdam.</p>
+               <div id="morris-line" class="morris-container"></div>
+             </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box">
+             <div class="head warning-bg clearfix">
+               <h5 class="content-title pull-left">Type of orders</h5>
+               <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+             </div>
+             <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, mollitia quasi quibusdam.</p>
+               <div id="morris-donut" class="morris-container"></div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+  @@include('./_footer.html')
+
+  @@include('./_commonjs.html')
+  
+  <script src="bower_components/raphael/raphael.min.js"></script>
+  <script src="bower_components/morris.js/morris.js"></script>
+
+  <script>
+    Morris.Bar({
+      element: 'morris-bar',
+      data: [
+        { y: '2010', a: 75,  b: 65 },
+        { y: '2011', a: 50,  b: 40 },
+        { y: '2012', a: 75,  b: 65 },
+        { y: '2013', a: 50,  b: 40 },
+        { y: '2014', a: 75,  b: 65 },
+        { y: '2015', a: 100, b: 80 },
+        { y: '2016', a: 85, b: 100 }
+      ],
+      xkey: 'y',
+      ykeys: ['a', 'b'],
+      labels: ['PC', 'Laptop'],
+      hideHover: 'auto',
+      resize: true,
+      barColors: ['#49ceff','#99cc00']
+    });
+
+
+    Morris.Area({
+      element: 'morris-area',
+      data: [
+        { y: '2010', a: 75,  b: 65 },
+        { y: '2011', a: 50,  b: 40 },
+        { y: '2012', a: 75,  b: 65 },
+        { y: '2013', a: 50,  b: 40 },
+        { y: '2014', a: 75,  b: 65 },
+        { y: '2015', a: 100, b: 90 },
+        { y: '2016', a: 80, b: 95 }
+      ],
+      xkey: 'y',
+      ykeys: ['a', 'b'],
+      labels: ['Euro', 'USD Dollars'],
+      hideHover: 'auto',
+      resize: true,
+      lineColors: ['#ffbb33','#99cc00']
+    });
+
+    Morris.Line({
+      element: 'morris-line',
+      data: [
+        { y: '2010', a: 50,  b: 40 },
+        { y: '2011', a: 75,  b: 65 },
+        { y: '2012', a: 80, b: 90 },
+        { y: '2013', a: 75, b: 95 },
+        { y: '2014', a: 100, b: 90 },
+        { y: '2015', a: 80, b: 60 },
+        { y: '2016', a: 55, b: 65 }
+      ],
+      xkey: 'y',
+      ykeys: ['a', 'b'],
+      labels: ['Orders', 'Returns'],
+      hideHover: 'auto',
+      resize: true,
+      lineColors: ['#aa66cc','#49ceff']
+    });
+
+    Morris.Donut({
+      element: 'morris-donut',
+      data: [
+        {label: "Download Sales", value: 12},
+        {label: "In-Store Sales", value: 30},
+        {label: "Mail-Order Sales", value: 20}
+      ],
+      colors: ['#ff5f5f', '#aa66cc','#49ceff'],
+      resize: true
+    });
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>9. Landing - Pacificonis Admin Template Docs</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/template.css" type="text/css" />
+  <link rel="stylesheet" href="../css/template_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "9. Landing";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/template.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Pacificonis Admin Template Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../index.html">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../overview/index.html">1. Overview</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1">
+        <a href="../build/index.html">2. Building tools</a>       
+    </li>
+<li>
+          
+    
+
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../style/index.html">3. Customize Styles</a>
+        
+    </li>
+<li>
+          
+
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../structure/index.html">4. Template Structure</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../layouts/index.html">5. Layouts</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../components/index.html">6. Components</a>
+        
+    </li>
+<li>
+          
+
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../credits/index.html">7. Sources and Credits</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../support/index.html">8. Support</a>
+        
+    </li>
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">9. Landing</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#9-building-tools">9. Landing</a></li>
+                
+                
+                    <li><a class="toctree-l4" href="#91-working-with-gulp">9.1 Working with Gulp</a></li>
+                    <li><a class="toctree-l4" href="#92-credits">9.2 Credits</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+        
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Pacificonis Admin Template Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>9. Landing</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="9-building-tools">9. Landing</h1>
+
+<h2 id="91-working-with-gulp">9.1 Working with Gulp</h2>
+<p>From the command line:</p>
+<p>Navigate to the root <code>/landing_page/</code> directory.</p>
+<h3 id="gulp-commands">Gulp Commands</h3>
+<p>To get default build:</p>
+<pre><code>gulp
+</code></pre>
+<p>To build project with animations:</p>
+<pre><code>gulp --animations
+</code></pre>
+<p>You can modify or add your task in <code>/landing_page/gulpfile.js</code>.</p>
+<p>Useful commands list:</p>
+<ul>
+<li><strong>gulp html</strong>: compile all html files.</li>
+<li><strong>gulp js</strong>: complied js file.</li>
+<li><strong>gulp scss</strong>: complied sass files.</li>
+<li><strong>gulp img</strong>: will copy all images and place them to build folder.</li>
+<li><strong>gulp browser-sync</strong>: started local webserver.</li>
+<li><strong>gulp watch</strong>: checking changes in files and fires particular task.</li>
+</ul>
+         
+<h2 id="92-credits">9.2 Credits</h2> 
+<h3 id="icons">Icons</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Version</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>material-design-iconic-font</td>
+<td>stable</td>
+<td><a href="http://zavoloklom.github.io/material-design-iconic-font">http://zavoloklom.github.io/material-design-iconic-font</a></td>
+</tr>
+</tbody>
+</table>  
+
+<h3 id="plugins">Plugins</h3>
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Version</th>
+        <th>Url</th>
+        <th>License</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Twitter Bootstrap</td>
+        <td>3.3.7</td>
+        <td><a href="http://getbootstrap.com">http://getbootstrap.com</a></td>
+        <td>MIT</td>
+      </tr>
+      <tr>
+        <td>Jquery</td>
+        <td>3.1.1</td>
+        <td><a href="https://jquery.com">https://jquery.com</a></td>
+        <td>MIT</td>
+      </tr>
+      <tr>
+        <td>Owl.Carousel</td>
+        <td>2.2.0</td>
+        <td><a href="https://owlcarousel2.github.io/OwlCarousel2">https://owlcarousel2.github.io/OwlCarousel2</a></td>
+        <td>MIT</td>
+      </tr>
+      <tr>
+        <td>Respond.js</td>
+        <td>1.4.2</td>
+        <td><a href="https://github.com/scottjehl/Respond">https://github.com/scottjehl/Respond</a></td>
+        <td>MIT</td>
+      </tr>
+      <tr>
+        <td>HTML5 Shiv</td>
+        <td>3.7.3</td>
+        <td><a href="https://github.com/afarkas/html5shiv">https://github.com/afarkas/html5shiv</a></td>
+        <td>MIT</td>
+      </tr>
+    </tbody>
+  </table>  
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../support/index.html" class="btn btn-neutral" title="1. Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+
+      
+      
+        <span><a href="../support/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+  @@include('./_head.html', {
+    "title": "Box Shadow"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Box-shadow"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="bs-demo shadow-1">
+            .shadow-1 / @include shadow(1);
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bs-demo shadow-2">
+            .shadow-2 / @include shadow(2);
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bs-demo shadow-3">
+            .shadow-3 / @include shadow(3);
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bs-demo shadow-4">
+            .shadow-4 / @include shadow(4);
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bs-demo shadow-5">
+            .shadow-5 / @include shadow(5);
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+</body>
+</html>

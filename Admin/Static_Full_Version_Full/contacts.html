@@ -1,0 +1,787 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no" />
+  
+  
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#49CEFF">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#49CEFF" />
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>Pacificonis - Contacts</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
+  <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="bower_components/Waves/dist/waves.min.css">
+  <link rel="stylesheet" href="bower_components/toastr/toastr.css">
+
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+<!--
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+-->
+    <!--[if lt IE 9]>
+      <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
+      <script src="bower_components/respondJs/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!--Preloader-->
+<div id="preloader">
+      <div class="refresh-preloader"><div class="preloader"><i>.</i><i>.</i><i>.</i></div></div>
+</div>
+
+
+  <div class="wrapper">
+   <nav class="navbar">
+ <div class="navbar-header container">
+   <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
+   <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo Pacificonis"></a>
+   <a href="index.html" class="icon-logo"></a>
+ </div>
+  <div class="navbar-container clearfix">
+    <div class="pull-left">
+      <a href="#" class="page-title text-uppercase">Contacts</a>
+    </div>
+
+    <div class="pull-right">
+      <div class="pull-left search-container">
+        <form class="searchbox">
+          <input type="search" placeholder="Search" name="search" class="searchbox-input">
+          <input type="submit" class="searchbox-submit" value="">
+          <span class="searchbox-icon"><span class="zmdi zmdi-search search-icon"></span></span>
+        </form>
+      </div>
+
+      <ul class="nav pull-right right-menu">
+        <li class="more-options dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">
+            <i class="zmdi zmdi-account-circle"></i>
+          </a>
+
+          <div class="more-opt-container dropdown-menu">
+            <a href="#"><i class="zmdi zmdi-account-o"></i>Account<span class="badge badge-warning">3</span></a>
+            <a href="#"><i class="zmdi zmdi-storage"></i>Storage <span class="badge badge-danger">2</span></a>
+            <a href="#"><i class="zmdi zmdi-calendar-note"></i>Calendar <span class="badge badge-success">2</span></a>
+            <a href="#"><i class="zmdi zmdi-chart-donut"></i>Analytics <span class="badge badge-success">7</span></a>
+            <a href="#"><i class="zmdi zmdi-balance"></i>Balance <span class="badge badge-info">5</span></a>
+            <a href="#"><i class="zmdi zmdi-run"></i>Exit</a>
+          </div>
+        </li>
+        <li class="notification dropdown">
+          <a class="dropdown-toggle">
+            <i class="zmdi zmdi-notifications"></i>
+            <span class="badge badge-primary">8</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <h4 class="text-center info-color m-0">You have 19 new notifications</h4>
+            <div class="notification-container">
+              <a href="#"><i class="zmdi zmdi-email warning-color m-r-5"></i> You have 16 messages <span class="pull-right">4 minutes ago</span></a>
+              <a href="#"><i class="zmdi zmdi-twitter info-color m-r-5"></i> 3 new followers <span class="pull-right">12 minutes ago</span></a>
+              <a href="#"><i class="zmdi zmdi-dropbox info-color m-r-5"></i> 7 changed files <span class="pull-right">18 minutes ago</span></a>
+              <a href="#"><i class="zmdi zmdi-instagram warning-color m-r-5"></i> 26 new followers <span class="pull-right">22 minutes ago</span></a>
+              <a href="#"><i class="zmdi zmdi-twitter info-color m-r-5"></i> 8 new followers <span class="pull-right">23 minutes ago</span></a>
+            </div>
+            <a href="#" class="text-uppercase clear-all">Clear all notifications</a>
+            <div class="check-ok">
+              <i class="zmdi zmdi-check"></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a class="sidepanel-toggle" href="#">
+            <i class="zmdi zmdi-more-vert"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<aside class="sidebar">
+  <ul class="nav metismenu">
+    <li class="profile-sidebar-container">
+      <div class="profile-sidebar text-center">
+        <div class="profile-userpic">
+          <img src="img/profile_user.jpg" class="img-responsive img-circle center-block" alt="user">
+          <span class="online"></span>
+        </div>
+        <div class="profile-usertitle">
+          <div class="name">
+            Marcus Doe
+          </div>
+          <div class="city">
+            <i class="zmdi zmdi-pin"></i>San Francisco, CA
+          </div>
+        </div>
+        <div class="profile-activity clearfix">
+          <div class="pull-left">
+            Photos
+            <br>
+            <span>56</span>
+          </div>
+          <div class="pull-right">
+            Videos
+            <br>
+            <span>18</span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-view-dashboard"></i>Dashboard<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Dashboard</li>
+        <li><a href="index.html">Dashboard v1</a></li>
+        <li><a href="dashboard-2.html">Dashboard v2</a></li>
+        <li><a href="dashboard-3.html">Dashboard v3</a></li>
+        <li><a href="dashboard-4.html">Dashboard v4</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-view-compact"></i>Layouts<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Layouts</li>
+        <li><a href="three-column-layout.html">Three Column Layout</a></li>
+        <li><a href="boxed-layout.html">Boxed Layout</a></li>
+        <li><a href="fixed-menu-boxed.html">Fixed Menu&Boxed Layout</a></li>
+        <li><a href="fixed-sidebar.html">Fixed Sidebar</a></li>
+        <li><a href="icon-menu-vertical.html">Vertical Icon Menu</a></li>
+        <li><a href="icon-menu-horizontal.html">Horizontal Icon Menu</a></li>
+        <li><a href="coming-soon.html">Default Layout</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-google-pages"></i>Pages<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Pages</li>
+        <li><a href="article.html">Article</a></li>
+        <li><a href="coming-soon.html">Coming Soon</a></li>
+        <li><a href="confirm-email.html">Confirm Email</a></li>
+        <li><a href="contacts.html">Contacts</a></li>     
+        <li><a href="faq-page.html">FAQ</a></li>
+        <li><a href="file-upload.html">File Upload</a></li>
+        <li><a href="idle-timer.html">Idle Timer</a></li>
+        <li><a href="image-slider.html">Image Slider</a></li>
+        <li><a href="lock-screen.html">Lock Screen</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="nestable.html">Nestable Lists</a></li>           
+        <li><a href="projects.html">Projects</a></li>             
+        <li><a href="resizable-panels.html">Resizable Panels</a></li>
+        <li><a href="draggable-panels.html">Draggable panels</a></li>
+        <li><a href="search.html">Search Results</a></li>
+        <li><a href="tour-page.html">Tour</a></li>
+        <li><a href="vote-list.html">Vote list</a></li>
+        <li><a href="widgets.html">Widgets</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-flower"></i>UI Kits<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">UI Kits</li>
+        <li><a href="animation.html">Animations</a></li>
+        <li><a href="box-shadow.html">Box-shadow</a></li>
+        <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+        <li><a href="buttons.html">Buttons</a></li>
+        <li><a href="typography.html">Typography</a></li>
+        <li><a href="checkboxes-radio.html">Checkboxes & Radio</a></li>
+        <li><a href="checkboxes-radio-material.html">Checkboxes & Radio Material</a></li>
+        <li><a href="labels-badges.html">Labels & Badges</a></li>
+        <li><a href="colors.html">Colors</a></li>
+        <li><a href="ui-colors.html">UI Colors</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="dropdowns.html">Dropdowns</a></li>
+        <li><a href="grids.html">Grids</a></li>        
+        <li><a href="media.html">Media</a></li>
+        <li><a href="progressbars.html">Progressbars</a></li>
+        <li><a href="tabs.html">Tabs</a></li>     
+        <li><a href="ui-material-icons.html">Material Icons</a></li>
+        <li><a href="ui-cards.html">Ui Cards</a></li>
+        <li><a href="ui-treeview.html">Tree View</a></li>
+        <li><a href="ui-range-slider.html">Range Slider</a></li> 
+      </ul>
+    </li>  
+    <li>
+      <a href="#"><i class="zmdi zmdi-comment-text-alt"></i>Forms<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Forms</li>
+        <li><a href="form-elements.html">Form Elements</a></li>
+        <li><a href="form-elements-material.html">Form Elements Material</a></li>
+        <li><a href="form-components.html">Form Components</a></li>
+        <li><a href="form-examples.html">Form Examples</a></li>
+        <li><a href="form-wizard.html">Form Wizard</a></li>
+        <li><a href="form-wysiwig.html">Form Wysiwig</a></li>
+        <li><a href="x-editable.html">X-Editable</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-border-all"></i>Tables<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Tables</li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="datatables.html">Data Tables</a></li>
+        <li><a href="tables-editable.html">Editable Tables</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-chart"></i>Charts<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Charts</li>
+        <li><a href="chartjs.html">Chart.js</a></li>
+        <li><a href="morrisjs.html">Morris.js</a></li>
+        <li><a href="flot-chart.html">Flot Chart</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-money"></i>E-commerce<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">E-commerce</li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="create-order.html">Create Order</a></li>
+        <li><a href="invoice-list.html">Invoice list</a></li>
+        <li><a href="invoice-details.html">Invoice Details</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="pricing-tables.html">Pricing Tables</a></li>
+        <li><a href="products-page.html">Products Page</a></li>
+        <li><a href="product-view.html">Product View</a></li>
+        <li><a href="search-products.html">Search Products</a></li>
+      </ul>
+    </li>
+    <li>
+      <a aria-expanded="false" href="#"><i class="zmdi zmdi-apps"></i>Apps<span class="zmdi arrow"></span></a>
+      <ul aria-expanded="false" class="nav nav-inside collapse">
+        <li class="inside-title">Apps</li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li><a href="file-manager.html">File Manager</a></li>
+        <li><a href="issue-list.html">Issue List</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li class="menu-child">
+          <a aria-expanded="false" href="#"><i class="zmdi zmdi-email"></i>Mailbox<span class="zmdi arrow"></span></a>
+          <ul aria-expanded="false" class="nav nav-inside collapse">
+            <li class="inside-title">Mailbox</li>
+            <li><a href="email-inbox.html">Email Inbox</a></li>
+            <li><a href="email-view.html">Email View</a></li>
+            <li><a href="email-compose.html">Email Compose</a></li>
+            <li><a href="email-templates.html">Email Templates</a></li>
+          </ul>
+        </li>
+        <li class="menu-child">
+          <a aria-expanded="false" href="#"><i class="zmdi zmdi-format-list-numbered"></i>Tasks<span class="zmdi arrow"></span></a>
+          <ul aria-expanded="false" class="nav nav-inside collapse">
+            <li class="inside-title">Tasks</li>
+            <li><a href="task-list.html">Task List</a></li>
+            <li><a href="task-detail.html">Task Detail</a></li>
+            <li><a href="taskboard.html">Taskboard</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-notifications"></i>Notifications<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Notifications</li>
+        <li><a href="notifications.html">Notifications</a></li>
+        <li><a href="modals.html">Modals</a></li>
+        <li><a href="sweet-alerts.html">Sweet-alerts</a></li>
+        <li><a href="toastr-notifications.html">Toastr</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-alert-circle"></i>Error pages<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Error pages</li>
+        <li><a href="400.html">400</a></li>
+        <li><a href="401.html">401</a></li>
+        <li><a href="403.html">403</a></li>
+        <li><a href="404.html">404</a></li>
+        <li><a href="500.html">500</a></li>
+        <li><a href="503.html">503</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-view-dashboard"></i>Three Level Menu<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Level 2</li>
+        <li><a href="#">Level 2</a></li>
+        <li>
+          <a class="third-level" href="#">Level 2<span class="zmdi arrow"></span></a>
+          <ul class="nav nav-inside collapse">
+            <li class="inside-title">Level 3</li>
+            <li><a href="#">Level 3</a></li>
+            <li><a href="#">Level 3</a></li>
+            <li><a href="#">Level 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Level 2</a></li>
+        <li><a href="#">Level 2</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="starter-page.html"><i class="zmdi zmdi-copy"></i>Starter Page</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="side-panel">
+    <ul class="nav nav-tabs nav-justified m-0">
+      <li class="active">
+        <a href="#tab-side-1" data-toggle="tab"><i class="zmdi zmdi-comment-text"></i></a>
+      </li>
+      <li>
+        <a href="#tab-side-2" data-toggle="tab"><i class="zmdi zmdi-settings"></i></a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="tab-side-1">
+       <div class="side-title">Activities</div>
+        <div class="p-15"> 
+          <ul class="timeline">
+              <li>
+                  <div class="timeline-icon primary-bg"><i class="zmdi zmdi-plus"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Jana Pena is now Follwing you</span>
+                          <span class="date">2 min ago</span>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-icon success-bg"><i class="zmdi zmdi-favorite"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Helen likes your photo</span>
+                          <span class="date">23 min ago</span>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-icon warning-bg"><i class="zmdi zmdi-email"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Colin send email</span>
+                          <span class="date">34 min ago</span>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-icon success-bg"><i class="zmdi zmdi-coffee"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Starbucks invites you</span>
+                          <span class="date">44 min ago</span>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-icon info-bg"><i class="zmdi zmdi-videocam"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Peter added new video</span>
+                          <span class="date">56 min ago</span>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+        </div>
+         
+          <div class="side-title">Contacts</div>
+          <div class="p-15"> 
+          <ul class="media-list side-contacts">
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/3.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Katerina Dankovich</span><br>
+                      <span class="contact-status text-success">Online</span>
+                  </div>
+              </li>
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/4.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Helen Doe</span><br>
+                      <span class="contact-status text-warning">Away</span>
+                  </div>
+              </li>
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/2.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Phil Simons</span><br>
+                      <span class="contact-status text-success">Online</span>
+                  </div>
+              </li>
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/1.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Peter Johnson</span><br>
+                      <span class="contact-status text-muted">Offline</span>
+                  </div>
+              </li>
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/5.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Kate Owl</span><br>
+                      <span class="contact-status text-danger">Busy</span>
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab-side-2">
+         <table class="table table-settings">
+            <tbody><tr>
+                    <td>
+                        <h5>Alerts</h5>
+                        <p>Sets alerts to get notified when changes occur to get new alerming items</p>
+                    </td>
+                    <td><div class="checkbox checkbox-primary">
+                        <label><input type="checkbox">
+                          <i></i></label>
+                      </div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Notifications</h5>
+                        <p>You will receive notification email for any notifications if you set notification</p>
+                    </td>
+                    <td>
+                    <div class="checkbox checkbox-primary">
+                      <label><input type="checkbox" checked>
+                        <i></i></label>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Messages</h5>
+                        <p>You will receive notification on email after setting messages notifications</p>                            
+                    </td>
+                    <td>
+                    <div class="checkbox checkbox-primary">
+                      <label><input type="checkbox">
+                        <i></i></label>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Warnings</h5>
+                        <p>You will get warnning only some specific setttings or alert system</p>
+                    </td>
+                    <td>
+                    <div class="checkbox checkbox-primary">
+                      <label><input type="checkbox" checked>
+                        <i></i></label>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Sidebar</h5>
+                        <p>You can hide/show use with sidebar collapsw settings</p>
+                    </td>
+                    <td>
+                    <div class="checkbox checkbox-primary">
+                      <label><input type="checkbox" checked>
+                        <i></i></label>
+                    </div>
+                    </td>
+                </tr>
+
+        </tbody></table>
+      </div>
+    </div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box box-drop contact-block">
+            <div class="head clearfix">
+              <div class="functions-btns pull-right">
+                <div class="btn-group success">
+                  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></span>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content text-muted text-center">
+             <img class="img-responsive img-circle center-block" src="img/contacts/1.png" alt="user">
+              <p class="text-uppercase">Designer</p>
+              <p>Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced.</p>
+              <div class="text-left">
+                <p><strong>Full Name :</strong> <span class="m-l-15">John Doe</span></p>
+                <p><strong>Phone :</strong> <span class="m-l-15">(235) 345-34-878</span></p>
+                <p><strong>Email :</strong> <span class="m-l-15">john@gmail.com</span></p>
+                <p><strong>Location :</strong> <span class="m-l-15">USA</span></p>
+              </div>
+
+              <button type="button" class="btn btn-success raised">Send Message</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box box-drop contact-block">
+            <div class="head clearfix">
+              <div class="functions-btns pull-right">
+                <div class="btn-group success">
+                  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></span>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content text-muted text-center">
+             <img class="img-responsive img-circle center-block" src="img/contacts/2.png" alt="user">
+              <p class="text-uppercase">Developer</p>
+              <p>Alteration literature to or an sympathize mr imprudence. Of is ferrars subject as enjoyed or tedious cottage. </p>
+              <div class="text-left">
+                <p><strong>Full Name :</strong> <span class="m-l-15">Victoria Doe</span></p>
+                <p><strong>Phone :</strong> <span class="m-l-15">(235) 345-34-878</span></p>
+                <p><strong>Email :</strong> <span class="m-l-15">victoria@gmail.com</span></p>
+                <p><strong>Location :</strong> <span class="m-l-15">USA</span></p>
+              </div>
+
+              <button type="button" class="btn btn-success raised">Send Message</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box box-drop contact-block">
+            <div class="head clearfix">
+              <div class="functions-btns pull-right">
+                <div class="btn-group success">
+                  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></span>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content text-muted text-center">
+             <img class="img-responsive img-circle center-block" src="img/contacts/3.png" alt="user">
+              <p class="text-uppercase">Designer</p>
+              <p>Old education him departure any arranging one prevailed. Their end whole might began her.
+              </p>
+              <div class="text-left">
+                <p><strong>Full Name :</strong> <span class="m-l-15">Katerina Doe</span></p>
+                <p><strong>Phone :</strong> <span class="m-l-15">(235) 345-34-878</span></p>
+                <p><strong>Email :</strong> <span class="m-l-15">katerina@gmail.com</span></p>
+                <p><strong>Location :</strong> <span class="m-l-15">USA</span></p>
+              </div>
+
+              <button type="button" class="btn btn-success raised">Send Message</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box box-drop contact-block">
+            <div class="head clearfix">
+              <div class="functions-btns pull-right">
+                <div class="btn-group success">
+                  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></span>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content text-muted text-center">
+             <img class="img-responsive img-circle center-block" src="img/contacts/4.png" alt="user">
+              <p class="text-uppercase">Artist</p>
+              <p>Court heard which up above hoped grave do. Answer living law things either sir bed length. Looked before we an on merely. </p>
+              <div class="text-left">
+                <p><strong>Full Name :</strong> <span class="m-l-15">John Doe</span></p>
+                <p><strong>Phone :</strong> <span class="m-l-15">(235) 345-34-878</span></p>
+                <p><strong>Email :</strong> <span class="m-l-15">john@gmail.com</span></p>
+                <p><strong>Location :</strong> <span class="m-l-15">USA</span></p>
+              </div>
+
+              <button type="button" class="btn btn-success raised">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box box-drop contact-block">
+            <div class="head clearfix">
+              <div class="functions-btns pull-right">
+                <div class="btn-group success">
+                  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></span>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content text-muted text-center">
+             <img class="img-responsive img-circle center-block" src="img/contacts/5.png" alt="user">
+              <p class="text-uppercase">Manager</p>
+              <p>Interested the unaffected mrs law friendship add principles. Indeed on people do merits to.</p>
+              <div class="text-left">
+                <p><strong>Full Name :</strong> <span class="m-l-15">George Doe</span></p>
+                <p><strong>Phone :</strong> <span class="m-l-15">(235) 345-34-878</span></p>
+                <p><strong>Email :</strong> <span class="m-l-15">george@gmail.com</span></p>
+                <p><strong>Location :</strong> <span class="m-l-15">USA</span></p>
+              </div>
+
+              <button type="button" class="btn btn-success raised">Send Message</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box box-drop contact-block">
+            <div class="head clearfix">
+              <div class="functions-btns pull-right">
+                <div class="btn-group success">
+                  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></span>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content text-muted text-center">
+             <img class="img-responsive img-circle center-block" src="img/contacts/6.png" alt="user">
+              <p class="text-uppercase">CEO</p>
+              <p>Certainty listening no no behaviour existence assurance situation is. Because add why not esteems amiable him. </p>
+              <div class="text-left">
+                <p><strong>Full Name :</strong> <span class="m-l-15">Mark Doe</span></p>
+                <p><strong>Phone :</strong> <span class="m-l-15">(235) 345-34-878</span></p>
+                <p><strong>Email :</strong> <span class="m-l-15">mark@gmail.com</span></p>
+                <p><strong>Location :</strong> <span class="m-l-15">USA</span></p>
+              </div>
+
+              <button type="button" class="btn btn-success raised">Send Message</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box box-drop contact-block">
+            <div class="head clearfix">
+              <div class="functions-btns pull-right">
+                <div class="btn-group success">
+                  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></span>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content text-muted text-center">
+             <img class="img-responsive img-circle center-block" src="img/contacts/7.png" alt="user">
+              <p class="text-uppercase">Web Developer</p>
+              <p>Call park out she wife face mean. Invitation excellence imprudence understood it continuing to. Ye show done an into. </p>
+              <div class="text-left">
+                <p><strong>Full Name :</strong> <span class="m-l-15">Helen Doe</span></p>
+                <p><strong>Phone :</strong> <span class="m-l-15">(235) 345-34-878</span></p>
+                <p><strong>Email :</strong> <span class="m-l-15">helen@gmail.com</span></p>
+                <p><strong>Location :</strong> <span class="m-l-15">USA</span></p>
+              </div>
+
+              <button type="button" class="btn btn-success raised">Send Message</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box box-drop contact-block">
+            <div class="head clearfix">
+              <div class="functions-btns pull-right">
+                <div class="btn-group success">
+                  <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></span>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="content text-muted text-center">
+             <img class="img-responsive img-circle center-block" src="img/contacts/8.png" alt="user">
+              <p class="text-uppercase">PHP coder</p>
+              <p>Him rendered may attended concerns jennings reserved now. Sympathize did now preference unpleasing mrs few.</p>
+              <div class="text-left">
+                <p><strong>Full Name :</strong> <span class="m-l-15">Peter Doe</span></p>
+                <p><strong>Phone :</strong> <span class="m-l-15">(235) 345-34-878</span></p>
+                <p><strong>Email :</strong> <span class="m-l-15">peter@gmail.com</span></p>
+                <p><strong>Location :</strong> <span class="m-l-15">USA</span></p>
+              </div>
+
+              <button type="button" class="btn btn-success raised">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+    
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+  <script src="bower_components/Waves/dist/waves.min.js"></script>
+  <script src="bower_components/toastr/toastr.js"></script>
+
+    <script src="js/common.js"></script>
+  
+
+</body>
+</html>

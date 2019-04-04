@@ -1,0 +1,626 @@
+  @@include('./_head.html', {
+    "title": "Horizontal Icon Menu"
+  })
+<link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.min.css">
+  @@include('./_head-end.html')
+</head>
+
+<body class="icon-menu horizontal-menu menu-alt">
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Horizontal Icon Menu"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head head-with-btns clearfix">
+              <h5 class="content-title text-color pull-left">Total sales statistics</h5>
+              <div class="functions-btns pull-right">
+                <button type="button" class="btn btn-info">
+                 Week
+                </button>
+                <button type="button" class="btn btn-warning">
+                 Month
+                </button>
+                <button type="button" class="btn btn-warning">
+                 Year
+                </button>
+              </div>
+            </div>
+             <div class="content">
+               <div id="js-legend" class="chart-legend"></div>
+               <div class="chartjs-container full-page-chart">
+                <canvas id="chart-line"></canvas>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box warning-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Orders</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-3" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total orders</p>
+              <p class="zero-m f-30">45,245,659</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box">
+            <div class="head clearfix">
+              <h5 class="content-title text-color pull-left">Implementation of a plan</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn text-color" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn text-color" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn text-color" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="p-l-20">
+              <button type="button" class="btn btn-info m-b-5">
+               Week
+              </button>
+              <button type="button" class="btn btn-warning m-b-5">
+               Month
+              </button>
+            </div>
+            <div class="content">
+              <div class="easychart text-right" data-percent="55"></div>
+              <div class="p-absolute b-20 l-20">
+                <p class="text-uppercase zero-m">Profit</p>
+                <p class="zero-m danger-color f-30">254,395</p>
+              </div>
+            </div>
+            <!-- Used for demo purposes. Remove if it is needed-->
+            <div class="visible-lg visible-md" style="height: 6px;"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box success-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Visitors</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-4" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total visitors</p>
+              <p class="zero-m f-30">15,654,700</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box info-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Returns</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-2" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total returns</p>
+              <p class="zero-m f-30">573,935</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="data-info">
+            <table id="table2" class="display widget datatable">
+              <thead>
+                <tr>
+                  <th>Currency</th>
+                  <th>Buy</th>
+                  <th>Sell</th>
+                  <th>Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>UAH</td>
+                  <td>22.35</td>
+                  <td>23.30</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+                <tr>
+                  <td>EUR</td>
+                  <td>1.13</td>
+                  <td>1.16</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>AUD</td>
+                  <td>22.35</td>
+                  <td>23.30</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>JPY</td>
+                  <td>32.30</td>
+                  <td>33.90</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>JPY</td>
+                  <td>32.30</td>
+                  <td>33.90</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+                <tr>
+                  <td>CAD</td>
+                  <td>0.86</td>
+                  <td>0.91</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>UAH</td>
+                  <td>22.35</td>
+                  <td>23.30</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>EUR</td>
+                  <td>1.13</td>
+                  <td>1.16</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>AUD</td>
+                  <td>22.35</td>
+                  <td>23.30</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+                <tr>
+                  <td>JPY</td>
+                  <td>32.30</td>
+                  <td>33.90</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+                <tr>
+                  <td>CAD</td>
+                  <td>0.86</td>
+                  <td>0.91</td>
+          <td><span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span> +0.38%</td>
+                </tr>
+                <tr>
+                  <td>JPY</td>
+                  <td>32.30</td>
+                  <td>33.90</td>
+          <td><span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span> -0.26%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content-box o-hidden">
+           <div class="head clearfix">
+             <h5 class="content-title text-color pull-left">To do list</h5>
+             <div class="functions-btns pull-right">
+                <a class="refresh-btn text-color" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn text-color" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn text-color" href="#"><i class="zmdi zmdi-close"></i></a>
+             </div>
+           </div>
+            <div class="panel zero-m">
+              <div class="panel-body todo">
+                <ul class="list-group zero-m">
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Searches
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Advertising
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Links
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Advertising
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Links
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Social media
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Searches
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Links
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Links
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                        Advertising
+                      </label>
+                    </div>
+                    <a class="trash pull-right"><span class="zmdi zmdi-close primary-color f-s-16"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Used for demo purposes. Remove if it is needed-->
+            <div class="visible-lg visible-md" style="height: 2px;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 twitter white f-s-16">
+            <img src="img/avatar.png" class="pull-left m-r-10" alt="avatar">
+            <span class="text-uppercase">John Massey</span>  <br>
+            <span class="half-opacity">@john</span>
+            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">Yet she income effect edward. Entire desire way design few. Mrs sentiments led solicitude estimating effect edward. Spite mirth money six above get going great own effect edward.</p>
+            <div class="socials text-right f-s-20">
+              <span class="share half-opacity"><i class="zmdi zmdi-share"></i></span>
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="content-box p-20 facebook white f-s-16">
+              <img src="img/avatar2.png" class="pull-left m-r-10" alt="avatar">
+              <span class="text-uppercase">Maria Thompson</span>  <br>
+              <span class="half-opacity">@mark</span>
+              <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
+              <p class="m-t-20">Yet she income effect edward. Entire desire way design few. Mrs sentiments led solicitude estimating effect edward. Spite mirth money six above get going great own effect edward.</p>
+              <div class="socials text-right f-s-20">
+                <span class="share half-opacity"><i class="zmdi zmdi-share"></i></span>
+                <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 gplus white f-s-16">
+            <img src="img/avatar3.png" class="pull-left m-r-10" alt="avatar">
+            <span class="text-uppercase">Nelly Peterson</span>  <br>
+            <span class="half-opacity">@alex</span>
+            <span class="zmdi zmdi-google-plus p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">Yet she income effect edward. Entire desire way design few. Mrs sentiments led solicitude estimating effect edward. Spite mirth money six above get going great own effect edward.</p>
+            <div class="socials text-right f-s-20">
+              <span class="share half-opacity"><i class="zmdi zmdi-share"></i></span>
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box p-20 soundcloud white f-s-16">
+            <img src="img/avatar4.png" class="pull-left m-r-10" alt="avatar">
+            <span class="text-uppercase">Jack Daniels</span>  <br>
+            <span class="half-opacity">@jack</span>
+            <span class="zmdi zmdi-soundcloud p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">Yet she income effect edward. Entire desire way design few. Mrs sentiments led solicitude estimating effect edward. Spite mirth money six above get going great own effect edward.</p>
+            <div class="socials text-right f-s-20">
+              <span class="share half-opacity"><i class="zmdi zmdi-share"></i></span>
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+
+  <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-responsive/js/dataTables.responsive.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+
+  <script src="bower_components/Chart.js/Chart.js"></script>
+  <script src="bower_components/flot/jquery.flot.js"></script>
+  <script src="bower_components/flot/jquery.flot.resize.js"></script>
+  <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
+  <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.js"></script>
+
+  <script>
+    var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+    var lineChartData = {
+        labels : ["MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY"],
+        datasets : [
+            {
+                label: "Mens goods",
+                fillColor : "rgba(73, 206, 255, 0.5)",
+                strokeColor : "rgba(73, 206, 255, 0.7)",
+                pointColor : "rgba(73, 206, 255, 0.9)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(255, 193, 7, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+            {
+                label: "Women goods",
+                fillColor : "rgba(255, 187, 51, 0.5)",
+                strokeColor : "rgba(255, 187, 51, 0.7)",
+                pointColor : "rgba(255, 187, 51, 0.9)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(244, 67, 54, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+            {
+                label: "Children goods",
+                fillColor : "rgba(153, 204, 0, 0.5)",
+                strokeColor : "rgba(153, 204, 0, 0.7)",
+                pointColor : "rgba(153, 204, 0, 0.9)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(33, 150, 243, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            }
+        ]
+
+    }
+
+
+
+  window.onload = function(){
+
+
+      var ctx = document.getElementById("chart-line").getContext("2d");
+      var myLine = new Chart(ctx).Line(lineChartData, {
+        scaleShowVerticalLines: false,
+//        scaleShowLabels: false,
+//        maintainAspectRatio: true,
+        datasetStrokeWidth : 6,
+        pointDotRadius : 6,
+        responsive: true,
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].pointColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+      });
+
+      document.getElementById('js-legend').innerHTML = myLine.generateLegend();
+  }
+
+  </script>
+
+  <script>
+  $(function () {
+  /* Make some random data for the Chart*/
+
+      var d1 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d1.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d2 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d2.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d3 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d3.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d4 = [];
+      for (var i = 0; i <= 50; i += 1) {
+          d4.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      /* Chart Options */
+
+      var options = {
+          series: {
+            shadowSize: 0,
+            label: "Qty",
+            lines: {
+                show: true,
+                lineWidth: 2
+            },
+            points: {
+              show: true
+            }
+          },
+          grid: {
+            margin: 10,
+            show: false,
+            hoverable: true,
+            clickable: true
+          },
+          yaxis: {
+              max: 100,
+              min: 0
+          },
+          legend: {
+            show: false
+          },
+          tooltip: {
+            show: true,
+            cssClass: "flot-tooltip",
+            defaultTheme: false,
+            content: '%y.2',
+            shifts: {
+                x: 1,
+                y: -45
+            }
+          }
+      };
+
+      var options2 = {
+          series: {
+            shadowSize: 5,
+            label: "Qty",
+            lines: {
+                show: true,
+                lineWidth: 2
+            }
+          },
+          grid: {
+            margin: 10,
+            show: false,
+            hoverable: true,
+            clickable: false
+          },
+          legend: {
+            show: false
+          },
+          tooltip: {
+            show: true,
+            cssClass: "flot-tooltip",
+            defaultTheme: false,
+            content: '%y.2',
+            shifts: {
+                x: 1,
+                y: -45
+            }
+          }
+      };
+
+
+      /* Let's create the chart */
+     if ($("#line-chart-2")[0]) {
+          $.plot($("#line-chart-2"), [
+              {data: d2, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-3")[0]) {
+          $.plot($("#line-chart-3"), [
+              {data: d3, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-4")[0]) {
+          $.plot($("#line-chart-4"), [
+              {data: d4, color: '#fff' }
+          ], options2);
+      }
+
+  });
+  </script>
+
+  <script>
+  $(function() {
+      $('.easychart').easyPieChart({
+        barColor: "#F44336",
+        trackColor: '#cccccc',
+        size: 115,
+        lineWidth: 15,
+        scaleLength: 0
+      });
+  });
+  </script>
+
+    <script>
+    $('#table2').DataTable({
+     "dom": '<"toolbar tool2">rtip',
+      info: false,
+      paging: false,
+      responsive: true,
+    });
+
+    $("div.tool2").css("padding", "7px 20px").html('<h5 class="content-title">Exchange rates</h5>');
+
+    //Todo
+    $(document).on('mouseover', '.list-group .checkbox', function () {
+      $('.list-group input:checkbox').each(function () {
+        $(this).on("change", function () {
+          if ($(this).is(":checked")) {
+            $(this).closest(".list-group-item").addClass("checked-todo").removeClass("list-item");
+          } else {
+            $(this).closest(".list-group-item").removeClass("checked-todo");
+          }
+        });
+      });
+    });
+
+    $(document).on('click', '.trash', function (e) {
+      var clearedCompItem = $(this).closest(".list-group-item").remove();
+      e.preventDefault();
+    });
+
+    //Social widget
+    $('.socials span').on('click', function() {
+        $(this).toggleClass("half-opacity");
+    });
+  </script>
+
+  @@include('./_commonjs.html')
+</body>
+</html>

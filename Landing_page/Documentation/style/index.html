@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Customize Styles - Pacificonis Admin Template Docs</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/template.css" type="text/css" />
+  <link rel="stylesheet" href="../css/template_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "3. Customize Styles";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/template.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> Pacificonis Admin Template Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../index.html">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../overview/index.html">1. Overview</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../build/index.html">2. Building Tools</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">3. Customize Styles</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#3-customize-styles">3. Customize Styles</a></li>
+                
+                    <li><a class="toctree-l4" href="#31-using-css">3.1 Using CSS</a></li>
+                
+                    <li><a class="toctree-l4" href="#32-using-less">3.2 Using SASS</a></li>
+            
+                    <li><a class="toctree-l4" href="#33-easily-customize">3.3 Easily Customize</a></li>
+            
+            </ul>
+        
+    </li>
+<li>
+          
+          
+
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../structure/index.html">4. Template Structure</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../layouts/index.html">5. Layouts</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../components/index.html">6. Components</a>
+        
+    </li>
+<li>
+          
+
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../credits/index.html">7. Sources and Credits</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../support/index.html">8. Support</a>
+        
+    </li>
+    <li class="toctree-l1 ">
+        <a class="" href="../landing/index.html">9. Landing</a>
+        
+    </li>
+<li>
+        
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Pacificonis Admin Template Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>3. Customize Styles</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="3-customize-styles">3. Customize Styles</h1>
+<h2 id="31-using-css">3.1 Using CSS</h2>
+<p>All style changes, fixes, and improvements made for Pacificonis will typically be added to <code>css</code> folder.
+</p>
+<p>To prevent losing your changes, you should add all of your customizations to a new stylesheet and include it separately in your pages. <strong>Note</strong> Also you must disable all <code>gulp scss</code> tasks in <code>gulpfile.js</code>.</p>
+<h2 id="32-using-less">3.2 Using SASS</h2>
+<p>SASS is powerful CSS pre-processor system. It will give you more accesibility to customize your styles.</p>
+
+<p>All custom scss styles you can find in src/sass folder.</p>
+
+<p>If you want to find some more information about SASS click <a href="http://sass-lang.com/">here</a>.</p>
+<pre><code>src/scss/
+├── _base.scss
+├── _components.scss
+├── _elements.scss
+├── _media.scss
+├── _menu.scss
+├── _mixins.scss
+├── _preloader.scss
+├── _typography.scss
+├── _variables.scss
+└── style.scss
+</code></pre>
+              
+              
+              <h2 id="33-easily-customize">3.3 Easily Customize</h2>
+
+<p>For creating and customizing pages and widgets, we made a lot of generic-classes.</p>	
+
+<p><b>Margin classes</b></p>
+
+<span>Margin &nbsp;&nbsp;&nbsp;&nbsp;</span>
+<code>.m-0</code>
+<code>.m-5</code>
+<code>.m-10</code>
+<code>.m-15</code>
+<code>.m-20</code>
+<code>.m-25</code>
+<code>.m-30</code>
+<code>.m-35</code>
+<code>.m-40</code>
+<code>.m-45</code>
+<code>.m-50</code>
+<br>
+<br>
+<span>Margin Top &nbsp;&nbsp;&nbsp;&nbsp;</span>
+<code>.m-t-0</code>
+<code>.m-t-5</code>
+<code>.m-t-10</code>
+<code>.m-t-15</code>
+<code>.m-t-20</code>
+<code>.m-t-25</code>
+<code>.m-t-30</code>
+<code>.m-t-35</code>
+<code>.m-t-40</code>
+<code>.m-t-45</code>
+<code>.m-t-50</code>
+<br>
+<br>
+<span>Margin Bottom &nbsp;&nbsp;&nbsp;&nbsp;</span>
+<code>.m-b-0</code>
+<code>.m-b-5</code>
+<code>.m-b-10</code>
+<code>.m-b-15</code>
+<code>.m-b-20</code>
+<code>.m-b-25</code>
+<code>.m-b-30</code>
+<code>.m-b-35</code>
+<code>.m-b-40</code>
+<code>.m-b-45</code>
+<code>.m-b-50</code>
+<br>
+<br>
+<span>Margin Left &nbsp;&nbsp;&nbsp;&nbsp;</span>
+<code>.m-l-0</code>
+<code>.m-l-5</code>
+<code>.m-l-10</code>
+<code>.m-l-15</code>
+<code>.m-l-20</code>
+<code>.m-l-25</code>
+<code>.m-l-30</code>
+<code>.m-l-35</code>
+<code>.m-l-40</code>
+<code>.m-l-45</code>
+<code>.m-l-50</code>
+<br>
+<br>
+<span>Margin Right &nbsp;&nbsp;&nbsp;&nbsp;</span>
+<code>.m-r-0</code>
+<code>.m-r-5</code>
+<code>.m-r-10</code>
+<code>.m-r-15</code>
+<code>.m-r-20</code>
+<code>.m-r-25</code>
+<code>.m-r-30</code>
+<code>.m-r-35</code>
+<code>.m-r-40</code>
+<code>.m-r-45</code>
+<code>.m-r-50</code>             
+<br>
+<br>              
+<br>
+<br>              
+
+                                       
+<p><b>Padding classes</b></p>
+
+<span>Padding &nbsp;&nbsp;&nbsp;&nbsp;</span>                                                 
+<code>.p-0</code>
+<code>.p-5</code>
+<code>.p-10</code>
+<code>.p-15</code>
+<code>.p-20</code>
+<code>.p-25</code>
+<code>.p-30</code>
+<code>.p-35</code>
+<code>.p-40</code>
+<code>.p-45</code>
+<code>.p-50</code>
+<br>
+<br>
+
+<span>Padding Top &nbsp;&nbsp;&nbsp;&nbsp;</span>    
+<code>.p-t-0</code>
+<code>.p-t-5</code>
+<code>.p-t-10</code>
+<code>.p-t-15</code>
+<code>.p-t-20</code>
+<code>.p-t-25</code>
+<code>.p-t-30</code>
+<code>.p-t-35</code>
+<code>.p-t-40</code>
+<code>.p-t-45</code>
+<code>.p-t-50</code>
+<br>
+<br>
+<span>Padding Bottom &nbsp;&nbsp;&nbsp;&nbsp;</span> 
+<code>.p-b-0</code>
+<code>.p-b-5</code>
+<code>.p-b-10</code>
+<code>.p-b-15</code>
+<code>.p-b-20</code>
+<code>.p-b-25</code>
+<code>.p-b-30</code>
+<code>.p-b-35</code>
+<code>.p-b-40</code>
+<code>.p-b-45</code>
+<code>.p-b-50</code>
+<br>
+<br>
+<span>Padding Left &nbsp;&nbsp;&nbsp;&nbsp;</span> 
+<code>.p-l-0</code>
+<code>.p-l-5</code>
+<code>.p-l-10</code>
+<code>.p-l-15</code>
+<code>.p-l-20</code>
+<code>.p-l-25</code>
+<code>.p-l-30</code>
+<code>.p-l-35</code>
+<code>.p-l-40</code>
+<code>.p-l-45</code>
+<code>.p-l-50</code>
+<br>
+<br>
+<span>Padding Right &nbsp;&nbsp;&nbsp;&nbsp;</span> 
+<code>.p-r-0</code>
+<code>.p-r-5</code>
+<code>.p-r-10</code>
+<code>.p-r-15</code>
+<code>.p-r-20</code>
+<code>.p-r-25</code>
+<code>.p-r-30</code>
+<code>.p-r-35</code>
+<code>.p-r-40</code>
+<code>.p-r-45</code>
+<code>.p-r-50</code>             
+<br>
+<br>              
+<br>
+<br> 
+             
+                          
+<p><b> Font size classes</b></p>                                        
+<code>.f-s-8</code>
+<code>.f-s-10</code>
+<code>.f-s-12</code>
+<code>.f-s-14</code>
+<code>.f-s-16</code>
+<code>.f-s-18</code>
+<code>.f-s-20</code>
+<code>.f-s-22</code>
+<code>.f-s-24</code>
+<code>.f-s-26</code>
+<code>.f-s-28</code>                                                       
+<br>
+<br>              
+<br>
+<br>                                                                      
+                                                                                 
+                                                                                                                        
+<p><b> Font weight classes</b></p>                                                                                                                                           
+<code>.f-w-100</code>
+<code>.f-w-200</code>
+<code>.f-w-300</code>
+<code>.f-w-400</code>
+<code>.f-w-500</code>
+<code>.f-w-600</code>
+<code>.f-w-700</code>
+<code>.f-w-800</code>
+<code>.f-w-900</code>                                                                                                                                                         
+<br>
+<br>              
+<br>
+<br>                                                                                                                                                                        
+                                                                                                                                                                                     
+<p><b> Text colors classes</b></p>               
+<code>.default-color</code>
+<code>.primary-color</code>
+<code>.success-color</code>
+<code>.info-color</code>
+<code>.warning-color</code>
+<code>.danger-color</code>                                                                                                                                                                       
+<br>
+<br>              
+<br>
+<br>                                          
+
+            
+<p><b> Background color  classes</b></p>               
+<code>.default-bg</code>
+<code>.primary-bg</code>
+<code>.success-bg</code>
+<code>.info-bg</code>
+<code>.warning-bg</code>
+<code>.danger-bg</code>           
+<code>.black-bg</code>           
+<br>
+<br>              
+<br>
+<br>  
+             
+<p><b> Box-shadow classes</b></p>               
+<code>shadow-1</code>
+<code>shadow-2</code>
+<code>shadow-3</code>
+<code>shadow-4</code>
+<code>shadow-5</code>         
+<br>
+<br>              
+<br>
+<br>             
+              
+    
+             
+<p><b>  Position classes   classes</b></p>                         
+<code>.p-relative</code>
+<code>.p-absolute</code>
+<code>.p-fixed</code>
+<code>.p-static</code>                                
+<br>
+<br>              
+<br>
+<br>                                             
+
+                                                                                                        
+
+<p><b> Display classes</b></p>                                                                           
+<code>.d-block</code>
+<code>.di-block</code>
+<code>.d-none</code>              
+<br>
+<br>              
+<br>
+<br> 
+            
+<p><b> Oerflow classes</b></p>                                                                           
+<code>.o-hidden</code>
+<code>.o-visible</code>
+<code>.o-auto</code>              
+<br>
+<br>              
+<br>
+<br> 
+             
+            
+
+<p><b> Border radius  classes</b></p> 				
+<code>.brd-0</code>
+<code>.brd-1</code>
+<code>.brd-2</code>
+<code>.brd-3</code>
+<code>.brd-4</code>
+<code>.brd-5</code>             
+<br>
+<br>              
+<br>
+<br>
+                         
+             
+
+<p><b> Text align  classes</b></p>              
+<code>.text-center</code>
+<code>.text-left</code>
+<code>.text-right</code>
+<code>.text-justify</code>             
+<br>
+<br>              
+<br>
+<br> 
+                         
+                         
+                          
+
+<p><b> Float  classes</b></p>              
+<code>.pull-left</code>
+<code>.pull-right</code>             
+ <br>
+<br>              
+<br>
+<br> 
+ 
+                         
+
+
+ <p><b> Text transform  classes</b></p>              
+<code>.text-uppercase</code>
+<code>.text-lowercase</code>
+<code>.text-capitalize</code>                         
+<br>
+<br>              
+<br>
+<br>   
+
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../structure/index.html" class="btn btn-neutral float-right" title="4. Template Structure"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../build/index.html" class="btn btn-neutral" title="2. Building Tools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+
+      
+      
+        <span><a href="../build/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../structure/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+  @@include('./_head.html', {
+    "title": "Progress Bars"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Progress Bars"
+   })
+    <div class="container-fluid">
+     <div class="row">
+       <div class="col-lg-12">
+         <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Progress Bars</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <h5>Basic</h5>
+              <p>Default progress bar</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                </div>
+              </div>
+
+              <h5>Sizes</h5>
+              <p>Add <code>progress-bar-lg</code> class to get larger progress bar</p>
+              <div class="progress progress-bar-lg">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="51" aria-valuemin="0" aria-valuemax="100" style="width: 51%">
+                </div>
+              </div>
+              <p>Default size</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%">
+                </div>
+              </div>
+              <p>Add <code>progress-bar-sm</code> class to get smaller progress bar</p>
+              <div class="progress progress-bar-sm">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100" style="width: 36%">
+                </div>
+              </div>
+
+              <h5>Contextual</h5>
+              <p>Add <code>progress-bar-primary</code> class to get primary styling</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100" style="width: 47%">
+                </div>
+              </div>
+              <p>Add <code>progress-bar-success</code> class to get success styling</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100" style="width: 47%">
+                </div>
+              </div>
+              <p>Add <code>progress-bar-info</code> class to get info styling</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%">
+                </div>
+              </div>
+              <p>Add <code>progress-bar-warning</code> class to get warning styling</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
+                </div>
+              </div>
+              <p>Add <code>progress-bar-danger</code> class to get danger styling</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+                </div>
+              </div>
+
+              <h5>Striped</h5>
+              <p>Add <code>progress-bar-striped</code> to create a striped effect</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100" style="width: 59%">
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100" style="width: 26%">
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%">
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100" style="width: 34%">
+                </div>
+              </div>
+
+              <h5>Animated</h5>
+              <p>Add <code>.active</code> to <code>.progress-bar-striped</code> to animate the stripes right to left.</p>
+              <div class="progress progress-bar-lg">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 27%">
+                </div>
+              </div>
+
+              <h5>Stacked</h5>
+              <p>Place multiple bars into the same <code>.progress</code> to stack them.</p>
+              <div class="progress progress-bar-lg">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100" style="width: 37%">
+                </div>
+                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" style="width: 14%">
+                </div>
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%">
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+</body>
+</html>

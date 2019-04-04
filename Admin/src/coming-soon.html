@@ -1,0 +1,53 @@
+  @@include('./_head.html', {
+    "title": "Coming Soon"
+  })
+  @@include('./_head-end.html')
+</head>
+
+<body class="user-page coming-soon">
+  @@include('./_preloader.html')
+  <div class="wrapper">
+     <div class="bg"></div>
+     <div class="overlay"></div>
+      <div class="table-wrapper text-center">
+        <div class="table-row">
+          <div class="table-cell">
+            <div class="animated fadeInDown">
+              <div class="pagenotfound">
+                <p class="white f-s-28 f-w-100 text-uppercase">Coming soon</p>
+                <div id="countdown"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  <script src="js/jquery.plugin.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+
+  <script>
+    var newYear = new Date();
+    newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
+    $("#countdown").countdown({
+      format: 'DHMS',
+      padZeroes: true,
+      until: newYear
+    });
+  </script>
+<script>
+  $('#preloader').height($(window).height() + "px");
+  $(window).on('load', function(){
+      setTimeout(function(){
+          $('body').css("overflow-y","visible");
+          $('#preloader').fadeOut(400);
+      }, 800);
+  });
+</script>
+</body>
+</html>

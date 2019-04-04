@@ -1,0 +1,96 @@
+  @@include('./_head.html', {
+    "title": "Editable Tables"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Editable Tables"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Inline Editor</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="table-responsive">
+                <table id="editable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Cost</th>
+                            <th>Profit</th>
+                            <th>Fun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td tabindex="1">Car</td>
+                            <td tabindex="1">100</td>
+                            <td tabindex="1">200</td>
+                            <td tabindex="1">0</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="1">Bike</td>
+                            <td tabindex="1">330</td>
+                            <td tabindex="1">240</td>
+                            <td tabindex="1">1</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="1">fsfdf</td>
+                            <td tabindex="1">430</td>
+                            <td tabindex="1">540</td>
+                            <td tabindex="1">3</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="1">Yacht</td>
+                            <td tabindex="1">100</td>
+                            <td tabindex="1">200</td>
+                            <td tabindex="1">0</td>
+                        </tr>
+                        <tr>
+                            <td tabindex="1">Segway</td>
+                            <td tabindex="1">330</td>
+                            <td tabindex="1">240</td>
+                            <td tabindex="1">1</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th><strong>TOTAL</strong></th>
+                            <th>1290</th>
+                            <th>1420</th>
+                            <th>5</th>
+                        </tr>
+                    </tfoot>
+                </table>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  <script src="js/mindmup-editabletable.js"></script>
+  <script src="js/numeric-input-example.js"></script>
+  @@include('./_commonjs.html')
+  
+  <script>$('#editable').editableTableWidget().numericInputExample().find('td:first').focus();</script>
+</body>
+</html>

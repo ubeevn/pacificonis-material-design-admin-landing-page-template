@@ -1,0 +1,84 @@
+  @@include('./_head.html', {
+    "title": "Tour"
+  })
+  <link rel="stylesheet" href="bower_components/hopscotch/dist/css/hopscotch.css">
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Tour"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="content-box" class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 id="content-title" class="content-title pull-left">Tour</h5>
+              <div id="function-btns" class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <p>Possession her thoroughly remarkably terminated man continuing. Removed greater to do ability. You shy shall while but wrote marry. Call why sake has sing pure. Gay six set polite nature worthy. So matter be me we wisdom should basket moment merely. Me burst ample wrong which would mr he could. Visit arise my point timed drawn no. Can friendly laughter goodness man him appetite carriage. Any widen see gay forth alone fruit bed.</p>
+
+              <p>And produce say the ten moments parties. Simple innate summer fat appear basket his desire joy. Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything.</p>
+
+              <p>So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his. Their to years so child truth. Honoured peculiar families sensible up likewise by on in.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  <script src="bower_components/hopscotch/dist/js/hopscotch.js"></script>
+  @@include('./_commonjs.html')
+  
+  <script>
+      $(document).ready(function () {
+          // Define the tour!
+          var tour = {
+              id: "my-intro",
+              steps: [
+                  {
+                      target: "content-title",
+                      title: "Content block title",
+                      content: "You can use any title you want",
+                      placement: 'bottom',
+                      yOffset: 1,
+                      zindex: 3
+                  },
+                  {
+                      target: 'function-btns',
+                      title: "Functional buttons",
+                      content: "Click on the button to different process",
+                      placement: 'left',
+                      zindex: 3
+                  },
+                  {
+                      target: 'content-box',
+                      title: "Content body",
+                      content: "Put any content in here",
+                      placement: 'bottom',
+                      zindex: 3
+                  }
+              ],
+              showPrevButton: true
+          };
+
+          // Start the tour!
+          hopscotch.startTour(tour);
+      });
+  </script>
+        
+</body>
+</html>

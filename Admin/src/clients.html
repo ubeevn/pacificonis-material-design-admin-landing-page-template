@@ -1,0 +1,1014 @@
+  @@include('./_head.html', {
+    "title": "Clients"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Clients"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Clients</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="form-group m-t-10">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search client...">
+                  <div class="input-group-addon p-0"><button type="button" class="btn btn-primary">Search</button></div>
+                </div>
+              </div>
+              <div class="clients-list">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"><i class="zmdi zmdi-account"></i> Contacts</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false"><i class="zmdi zmdi-case"></i> Companies</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <tbody>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/2.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-1" class="client-link" aria-expanded="true">Helen Doe</a></td>
+                                        <td> Google Inc.</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> mail@gmail.com</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/3.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-2" class="client-link" aria-expanded="true">John Mayer</a></td>
+                                        <td>Twitter Inc.</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> mayer@mayer.com</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/4.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-3" class="client-link" aria-expanded="true">Victor Valdez</a></td>
+                                        <td>Porsche</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-phone"> </i></td>
+                                        <td> 266-35-22</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/5.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-4" class="client-link" aria-expanded="true">Karim Benzema</a></td>
+                                        <td>Oil Market</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-phone"> </i></td>
+                                        <td> 988-22-56</td>
+                                        <td class="client-status"><span class="label label-warning">Waiting</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/6.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-2" class="client-link" aria-expanded="true">Casper Johnson</a></td>
+                                        <td>Art Institute</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-phone"> </i></td>
+                                        <td> 092-44-2-44</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/7.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-3" class="client-link" aria-expanded="true">Aureliano Buendia</a></td>
+                                        <td>Columbia</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> buendia@gmail.com</td>
+                                        <td class="client-status"><span class="label label-info">Phoned</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/1.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-1" class="client-link" aria-expanded="true">Katerina Dankovich</a></td>
+                                        <td>Oracle</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> kat_dankovich@gmail.com</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/3.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-2" class="client-link" aria-expanded="true">John Mayer</a></td>
+                                        <td>Twitter Inc.</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> mayer@mayer.com</td>
+                                        <td class="client-status"><span class="label label-warning">Waiting</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/4.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-3" class="client-link" aria-expanded="true">Victor Valdez</a></td>
+                                        <td>Bosch</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-phone"> </i></td>
+                                        <td> 266-35-22</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/5.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-4" class="client-link" aria-expanded="true">Karim Benzema</a></td>
+                                        <td>Oil Market</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-phone"> </i></td>
+                                        <td> 988-22-56</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/2.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-1" class="client-link" aria-expanded="true">Helen Doe</a></td>
+                                        <td> Google Inc.</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> mail@gmail.com</td>
+                                        <td class="client-status"><span class="label label-danger">Deleted</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/7.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-2" class="client-link" aria-expanded="true">Aureliano Buendia</a></td>
+                                        <td>Columbia</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> buendia@gmail.com</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/5.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-3" class="client-link" aria-expanded="true">Karim Benzema</a></td>
+                                        <td>Oil Market</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-phone"> </i></td>
+                                        <td> 988-22-56</td>
+                                        <td class="client-status"><span class="label label-info">Phoned</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/6.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-4" class="client-link" aria-expanded="true">Casper Johnson</a></td>
+                                        <td>Art Institute</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-phone"> </i></td>
+                                        <td> 092-44-2-44</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/7.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-2" class="client-link" aria-expanded="true">Aureliano Buendia</a></td>
+                                        <td>Columbia</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> buendia@gmail.com</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/1.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-1" class="client-link" aria-expanded="true">Katerina Dankovich</a></td>
+                                        <td>Oracle</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> kat_dankovich@gmail.com</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/3.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-3" class="client-link" aria-expanded="true">John Mayer</a></td>
+                                        <td>Twitter Inc.</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> mayer@mayer.com</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/4.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-4" class="client-link" aria-expanded="true">Victor Valdez</a></td>
+                                        <td>Bosch</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-phone"> </i></td>
+                                        <td> 266-35-22</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/5.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-1" class="client-link" aria-expanded="true">Karim Benzema</a></td>
+                                        <td>Oil Market</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-phone"> </i></td>
+                                        <td> 988-22-56</td>
+                                        <td class="client-status"><span class="label label-info">Phoned</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/2.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-2" class="client-link" aria-expanded="true">Helen Doe</a></td>
+                                        <td> Google Inc.</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> mail@gmail.com</td>
+                                        <td class="client-status"><span class="label label-warning">Waiting</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="client-avatar"><a href=""><img class="img-circle" alt="image" src="img/contacts/7.png"></a> </td>
+                                        <td><a data-toggle="tab" href="#contact-4" class="client-link" aria-expanded="true">Aureliano Buendia</a></td>
+                                        <td>Columbia</td>
+                                        <td class="contact-type"><i class="zmdi zmdi-email"> </i></td>
+                                        <td> buendia@gmail.com</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+         
+                    </div>
+                    <div id="tab-2" class="tab-pane">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <tbody>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-1" class="client-link" aria-expanded="false">Google Inc.</a></td>
+                                        <td>San Francisco</td>
+                                        <td>USA</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-2" class="client-link" aria-expanded="false">LG</a></td>
+                                        <td>London</td>
+                                        <td>UK</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-3" class="client-link" aria-expanded="false">Art Limited</a></td>
+                                        <td>Berlin</td>
+                                        <td>Germany</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-1" class="client-link" aria-expanded="false">Book Store</a></td>
+                                        <td>Luxor</td>
+                                        <td>Egypt</td>
+                                        <td class="client-status"><span class="label label-warning">Waiting</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-2" class="client-link" aria-expanded="false">CocaCola</a></td>
+                                        <td>Madrid</td>
+                                        <td>Spain</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-3" class="client-link" aria-expanded="false">Mercedes</a></td>
+                                        <td>Munich</td>
+                                        <td>Germany</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-2" class="client-link" aria-expanded="false">Roshen</a></td>
+                                        <td>Kyiv</td>
+                                        <td>Ukraine</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-1" class="client-link" aria-expanded="false">Google Inc.</a></td>
+                                        <td>San Francisco</td>
+                                        <td>USA</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-2" class="client-link" aria-expanded="false">LG</a></td>
+                                        <td>London</td>
+                                        <td>UK</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-3" class="client-link" aria-expanded="false">Art Limited</a></td>
+                                        <td>Berlin</td>
+                                        <td>Germany</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-1" class="client-link" aria-expanded="false">Book Store</a></td>
+                                        <td>Luxor</td>
+                                        <td>Egypt</td>
+                                        <td class="client-status"><span class="label label-warning">Waiting</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-2" class="client-link" aria-expanded="false">CocaCola</a></td>
+                                        <td>Madrid</td>
+                                        <td>Spain</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-3" class="client-link" aria-expanded="false">Mercedes</a></td>
+                                        <td>Munich</td>
+                                        <td>Germany</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-2" class="client-link" aria-expanded="false">Roshen</a></td>
+                                        <td>Kyiv</td>
+                                        <td>Ukraine</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-1" class="client-link" aria-expanded="false">Google Inc.</a></td>
+                                        <td>San Francisco</td>
+                                        <td>USA</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-2" class="client-link" aria-expanded="false">LG</a></td>
+                                        <td>London</td>
+                                        <td>UK</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-3" class="client-link" aria-expanded="false">Art Limited</a></td>
+                                        <td>Berlin</td>
+                                        <td>Germany</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-1" class="client-link" aria-expanded="false">Book Store</a></td>
+                                        <td>Luxor</td>
+                                        <td>Egypt</td>
+                                        <td class="client-status"><span class="label label-warning">Waiting</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-2" class="client-link" aria-expanded="false">CocaCola</a></td>
+                                        <td>Madrid</td>
+                                        <td>Spain</td>
+                                        <td class="client-status"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-3" class="client-link" aria-expanded="false">Mercedes</a></td>
+                                        <td>Munich</td>
+                                        <td>Germany</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a data-toggle="tab" href="#company-2" class="client-link" aria-expanded="false">Roshen</a></td>
+                                        <td>Kyiv</td>
+                                        <td>Ukraine</td>
+                                        <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                
+                    </div>
+                </div>
+
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="content-box">
+           <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Client Info</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div class="tab-content">
+                <div id="contact-1" class="tab-pane active">
+                    <div class="row m-b-30">
+                        <div class="col-lg-4 text-center">
+                            <h2 class="f-w-100 f-s-24 m-t-5">Helen Doe</h2>
+              
+                            <div class="m-b-10">
+                                <img alt="image" class="img-circle" src="img/contacts/2.png" style="width: 65px">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <strong>
+                                About me
+                            </strong>
+              
+                            <p>
+                                Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere.
+                            </p>
+                            <button type="button" class="btn btn-success btn-block"><i class="zmdi zmdi-email"></i> Send Message
+                            </button>
+                        </div>
+                    </div>
+                    <div class="client-detail">
+                    
+              
+                        <strong>Last activity</strong>
+              
+                        <ul class="list-group clear-list">
+                            <li class="list-group-item fist-item">
+                                <span class="pull-right"> 09:30 pm </span>
+                                Contact Victor
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 12:28 am </span>
+                                Sign a contract
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 14:00 pm </span>
+                                Show new website
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 15:09 pm </span>
+                                Call back to Josh
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 17:14 am </span>
+                                Find new candidates
+                            </li>
+                        </ul>
+                        <strong>Notes</strong>
+                        <p>
+                            Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the.
+                        </p>
+                        <hr>
+                        <strong>Timeline activity</strong>
+                        <section class="cd-container m-t-10">
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img success-bg">
+                                  <i class="zmdi zmdi-facebook"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content success-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>1</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>3</span></div>
+                                  </div>
+                                  <p>Questions explained agreeable preferred strangers too him her son. Set put shyness offices his females him distant. Improve has message besides shy himself cheered however how son. Quick judge other leave ask first chief her. Indeed or remark always silent seemed narrow be. Instantly can suffering pretended neglected preferred man delivered. Perhaps fertile brandon do imagine to cordial cottage.</p>
+                                  <button type="button" class="btn btn-lg btn-primary raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date success-color">Today, 15:30</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img info-bg">
+                                  <i class="zmdi zmdi-twitter"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content info-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>12</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>8</span></div>
+                                  </div>
+                                  <p>Lose eyes get fat shew. Winter can indeed letter oppose way change tended now. So is improve my charmed picture exposed adapted demands. Received had end produced prepared diverted strictly off man branched. Known ye money so large decay voice there to.</p>
+                                  <button type="button" class="btn btn-lg btn-warning raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date info-color">Today, 14:45</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img warning-bg">
+                                  <i class="zmdi zmdi-dribbble"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content warning-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>8</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>8</span></div>
+                                  </div>
+                                  <p>Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire her called.</p>
+                                  <button type="button" class="btn btn-lg btn-success raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date warning-color">Today, 12:34</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img primary-bg is-hidden">
+                                  <i class="zmdi zmdi-steam"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content primary-bg white is-hidden">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>51</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>23</span></div>
+                                  </div>
+                                  <p>Promotion an ourselves up otherwise my. High what each snug rich far yet easy. In companions inhabiting mr principles at insensible do. Heard their sex hoped enjoy vexed child for. Prosperous so occasional assistance it discovered especially no.</p>
+                                  <button type="button" class="btn btn-lg btn-info raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date primary-color">Today, 14:45</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          
+                        </section>
+                    
+                    </div>
+                </div>
+                <div id="contact-2" class="tab-pane">
+                    <div class="row m-b-30">
+                        <div class="col-lg-4 text-center">
+                            <h2 class="f-w-100 f-s-24 m-t-5">Victor Valdez</h2>
+              
+                            <div class="m-b-10">
+                                <img alt="image" class="img-circle" src="img/contacts/3.png" style="width: 65px">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <strong>
+                                About me
+                            </strong>
+              
+                            <p>
+                                Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere.
+                            </p>
+                            <button type="button" class="btn btn-success btn-block"><i class="zmdi zmdi-email"></i> Send Message
+                            </button>
+                        </div>
+                    </div>
+                    <div class="client-detail">
+                    
+              
+                        <strong>Last activity</strong>
+              
+                        <ul class="list-group clear-list">
+                            <li class="list-group-item fist-item">
+                                <span class="pull-right"> 09:30 pm </span>
+                                Contact Victor
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 12:28 am </span>
+                                Sign a contract
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 14:00 pm </span>
+                                Show new website
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 15:09 pm </span>
+                                Call back to Josh
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 17:14 am </span>
+                                Find new candidates
+                            </li>
+                        </ul>
+                        <strong>Notes</strong>
+                        <p>
+                            Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the.
+                        </p>
+                        <hr>
+                        <strong>Timeline activity</strong>
+                        <section class="cd-container m-t-10">
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img success-bg">
+                                  <i class="zmdi zmdi-facebook"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content success-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>1</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>3</span></div>
+                                  </div>
+                                  <p>Questions explained agreeable preferred strangers too him her son. Set put shyness offices his females him distant. Improve has message besides shy himself cheered however how son. Quick judge other leave ask first chief her. Indeed or remark always silent seemed narrow be. Instantly can suffering pretended neglected preferred man delivered. Perhaps fertile brandon do imagine to cordial cottage.</p>
+                                  <button type="button" class="btn btn-lg btn-primary raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date success-color">Today, 15:30</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img info-bg">
+                                  <i class="zmdi zmdi-twitter"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content info-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>12</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>8</span></div>
+                                  </div>
+                                  <p>Lose eyes get fat shew. Winter can indeed letter oppose way change tended now. So is improve my charmed picture exposed adapted demands. Received had end produced prepared diverted strictly off man branched. Known ye money so large decay voice there to.</p>
+                                  <button type="button" class="btn btn-lg btn-warning raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date info-color">Today, 14:45</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img warning-bg">
+                                  <i class="zmdi zmdi-dribbble"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content warning-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>8</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>8</span></div>
+                                  </div>
+                                  <p>Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire her called.</p>
+                                  <button type="button" class="btn btn-lg btn-success raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date warning-color">Today, 12:34</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img primary-bg is-hidden">
+                                  <i class="zmdi zmdi-steam"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content primary-bg white is-hidden">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>51</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>23</span></div>
+                                  </div>
+                                  <p>Promotion an ourselves up otherwise my. High what each snug rich far yet easy. In companions inhabiting mr principles at insensible do. Heard their sex hoped enjoy vexed child for. Prosperous so occasional assistance it discovered especially no.</p>
+                                  <button type="button" class="btn btn-lg btn-info raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date primary-color">Today, 14:45</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          
+                        </section>
+                    
+                    </div>
+                </div>
+                <div id="contact-3" class="tab-pane">
+                    <div class="row m-b-30">
+                        <div class="col-lg-4 text-center">
+                            <h2 class="f-w-100 f-s-24 m-t-5">Casper Jones</h2>
+              
+                            <div class="m-b-10">
+                                <img alt="image" class="img-circle" src="img/contacts/6.png" style="width: 65px">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <strong>
+                                About me
+                            </strong>
+              
+                            <p>
+                                Manor we shall merit by chief wound no or would. Oh towards between subject passage sending mention or it. Sight happy do burst fruit to woody begin at.
+                            </p>
+                            <button type="button" class="btn btn-success btn-block"><i class="zmdi zmdi-email"></i> Send Message
+                            </button>
+                        </div>
+                    </div>
+                    <div class="client-detail">
+                    
+              
+                        <strong>Last activity</strong>
+              
+                        <ul class="list-group clear-list">
+                            <li class="list-group-item fist-item">
+                                <span class="pull-right"> 09:30 pm </span>
+                                Contact Victor
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 12:28 am </span>
+                                Sign a contract
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 14:00 pm </span>
+                                Show new website
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 15:09 pm </span>
+                                Call back to Josh
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 17:14 am </span>
+                                Find new candidates
+                            </li>
+                        </ul>
+                        <strong>Notes</strong>
+                        <p>
+                            Manor we shall merit by chief wound no or would. Oh towards between subject passage sending mention or it. Sight happy do burst fruit to woody begin at.
+                        </p>
+                        <hr>
+                        <strong>Timeline activity</strong>
+                        <section class="cd-container m-t-10">
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img success-bg">
+                                  <i class="zmdi zmdi-facebook"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content success-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>1</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>3</span></div>
+                                  </div>
+                                  <p>Questions explained agreeable preferred strangers too him her son. Set put shyness offices his females him distant. Improve has message besides shy himself cheered however how son. Quick judge other leave ask first chief her. Indeed or remark always silent seemed narrow be. Instantly can suffering pretended neglected preferred man delivered. Perhaps fertile brandon do imagine to cordial cottage.</p>
+                                  <button type="button" class="btn btn-lg btn-primary raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date success-color">Today, 15:30</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img info-bg">
+                                  <i class="zmdi zmdi-twitter"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content info-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>12</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>8</span></div>
+                                  </div>
+                                  <p>Lose eyes get fat shew. Winter can indeed letter oppose way change tended now. So is improve my charmed picture exposed adapted demands. Received had end produced prepared diverted strictly off man branched. Known ye money so large decay voice there to.</p>
+                                  <button type="button" class="btn btn-lg btn-warning raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date info-color">Today, 14:45</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img warning-bg">
+                                  <i class="zmdi zmdi-dribbble"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content warning-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>8</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>8</span></div>
+                                  </div>
+                                  <p>Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire her called.</p>
+                                  <button type="button" class="btn btn-lg btn-success raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date warning-color">Today, 12:34</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img primary-bg is-hidden">
+                                  <i class="zmdi zmdi-steam"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content primary-bg white is-hidden">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>51</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>23</span></div>
+                                  </div>
+                                  <p>Promotion an ourselves up otherwise my. High what each snug rich far yet easy. In companions inhabiting mr principles at insensible do. Heard their sex hoped enjoy vexed child for. Prosperous so occasional assistance it discovered especially no.</p>
+                                  <button type="button" class="btn btn-lg btn-info raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date primary-color">Today, 14:45</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          
+                        </section>
+                    
+                    </div>
+                </div>
+                <div id="contact-4" class="tab-pane">
+                    <div class="row m-b-30">
+                        <div class="col-lg-4 text-center">
+                            <h2 class="f-w-100 f-s-24 m-t-5">Karim Benzema</h2>
+              
+                            <div class="m-b-10">
+                                <img alt="image" class="img-circle" src="img/contacts/1.png" style="width: 65px">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <strong>
+                                About me
+                            </strong>
+              
+                            <p>
+                                Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving.
+                            </p>
+                            <button type="button" class="btn btn-success btn-block"><i class="zmdi zmdi-email"></i> Send Message
+                            </button>
+                        </div>
+                    </div>
+                    <div class="client-detail">
+                    
+              
+                        <strong>Last activity</strong>
+              
+                        <ul class="list-group clear-list">
+                            <li class="list-group-item fist-item">
+                                <span class="pull-right"> 09:30 pm </span>
+                                Contact Victor
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 12:28 am </span>
+                                Sign a contract
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 14:00 pm </span>
+                                Show new website
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 15:09 pm </span>
+                                Call back to Josh
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right"> 17:14 am </span>
+                                Find new candidates
+                            </li>
+                        </ul>
+                        <strong>Notes</strong>
+                        <p>
+                            Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. She consisted consulted elsewhere happiness disposing household any old the.
+                        </p>
+                        <hr>
+                        <strong>Timeline activity</strong>
+                        <section class="cd-container m-t-10">
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img success-bg">
+                                  <i class="zmdi zmdi-facebook"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content success-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>1</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>3</span></div>
+                                  </div>
+                                  <p>Questions explained agreeable preferred strangers too him her son. Set put shyness offices his females him distant. Improve has message besides shy himself cheered however how son. Quick judge other leave ask first chief her. Indeed or remark always silent seemed narrow be. Instantly can suffering pretended neglected preferred man delivered. Perhaps fertile brandon do imagine to cordial cottage.</p>
+                                  <button type="button" class="btn btn-lg btn-primary raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date success-color">Today, 15:30</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img info-bg">
+                                  <i class="zmdi zmdi-twitter"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content info-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>12</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>8</span></div>
+                                  </div>
+                                  <p>Lose eyes get fat shew. Winter can indeed letter oppose way change tended now. So is improve my charmed picture exposed adapted demands. Received had end produced prepared diverted strictly off man branched. Known ye money so large decay voice there to.</p>
+                                  <button type="button" class="btn btn-lg btn-warning raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date info-color">Today, 14:45</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img warning-bg">
+                                  <i class="zmdi zmdi-dribbble"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content warning-bg white">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>8</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>8</span></div>
+                                  </div>
+                                  <p>Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire her called.</p>
+                                  <button type="button" class="btn btn-lg btn-success raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date warning-color">Today, 12:34</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          <div class="cd-timeline-block">
+                              <div class="cd-timeline-img primary-bg is-hidden">
+                                  <i class="zmdi zmdi-steam"></i>
+                              </div> <!-- cd-timeline-img -->
+
+                              <div class="cd-timeline-content primary-bg white is-hidden">
+                                  <div class="clearfix">
+                                    <h5 class="m-t-0 m-b-10 pull-left">Title of section</h5>
+                                    <div class="pull-right"><span class="like"><i class="zmdi zmdi-favorite-outline m-r-5 f-s-18"></i>51</span><span class="comments m-l-10"><i class="zmdi zmdi-comment-text m-r-5 f-s-18"></i>23</span></div>
+                                  </div>
+                                  <p>Promotion an ourselves up otherwise my. High what each snug rich far yet easy. In companions inhabiting mr principles at insensible do. Heard their sex hoped enjoy vexed child for. Prosperous so occasional assistance it discovered especially no.</p>
+                                  <button type="button" class="btn btn-lg btn-info raised cd-read-more waves-effect">Read More</button>
+                                  <span class="cd-date primary-color">Today, 14:45</span>
+                              </div> <!-- cd-timeline-content -->
+                          </div> <!-- cd-timeline-block -->
+
+                          
+                        </section>
+                    
+                    </div>
+                </div>
+                <div id="company-1" class="tab-pane">
+                    <div class="m-b-30">
+                            <h2 class="f-w-100 f-s-24 m-t-5">Google Inc.</h2>
+              
+                            <p>
+                                Up unpacked friendly ecstatic so possible humoured do. Ample end might folly quiet one set spoke her. We no am former valley assure.
+                            </p>
+                            <div>
+                                <small>Active project completion with: 67%</small>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%">
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="client-detail">
+                        
+              
+                            <strong>Last activity</strong>
+              
+                            <ul class="list-group clear-list">
+                                <li class="list-group-item fist-item">
+                                    <span class="pull-right"> <span class="label label-primary">NEW</span> </span>
+                                    New contract
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="pull-right"> <span class="label label-warning">WAITING</span></span>
+                                    Call to Eric Carlson
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="pull-right"> <span class="label label-danger">BLOCKED</span> </span>
+                                    New design
+                                </li>
+                            </ul>
+                            <strong>Notes</strong>
+                            <p>
+                                Four need spot ye said we find mile. Are commanded him convinced dashwoods did estimable forfeited. Shy celebrated met sentiments she reasonably but. Proposal its disposed eat advanced marriage sociable. 
+                            </p>
+                            
+                    </div>
+                </div>
+                <div id="company-2" class="tab-pane">
+                    <div class="m-b-30">
+                            <h2 class="f-w-100 f-s-24 m-t-5">LG</h2>
+              
+                            <p>
+                                Resources exquisite set arranging moonlight sex him household had. Months had too ham cousin remove far spirit.
+                            </p>
+                            <div>
+                                <small>Active project completion with: 38%</small>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="client-detail">
+                        
+              
+                            <strong>Last activity</strong>
+              
+                            <ul class="list-group clear-list">
+                                <li class="list-group-item fist-item">
+                                    <span class="pull-right"> <span class="label label-primary">NEW</span> </span>
+                                    New contract
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="pull-right"> <span class="label label-warning">WAITING</span></span>
+                                    Call to Eric Carlson
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="pull-right"> <span class="label label-danger">BLOCKED</span> </span>
+                                    New design
+                                </li>
+                            </ul>
+                            <strong>Notes</strong>
+                            <p>
+                                Walking chamber as shewing an it minutes. Trees fully of blind do. Exquisite favourite at do extensive listening. Improve up musical welcome he. Gay attended vicinity prepared now diverted.
+                            </p>
+                            
+                    </div>
+                </div>
+                <div id="company-3" class="tab-pane">
+                    <div class="m-b-30">
+                            <h2 class="f-w-100 f-s-24 m-t-5">Art Limited</h2>
+              
+                            <p>
+                                She procuring the why performed continual improving. Civil songs so large shade in cause. Lady an mr here must neat sold.
+                            </p>
+                            <div>
+                                <small>Active project completion with: 52%</small>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100" style="width: 52%">
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="client-detail">
+                        
+              
+                            <strong>Last activity</strong>
+              
+                            <ul class="list-group clear-list">
+                                <li class="list-group-item fist-item">
+                                    <span class="pull-right"> <span class="label label-primary">NEW</span> </span>
+                                    New contract
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="pull-right"> <span class="label label-warning">WAITING</span></span>
+                                    Call to Eric Carlson
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="pull-right"> <span class="label label-danger">BLOCKED</span> </span>
+                                    New design
+                                </li>
+                            </ul>
+                            <strong>Notes</strong>
+                            <p>
+                                And sir dare view but over man. So at within mr to simple assure. Mr disposing continued it offending arranging in we. Extremity as if breakfast agreement. Off now mistress provided out horrible opinions. Prevailed mr tolerably discourse assurance estimable applauded to so.
+                            </p>
+                            
+                    </div>
+                </div>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+  
+  <script>
+    $(document).ready(function($){
+      $(".client-detail, .clients-list .tab-pane").mCustomScrollbar({
+        theme: "minimal-dark",
+        scrollInertia: 0,
+        mouseWheel:{
+          preventDefault: true
+        }
+      });
+    });
+  </script>
+</body>
+</html>

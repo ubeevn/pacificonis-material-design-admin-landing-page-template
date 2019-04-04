@@ -1,0 +1,280 @@
+  @@include('./_head.html', {
+    "title": "Flot Chart"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Flot Chart"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-box warning-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Orders</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-3" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total orders</p>
+              <p class="zero-m f-30">45,245,659</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box primary-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Orders</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-1" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total orders</p>
+              <p class="zero-m f-30">15,243,267</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box success-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Visitors</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-4" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total visitors</p>
+              <p class="zero-m f-30">15,654,700</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">     
+          <div class="content-box success-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Likes</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-5" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total returns</p>
+              <p class="zero-m f-30">26,727,432</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">     
+          <div class="content-box danger-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Reposts</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-6" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total returns</p>
+              <p class="zero-m f-30">16,447,934</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">     
+          <div class="content-box info-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Returns</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-2" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total returns</p>
+              <p class="zero-m f-30">45,245,659</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+  @@include('./_footer.html')
+  <script src="bower_components/flot/jquery.flot.js"></script>
+  <script src="bower_components/flot/jquery.flot.resize.js"></script>
+  <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
+
+  @@include('./_commonjs.html')
+
+  
+
+  <script>
+  $(function () {
+  /* Make some random data for the Chart*/
+
+      var d1 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d1.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d2 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d2.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d3 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d3.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d4 = [];
+      for (var i = 0; i <= 50; i += 1) {
+          d4.push([i, parseInt(Math.random() * 100)]);
+      }
+    
+      var d5 = [];
+      for (var i = 0; i <= 50; i += 1) {
+          d5.push([i, parseInt(Math.random() * 100)]);
+      }
+    
+      var d6 = [];
+      for (var i = 0; i <= 50; i += 1) {
+          d6.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      /* Chart Options */
+
+      var options = {
+          series: {
+            shadowSize: 0,
+            label: "Qty",
+            lines: {
+                show: true,
+                lineWidth: 2
+            },
+            points: {
+              show: true
+            }
+          },
+          grid: {
+            margin: 10,
+            show: false,
+            hoverable: true,
+            clickable: true
+          },
+          yaxis: {
+              max: 100,
+              min: 0
+          },
+          legend: {
+            show: false
+          },
+          tooltip: {
+            show: true,
+            cssClass: "flot-tooltip",
+            defaultTheme: false,
+            content: '%y.2',
+            shifts: {
+                x: 1,
+                y: -45
+            }
+          }
+      };
+
+      var options2 = {
+          series: {
+            shadowSize: 5,
+            lines: {
+                show: true,
+                lineWidth: 2
+            }
+          },
+          grid: {
+            margin: 10,
+            show: false,
+            hoverable: true,
+            clickable: false
+          },
+          legend: {
+            show: false
+          },
+          tooltip: {
+            show: true,
+            cssClass: "flot-tooltip",
+            defaultTheme: false,
+            content: '%y.2',
+            shifts: {
+                x: 1,
+                y: -45
+            }
+          }
+      };
+
+
+      /* Let's create the chart */
+
+      if ($("#line-chart-1")[0]) {
+          $.plot($("#line-chart-1"), [
+              {data: d1, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-2")[0]) {
+          $.plot($("#line-chart-2"), [
+              {data: d2, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-3")[0]) {
+          $.plot($("#line-chart-3"), [
+              {data: d3, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-4")[0]) {
+          $.plot($("#line-chart-4"), [
+              {data: d4, color: '#fff' }
+          ], options2);
+      }
+    
+      if ($("#line-chart-5")[0]) {
+          $.plot($("#line-chart-5"), [
+              {data: d5, color: '#fff' }
+          ], options2);
+      }
+    
+      if ($("#line-chart-6")[0]) {
+          $.plot($("#line-chart-6"), [
+              {data: d6, color: '#fff' }
+          ], options2);
+      }
+
+  });
+  </script>
+
+
+</body>
+</html>

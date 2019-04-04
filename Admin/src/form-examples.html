@@ -1,0 +1,163 @@
+  @@include('./_head.html', {
+    "title": "Form-examples"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Form-examples"
+   })
+    <div class="container-fluid">
+     <div class="row">
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Basic example</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+               <p>Basic styling for your forms</p>
+                <form>
+                  <div class="form-group">
+                    <label class="control-label">Username</label>
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox checkbox-info">
+                      <label><input type="checkbox">
+                        <i></i></label>
+                        <span class="m-l-5">Remember me</span>
+                    </div>
+                  </div>
+                   <div class="form-group">
+                    <button type="button" class="btn btn-info">Submit</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Horizontal form</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <p>Add <code>.form-horizontal</code> class for horizontal layout</p>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="inputText" class="col-sm-2 control-label">Username</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputText" placeholder="Username">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" value="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2">
+                    <div class="checkbox checkbox-alt checkbox-primary">
+                      <label><input type="checkbox">
+                        <i></i></label>
+                        <span class="m-l-5">Check me out!</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2">
+                    <button type="button" class="btn btn-primary m-b-5">Sign in</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+     </div>
+     <div class="row">
+       <div class="col-md-12">
+         <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Inline form</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+           <div class="content">
+             <p>Add <code>.form-inline</code> to your form for left-aligned and inline-block controls. <strong>This only applies to forms within viewports that are at least 768px wide.</strong></p>
+             <form class="form-inline m-b-40">
+             <h5>Variation 1</h5>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <div class="checkbox checkbox-info">
+                  <label><input type="checkbox">
+                    <i></i></label>
+                    <span class="m-l-5">Remember me</span>
+                </div>
+              </div>
+               <div class="form-group">
+                <button type="button" class="btn btn-info">Submit</button>
+               </div>
+             </form>
+              <form class="form-inline">
+               <h5>Variation 2</h5>
+                <div class="form-group">
+                  <label class="control-label">Username</label>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Email</label>
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+                 <div class="form-group">
+                  <button type="button" class="btn btn-warning">Reset password</button>
+                </div>
+              </form>
+           </div>
+         </div>
+       </div>
+     </div>
+     </div>
+     <footer class="page-footer">© 2016 Copyright</footer>
+    </div>
+
+
+  @@include('./_footer.html')
+
+
+  @@include('./_commonjs.html')
+</body>
+</html>

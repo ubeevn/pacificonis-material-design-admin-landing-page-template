@@ -1,0 +1,555 @@
+  @@include('./_head.html', {
+    "title": "Dashboard 2"
+  })
+
+  <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.min.css">
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Dashboard 2"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <ol class="breadcrumb breadcrumb-arrow">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Media</a></li>
+            <li class="active">Data</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head head-with-btns clearfix">
+              <h5 class="content-title text-color pull-left">Total sales statistics</h5>
+              <div class="functions-btns pull-right">
+                <button type="button" class="btn btn-info">
+                 Week
+                </button>
+                <button type="button" class="btn btn-default">
+                 Month
+                </button>
+                <button type="button" class="btn btn-default">
+                 Year
+                </button>
+              </div>
+            </div>
+             <div class="content">
+               <div id="js-legend" class="chart-legend"></div>
+               <div class="chartjs-container full-page-chart">
+                <canvas id="chart-line"></canvas>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="data-info">
+            <table id="table" class="display datatable">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Category</th>
+                  <th>Number of Orders</th>
+                  <th>Customer</th>
+                  <th>Status</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Coats Tony Taylor</td>
+                  <td>Mens</td>
+                  <td>3 324</td>
+                  <td class="info-color">Alisa Kito</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$245</td>
+                </tr>
+                <tr>
+                  <td>Nike sneakers</td>
+                  <td>Womans</td>
+                  <td>5 467</td>
+                  <td class="info-color">John Tredmont</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>Adidas T-shirt</td>
+                  <td>Children</td>
+                  <td>2 546</td>
+                  <td class="info-color">Kyle Jackson</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>Jacket</td>
+                  <td>Womans</td>
+                  <td>1 875</td>
+                  <td class="info-color">CJ Watson</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>Shirt Diamond</td>
+                  <td>Mens</td>
+                  <td>6 032</td>
+                  <td class="info-color">Olga Lutchkova</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>Summer Shorts</td>
+                  <td>Children</td>
+                  <td>1 358</td>
+                  <td class="info-color">Silvia Blake</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+       <div class="col-lg-6">
+          <div class="content-box">
+             <div class="head head-with-btns primary-bg clearfix">
+               <h5 class="content-title pull-left">Best selling products</h5>
+               <div class="functions-btns pull-right">
+                 <button type="button" class="btn btn-warning raised">Today</button>
+                 <button type="button" class="btn btn-default">Week</button>
+                 <button type="button" class="btn btn-default">Month</button>
+               </div>
+             </div>
+             <!-- Inline styles for content used only for demo-->
+             <div class="content" style="min-height: 273px;">
+                <div class="row">
+                 <div class="col-sm-7">
+                   <div class="chartjs-container">
+                    <canvas id="chart-bar" height="134"></canvas>
+                   </div>
+                 </div>
+                 <div class="col-sm-5">
+                   <div id="js-legend-bar" class="chart-legend rounded vertical"></div>
+                 </div>
+                </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-box">
+            <div class="head clearfix">
+              <h5 class="content-title text-color pull-left">Best selling products</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn text-color" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn text-color" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn text-color" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <!-- Inline styles for content used only for demo-->
+            <div class="content" style="min-height: 273px;">
+              <div class="row">
+                <div class="col-sm-4 text-center">
+                  <div class="easychart m-b-10" data-percent="55"></div>
+                  <span class="danger-color h1">55%</span><br>
+                  <span>Mens goods</span>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <div class="easychart2 m-b-10" data-percent="68"></div>
+                  <span class="success-color h1">68%</span><br>
+                  <span>Womans goods</span>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <div class="easychart3 m-b-10" data-percent="27"></div>
+                  <span class="warning-color h1">27%</span><br>
+                  <span>Children goods</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="data-white">
+            <table id="table2" class="display datatable">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Date</th>
+                  <th>Customer</th>
+                  <th>Status</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="info-color">#3242</td>
+                  <td>15.04.2016</td>
+                  <td class="info-color">Alisa Kito</td>
+                  <td><span class="label label-success">Adopted</span></td>
+                  <td>$245</td>
+                </tr>
+                <tr>
+                  <td class="info-color">#7478</td>
+                  <td>15.04.2016</td>
+                  <td class="info-color">John Tredmont</td>
+                  <td><span class="label label-info">Confirmed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td class="info-color">#5727</td>
+                  <td>15.04.2016</td>
+                  <td class="info-color">Kyle Jackson</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td class="info-color">#5279</td>
+                  <td>15.04.2016</td>
+                  <td class="info-color">CJ Watson</td>
+                  <td><span class="label label-warning">Shipped</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td class="info-color">#2379</td>
+                  <td>15.04.2016</td>
+                  <td class="info-color">Olga Lutchkova</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td class="info-color">#9347</td>
+                  <td>15.04.2016</td>
+                  <td class="info-color">Silvia Blake</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$8 907</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+       <div class="col-lg-6">
+          <div class="data-success">
+            <table id="table3" class="display widget datatable">
+              <thead>
+                <tr>
+                  <th>Status</th>
+                  <th class="text-right">Number of orders</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="label label-success">Adopted</span></td>
+                  <td class="text-right">4637</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-info">Confirmed</span></td>
+                  <td class="text-right">3261</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td class="text-right">76590</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-warning">Shipped</span></td>
+                  <td class="text-right">5568</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td class="text-right">4378</td>
+                </tr>
+                <tr>
+                  <td><span class="label label-danger">Canceled</span></td>
+                  <td class="text-right">3327</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-box">
+            <div class="head clearfix">
+              <h5 class="content-title text-color pull-left">Statistics order status</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn text-color" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn text-color" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn text-color" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+             <!-- Inline styles for content used only for demo-->
+             <div class="content" style="min-height: 261px;">
+               <div class="row">
+                 <div class="col-sm-6">
+                   <div id="js-legend-3" class="chart-legend rounded vertical"></div>
+                 </div>
+                 <div class="col-sm-6">
+                   <div class="chartjs-container">
+                    <canvas id="chart-pie" height="148"></canvas>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+
+  <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-responsive/js/dataTables.responsive.js"></script>
+
+  <script src="bower_components/Chart.js/Chart.js"></script>
+  <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.js"></script>
+
+  <script>
+    var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+    var lineChartData = {
+        labels : ["MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY"],
+        datasets : [
+            {
+                label: "Mens goods",
+                fillColor : "rgba(255, 193, 7, 0.5)",
+                strokeColor : "#fff",
+                pointColor : "rgba(255, 193, 7, 1)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(255, 193, 7, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+            {
+                label: "Women goods",
+                fillColor : "rgba(244, 67, 54, 0.5)",
+                strokeColor : "#fff",
+
+                pointColor : "rgba(244, 67, 54, 1)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(244, 67, 54, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+            {
+                label: "Children goods",
+                fillColor : "rgba(33, 150, 243, 0.7)",
+                strokeColor : "#fff",
+                pointColor : "rgba(33, 150, 243, 1)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(33, 150, 243, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            }
+        ]
+
+    };
+
+    var pieData = [
+        {
+            value: 260,
+            color: "rgb(76, 175, 80)",
+            highlight: "rgba(76, 175, 80, 0.8)",
+            label: "Coats Tony Taylor"
+        },
+        {
+            value: 50,
+            color:"rgb(244, 67, 54)",
+            highlight: "rgba(244, 67, 54, 0.8)",
+            label: "Sketchers sneakers"
+        },
+        {
+            value: 100,
+            color: "rgb(255, 193, 7)",
+            highlight: "rgba(255, 193, 7, 0.8)",
+            label: "Sweater Deer"
+        },
+        {
+            value: 40,
+            color: "rgb(33, 150, 243)",
+            highlight: "rgba(33, 150, 243, 0.8)",
+            label: "Jacket"
+        },
+        {
+            value: 120,
+            color: "rgb(103, 58, 183)",
+            highlight: "rgba(103, 58, 183, 0.8)",
+            label: "Shirt Diamont"
+        }
+
+    ];
+
+    var barChartData = {
+    labels : ["TODAY"],
+    datasets : [
+      {
+        fillColor : "rgba(3, 169, 244, 0.65)",
+        strokeColor : "rgba(3, 169, 244, 0.65)",
+        highlightFill: "rgba(3, 169, 244, 0.75)",
+        highlightStroke: "rgba(3, 169, 244, 1)",
+                label: "Coats Tony Taylor",
+        data : [randomScalingFactor()]			},
+      {
+        fillColor : "rgba(139, 195, 74, 0.65)",
+        strokeColor : "rgba(139, 195, 74, 0.65)",
+        highlightFill : "rgba(139, 195, 74, 0.75)",
+        highlightStroke : "rgba(139, 195, 74, 1)",
+                label: "Sketchers sneakers",
+        data : [randomScalingFactor()]			},
+      {
+        fillColor : "rgba(244, 67, 54, 0.65)",
+        strokeColor : "rgba(244, 67, 54, 0.65)",
+        highlightFill : "rgba(244, 67, 54, 0.75)",
+        highlightStroke : "rgba(244, 67, 54, 1)",
+                label: "Sweater Deer",
+        data : [randomScalingFactor()]
+      },
+      {
+        fillColor : "rgba(255, 193, 7, 0.65)",
+        strokeColor : "rgba(255, 193, 7, 0.65)",
+        highlightFill : "rgba(255, 193, 7, 0.75)",
+        highlightStroke : "rgba(255, 193, 7, 1)",
+                label: "Jacket",
+        data : [randomScalingFactor()]
+      },
+      {
+        fillColor : "rgba(103, 58, 183, 0.65)",
+        strokeColor : "rgba(103, 58, 183, 0.65)",
+        highlightFill : "rgba(103, 58, 183, 0.75)",
+        highlightStroke : "rgba(103, 58, 183, 1)",
+                label: "Shirt Diamont",
+        data : [randomScalingFactor()]
+      },
+      {
+        fillColor : "rgba(205, 220, 57, 0.65)",
+        strokeColor : "rgba(205, 220, 57, 0.65)",
+        highlightFill : "rgba(205, 220, 57, 0.75)",
+        highlightStroke : "rgba(205, 220, 57, 1)",
+                label: "Shoos",
+        data : [randomScalingFactor()]
+      },
+      {
+        fillColor : "rgba(158, 158, 158, 0.65)",
+        strokeColor : "rgba(158, 158, 158, 0.65)",
+        highlightFill : "rgba(158, 158, 158, 0.75)",
+        highlightStroke : "rgba(158, 158, 158, 1)",
+                label: "Jeans",
+        data : [randomScalingFactor()]
+      }
+    ]
+
+  };
+
+
+
+  window.onload = function(){
+
+
+      var ctx = document.getElementById("chart-line").getContext("2d");
+      var myLine = new Chart(ctx).Line(lineChartData, {
+        scaleShowVerticalLines: false,
+//        scaleShowLabels: false,
+//        maintainAspectRatio: true,
+        datasetStrokeWidth : 6,
+        pointDotRadius : 6,
+        responsive: true,
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].pointColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+      });
+
+      document.getElementById('js-legend').innerHTML = myLine.generateLegend();
+
+      var ctx3 = document.getElementById("chart-pie").getContext("2d");
+      var myPie = new Chart(ctx3).Pie(pieData, {
+        segmentShowStroke : false
+      });
+
+      document.getElementById('js-legend-3').innerHTML = myPie.generateLegend();
+
+      var ctx5 = document.getElementById("chart-bar").getContext("2d");
+      var myBar = new Chart(ctx5).Bar(barChartData, {
+        responsive : true,
+        scaleShowVerticalLines: false,
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+      });
+
+      document.getElementById('js-legend-bar').innerHTML = myBar.generateLegend();
+  }
+
+  </script>
+
+  <script>
+    $(function() {
+        $('.easychart').easyPieChart({
+          barColor: "#ff5f5f",
+          trackColor: '#cccccc',
+          size: 120,
+          lineWidth: 15,
+          scaleLength: 0
+        });
+      $('.easychart2').easyPieChart({
+          barColor: "#99cc00",
+          trackColor: '#cccccc',
+          size: 120,
+          lineWidth: 15,
+          scaleLength: 0
+        });
+      $('.easychart3').easyPieChart({
+          barColor: "#ffbb33",
+          trackColor: '#cccccc',
+          size: 120,
+          lineWidth: 15,
+          scaleLength: 0
+        });
+    });
+  </script>
+
+  <script>
+    $('#table').DataTable({
+     "dom": '<"toolbar tool"><"clear-filter">frtip',
+      info: false,
+      paging: false,
+      responsive: true,
+      "oLanguage": { "sSearch": "" }
+    });
+
+    $("div.tool").css("padding", "7px 20px").html('<h5 class="content-title">Best selling products</h5>');
+
+    $('#table2').DataTable({
+     "dom": '<"toolbar tool2"><"clear-filter">frtip',
+      info: false,
+      paging: false,
+      responsive: true,
+      "oLanguage": { "sSearch": "" }
+    });
+
+    $("div.tool2").css("padding", "7px 20px").html('<h5 class="content-title text-color">Orders</h5>');
+
+    $('.dataTables_filter input').attr("placeholder", "Search");
+
+    $('#table3').DataTable({
+     "dom": '<"toolbar tool3">rtip',
+      info: false,
+      paging: false,
+      responsive: true,
+    });
+
+    $("div.tool3").css("padding", "7px 20px").html('<h5 class="content-title">Statistics order status</h5>');
+
+  </script>
+
+  @@include('./_commonjs.html')
+</body>
+</html>

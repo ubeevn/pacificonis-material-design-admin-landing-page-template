@@ -1,0 +1,100 @@
+@media (max-width: 1023px) {
+    .download {
+        text-align: center;
+        span {
+            display: inline-block;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        &.open {
+            .navbar-collapse {
+                transform: translateX(0);
+            }
+        }
+        .navbar-nav>li>a:after, .navbar-nav>li>a, .navbar-nav>li.active>a {
+            color: $white !important;
+            content: none;
+        }
+        &-toggle {
+            margin-top: 15px;
+            span{
+                background: $white;
+            }
+        }
+        &-nav {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        &-collapse {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 220px;
+            height: 100%;
+            background: #474747;
+            border: 0;
+            box-shadow: -1px 0px 7px 0px #323232;
+            transform: translateX(230px);
+            .close-menu {
+                display: block;
+                background: transparent;
+                border: none;
+                color: $white;
+                position: absolute;
+                top: 18px;
+                right: 40px;
+                font-size: 32px;
+                z-index: 10;
+                &:focus, &:active {
+                    outline: none;
+                }
+            }
+        }
+        &.scrolled {
+            .navbar-nav > li > a {
+                color: $white;
+            }
+            .navbar-toggle span {
+                background: $black;
+            }
+        }
+    }
+
+    .comment__text:before {
+        content: none;
+    }
+
+    .fg.fg--white .fg__line-input {
+        width: 100%;
+    }
+
+    .socials {
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        &__item {
+            margin-bottom: 10px;
+        }
+    }
+
+    .back-to-top {
+        right: 20px;
+        bottom: 15px;
+    }
+
+    .modal {
+        &__info {
+            padding: 15px 20px;
+            font-size: 0.8em;
+            &-btn {
+                top: -20px;
+                right: -10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,304 @@
+  @@include('./_head.html', {
+    "title": "Tree View"
+  })
+  <link rel="stylesheet" href="bower_components/jstree/dist/themes/default/style.css" />
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Tree View"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head primary-bg clearfix">
+              <h5 class="content-title pull-left">Basic Tree</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="html1">
+                <ul>
+                  <li class="jstree-open">Home
+                    <ul>
+                      <li class="jstree-open">Email
+                        <ul>
+                          <li data-jstree='{"type":"file"}'>Inbox</li>
+                          <li data-jstree='{"type":"file"}'>Compose</li>
+                          <li class="jstree-open">View
+                            <ul>
+                              <li data-jstree='{"type":"file"}'><a href="#" class="jstree-clicked">Email One</a></li>
+                              <li data-jstree='{"type":"file"}'>Email Two</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li data-jstree='{"icon":"zmdi zmdi-view-dashboard"}'>Dashboard</li>
+                      <li data-jstree='{"icon":"zmdi zmdi-text-format"}'>Typography</li>
+                      <li class="jstree-open">User Interface
+                        <ul>
+                          <li data-jstree='{"type":"file"}'>Buttons</li>
+                          <li data-jstree='{"type":"file"}'>Checkboxes</li>
+                          <li data-jstree='{"type":"file"}'>Radios</li>
+                        </ul>
+                      </li>
+                      <li>Pages</li>
+                      <li class="jstree-open" data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Forms
+                        <ul>
+                          <li data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Form Elements</li>
+                          <li data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Form Components</li>
+                          <li data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Form Examples</li>
+                        </ul>
+                      </li>
+                      <li data-jstree='{"icon":"zmdi zmdi-format-list-bulleted"}'>Tables</li>
+                      <li data-jstree='{"icon":"zmdi zmdi-star"}'>Widgets</li>
+                    </ul>
+                  </li>
+                  <li>Settings</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Checkbox Tree</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="html2">
+                <ul>
+                  <li class="jstree-open">Home
+                    <ul>
+                      <li class="jstree-open">Email
+                        <ul>
+                          <li data-jstree='{"type":"file"}'>Inbox</li>
+                          <li data-jstree='{"type":"file"}'>Compose</li>
+                          <li class="jstree-open">View
+                            <ul>
+                              <li data-jstree='{"type":"file"}'><a href="#" class="jstree-clicked">Email One</a></li>
+                              <li data-jstree='{"type":"file"}'>Email Two</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li data-jstree='{"icon":"zmdi zmdi-view-dashboard"}'>Dashboard</li>
+                      <li data-jstree='{"icon":"zmdi zmdi-text-format"}'>Typography</li>
+                      <li class="jstree-open">User Interface
+                        <ul>
+                          <li data-jstree='{"type":"file"}'>Buttons</li>
+                          <li data-jstree='{"type":"file"}'>Checkboxes</li>
+                          <li data-jstree='{"type":"file"}'>Radios</li>
+                        </ul>
+                      </li>
+                      <li>Pages</li>
+                      <li class="jstree-open" data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Forms
+                        <ul>
+                          <li data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Form Elements</li>
+                          <li data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Form Components</li>
+                          <li data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Form Examples</li>
+                        </ul>
+                      </li>
+                      <li data-jstree='{"icon":"zmdi zmdi-format-list-bulleted"}'>Tables</li>
+                      <li data-jstree='{"icon":"zmdi zmdi-star"}'>Widgets</li>
+                    </ul>
+                  </li>
+                  <li>Settings</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Drag & Drop</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="html3">
+                <ul>
+                  <li class="jstree-open">Home
+                    <ul>
+                      <li class="jstree-open">Email
+                        <ul>
+                          <li data-jstree='{"type":"file"}'>Inbox</li>
+                          <li data-jstree='{"type":"file"}'>Compose</li>
+                          <li class="jstree-open">View
+                            <ul>
+                              <li data-jstree='{"type":"file"}'><a href="#" class="jstree-clicked">Email One</a></li>
+                              <li data-jstree='{"type":"file"}'>Email Two</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li data-jstree='{"icon":"zmdi zmdi-view-dashboard"}'>Dashboard</li>
+                      <li data-jstree='{"icon":"zmdi zmdi-text-format"}'>Typography</li>
+                      <li class="jstree-open">User Interface
+                        <ul>
+                          <li data-jstree='{"type":"file"}'>Buttons</li>
+                          <li data-jstree='{"type":"file"}'>Checkboxes</li>
+                          <li data-jstree='{"type":"file"}'>Radios</li>
+                        </ul>
+                      </li>
+                      <li>Pages</li>
+                      <li class="jstree-open" data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Forms
+                        <ul>
+                          <li data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Form Elements</li>
+                          <li data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Form Components</li>
+                          <li data-jstree='{"icon":"zmdi zmdi-format-subject"}'>Form Examples</li>
+                        </ul>
+                      </li>
+                      <li data-jstree='{"icon":"zmdi zmdi-format-list-bulleted"}'>Tables</li>
+                      <li data-jstree='{"icon":"zmdi zmdi-star"}'>Widgets</li>
+                    </ul>
+                  </li>
+                  <li>Settings</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head danger-bg clearfix">
+              <h5 class="content-title pull-left">Ajax</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="html4">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+
+  <script src="bower_components/jstree/dist/jstree.js"></script>
+
+  @@include('./_commonjs.html')
+
+  <script>
+    $(function () {
+      $('#html1').jstree({
+        'core' : {
+          'themes' : {
+            'responsive': false
+          }
+        },
+        'types' : {
+            'default' : {
+                'icon' : 'zmdi zmdi-folder-star'
+            },
+            'file' : {
+                'icon' : 'zmdi zmdi-file'
+            }
+        },
+        'plugins' : ['types']
+      });
+
+      $('#html2').jstree({
+        'core' : {
+          'themes' : {
+            'responsive': false
+          }
+        },
+        'types' : {
+            'default' : {
+                'icon' : 'zmdi zmdi-folder-star'
+            },
+            'file' : {
+                'icon' : 'zmdi zmdi-file'
+            }
+        },
+        'plugins' : ['types', 'checkbox']
+      });
+
+      $('#html3').jstree({
+        'core' : {
+          'check_callback' : true,
+          'themes' : {
+            'responsive': false
+          }
+        },
+        'types' : {
+            'default' : {
+                'icon' : 'zmdi zmdi-folder-star'
+            },
+            'file' : {
+                'icon' : 'zmdi zmdi-file'
+            }
+        },
+        'plugins' : ['types', 'dnd']
+      });
+
+      $('#html4').jstree({
+        'core' : {
+          'check_callback' : true,
+          'themes' : {
+            'responsive': false
+          },
+            'data' : {
+                'url' : function (node) {
+                    return node.id === '#' ? 'js/jstree/ajax_roots.json' : 'js/jstree/ajax_children.json';
+                },
+                'data' : function (node) {
+                    return { 'id' : node.id };
+                }
+            }
+        },
+        'types' : {
+            'default' : {
+                'icon' : 'zmdi zmdi-folder-star'
+            },
+            'file' : {
+                'icon' : 'zmdi zmdi-file'
+            }
+        },
+        "plugins" : [ "contextmenu", "dnd", "search", "state", "types", "wholerow" ]
+      });
+
+    });
+  </script>
+</body>
+</html>

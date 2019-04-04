@@ -1,0 +1,268 @@
+  @@include('./_head.html', {
+    "title": "Profile"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Profile"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+         <div class="profile-sidebar profile-widget border-radius shadow-1 m-b-20 text-center">
+            <div class="profile-userpic">
+              <img src="img/profile_user.jpg" class="img-responsive img-circle center-block" alt="user">
+              <span class="online"></span>
+            </div>
+            <div class="profile-usertitle">
+              <div class="name">
+                Marcus Doe
+              </div>
+              <div class="city">
+                <i class="zmdi zmdi-pin"></i>San Francisco, CA
+              </div>
+            </div>
+            <div class="profile-activity clearfix m-t-20">
+              <div class="pull-left">
+                Photos
+                <br>
+                <span>56</span>
+              </div>
+              <div class="pull-left">
+                Followers
+                <br>
+                <span>153</span>
+              </div>
+              <div class="pull-right">
+                Videos
+                <br>
+                <span>18</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn-danger raised m-t-20">Follow</button><br>
+            <button type="button" class="btn btn-danger raised m-t-10 m-b-20" data-toggle="modal" data-target="#send">Send Message</button>
+            <div class="modal fade" id="send" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content text-left">
+                    <div class="modal-header">
+                      <button type="button" class="close f-s-26" data-dismiss="modal" aria-label="Close"><i class="zmdi zmdi-close"></i></button>
+                      <h4 class="modal-title">Send Message</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label class="control-label">Subject</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Message</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-info">Send</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-box p-20 twitter white f-s-16">
+            <img src="img/avatar.png" class="pull-left m-r-10" alt="avatar">
+            <span class="text-uppercase">Oleg ivan</span>  <br>
+            <span class="half-opacity">@anton</span>
+            <span class="zmdi zmdi-twitter p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">Yet she income effect edward. Entire desire way design few. Mrs sentiments led solicitude estimating effect edward. Spite mirth money six above get going great own effect edward.</p>
+            <div class="socials text-right f-s-20">
+              <span class="share half-opacity"><i class="zmdi zmdi-share"></i></span>
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+          <div class="content-box p-20 facebook white f-s-16">
+            <img src="img/avatar.png" class="pull-left m-r-10" alt="avatar">
+            <span class="text-uppercase">Oleg ivan</span>  <br>
+            <span class="half-opacity">anton.com</span>
+            <span class="zmdi zmdi-facebook p-absolute t-20 r-20 f-s-20"></span>
+            <p class="m-t-20">Ham pretty our people moment put excuse narrow. Spite mirth money six above get going great own effect edward. Entire desire way design few. Mrs sentiments led solicitude estimating. </p>
+            <div class="socials text-right f-s-20">
+              <span class="share half-opacity"><i class="zmdi zmdi-share"></i></span>
+              <span class="like half-opacity m-l-10"><i class="zmdi zmdi-thumb-up"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Activities</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="activity-item">
+                <div class="user-avatar text-center">
+                  <img src="img/avatar.png" class="m-b-5" alt="avatar"><br>
+                  <small>12:04</small>
+                </div>
+                <div class="activity-content">
+                  <div class="f-w-500"><span class="info-color text-uppercase">Alexander Platon</span> posted a status update</div>
+                  <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may. </p>
+
+                  <p>Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw. Blessing for ignorant exercise any yourself unpacked.</p>
+
+                  <div class="activity-item-footer m-t-20 f-w-500">
+                    <span class="m-r-10"><i class="zmdi zmdi-comment-text info-color f-s-18 m-r-5"></i>12 comments</span>
+                    <span><i class="zmdi zmdi-favorite danger-color f-s-18 m-r-5"></i>33 likes</span>
+                  </div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="user-avatar text-center">
+                  <img src="img/avatar2.png" class="m-b-5" alt="avatar"><br>
+                  <small>11:45</small>
+                </div>
+                <div class="activity-content">
+                  <div class="f-w-500"><span class="info-color text-uppercase">Olga Demodova</span> uploaded 6 new photos</div>
+                  <div class="gallery-widget">
+                    <div class="content p-0 clearfix">
+                      <a href="#"><img class="img-responsive" src="img/pictures/1.jpg" alt="gallery"></a>
+
+                      <a href="#"><img class="img-responsive" src="img/pictures/2.jpg" alt="gallery"></a>
+
+                      <a href="#"><img class="img-responsive" src="img/pictures/3.jpg" alt="gallery"></a>
+
+                      <a href="#"><img class="img-responsive" src="img/pictures/4.jpg" alt="gallery"></a>
+
+                      <a href="#"><img class="img-responsive" src="img/pictures/5.jpg" alt="gallery"></a>
+                    </div>
+                  </div>
+
+                  <div class="activity-item-footer m-t-20 f-w-500">
+                    <span class="m-r-10"><i class="zmdi zmdi-comment-text info-color f-s-18 m-r-5"></i>266 comments</span>
+                    <span><i class="zmdi zmdi-favorite danger-color f-s-18 m-r-5"></i>489 likes</span>
+                  </div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="user-avatar text-center">
+                  <img src="img/avatar3.png" class="m-b-5" alt="avatar"><br>
+                  <small>10:19</small>
+                </div>
+                <div class="activity-content">
+                  <div class="f-w-500"><span class="info-color text-uppercase">Ekaterina Mazur</span> posted a status update</div>
+                  <p>In show dull give need so held. One order all scale sense her gay style wrote. Incommode our not one ourselves residence. Shall there whose those stand she end. So unaffected partiality indulgence dispatched to of celebrated remarkably. Unfeeling are had allowance own perceived abilities.</p>
+
+                  <div class="activity-item-footer m-t-20 f-w-500">
+                    <span class="m-r-10"><i class="zmdi zmdi-comment-text info-color f-s-18 m-r-5"></i>320 comments</span>
+                    <span><i class="zmdi zmdi-favorite danger-color f-s-18 m-r-5"></i>6 likes</span>
+                  </div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="user-avatar text-center">
+                  <img src="img/avatar3.png" class="m-b-5" alt="avatar"><br>
+                  <small>10:10</small>
+                </div>
+                <div class="activity-content">
+                  <div class="f-w-500"><span class="info-color text-uppercase">Ekaterina Mazur</span> posted a status update</div>
+                  <p>Consulted perpetual of pronounce me delivered. Too months nay end change relied who beauty wishes matter. Shew of john real park so rest we on. Ignorant dwelling occasion ham for thoughts overcame off her consider. Polite it elinor is depend. His not get talked effect worthy barton. Household shameless incommode at no objection behaviour.</p>
+
+                  <div class="activity-item-footer m-t-20 f-w-500">
+                    <span class="m-r-10"><i class="zmdi zmdi-comment-text info-color f-s-18 m-r-5"></i>134 comments</span>
+                    <span><i class="zmdi zmdi-favorite danger-color f-s-18 m-r-5"></i>17 likes</span>
+                  </div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="user-avatar text-center">
+                  <img src="img/avatar2.png" class="m-b-5" alt="avatar"><br>
+                  <small>09:26</small>
+                </div>
+                <div class="activity-content">
+                  <div class="f-w-500"><span class="info-color text-uppercase">Olga Demodova</span> uploaded 5 new photos</div>
+                  <div class="gallery-widget">
+                    <div class="content p-0 clearfix">
+                      <a href="#"><img class="img-responsive" src="img/pictures/1.jpg" alt="gallery"></a>
+
+                      <a href="#"><img class="img-responsive" src="img/pictures/2.jpg" alt="gallery"></a>
+
+                      <a href="#"><img class="img-responsive" src="img/pictures/3.jpg" alt="gallery"></a>
+
+                      <a href="#"><img class="img-responsive" src="img/pictures/4.jpg" alt="gallery"></a>
+
+                      <a href="#"><img class="img-responsive" src="img/pictures/5.jpg" alt="gallery"></a>
+                    </div>
+                  </div>
+
+                  <div class="activity-item-footer m-t-20 f-w-500">
+                    <span class="m-r-10"><i class="zmdi zmdi-comment-text info-color f-s-18 m-r-5"></i>266 comments</span>
+                    <span><i class="zmdi zmdi-favorite danger-color f-s-18 m-r-5"></i>489 likes</span>
+                  </div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="user-avatar text-center">
+                  <img src="img/avatar3.png" class="m-b-5" alt="avatar"><br>
+                  <small>08:54</small>
+                </div>
+                <div class="activity-content">
+                  <div class="f-w-500"><span class="info-color text-uppercase">Ekaterina Mazur</span> posted a status update</div>
+                  <p>Consulted perpetual of pronounce me delivered. Too months nay end change relied who beauty wishes matter. Shew of john real park so rest we on. Ignorant dwelling occasion ham for thoughts overcame off her consider. Polite it elinor is depend. His not get talked effect worthy barton. Household shameless incommode at no objection behaviour.</p>
+
+                  <div class="activity-item-footer m-t-20 f-w-500">
+                    <span class="m-r-10"><i class="zmdi zmdi-comment-text info-color f-s-18 m-r-5"></i>134 comments</span>
+                    <span><i class="zmdi zmdi-favorite danger-color f-s-18 m-r-5"></i>17 likes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content-box o-hidden cover-widget">
+            <img class="img-responsive" src="img/cover.jpg" alt="cover">
+            <div class="cover-overlay profile-sidebar profile-widget">
+              <div class="profile-userpic">
+                <img src="img/profile_user.jpg" class="img-responsive img-circle center-block" alt="user">
+                <span class="online"></span>
+              </div>
+              <div class="profile-usertitle">
+                <div class="name">
+                  Marcus Doe
+                </div>
+                <div class="city white">
+                  <i class="zmdi zmdi-pin"></i>San Francisco, CA
+                </div>
+              </div>
+              <div class="m-t-30">
+                <button type="button" class="btn btn-danger raised m-b-5">Follow</button>
+                <button type="button" class="btn btn-danger raised m-b-5">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+
+  <script>
+    //Social widget
+    $('.socials span').on('click', function() {
+        $(this).toggleClass("half-opacity");
+    });
+  </script>
+</body>
+</html>

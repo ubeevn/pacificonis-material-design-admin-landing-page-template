@@ -1,0 +1,105 @@
+  @@include('./_head.html', {
+    "title": "Breadcrumbs"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Breadcrumbs"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Breadcrumbs</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>Breadcrumbs default style</h5>
+                  <p>Separators are automatically added in CSS through <code>:before</code> and content.</p>
+                  <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Library</li>
+                  </ol>
+
+                  <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li class="active">Data</li>
+                  </ol>
+
+                  <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li class="active">Data</li>
+                  </ol>
+                </div>
+                <div class="col-md-4">
+                  <h5>Breadcrumbs arrow style</h5>
+                  <p>Add modifier class <code>.breadcrumb-arrow</code> to switch slash or arrow style.</p>
+                  <ol class="breadcrumb breadcrumb-arrow">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Library</li>
+                  </ol>
+
+                  <ol class="breadcrumb breadcrumb-arrow">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li class="active">Data</li>
+                  </ol>
+
+                  <ol class="breadcrumb breadcrumb-arrow">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li class="active">Data</li>
+                  </ol>
+                </div>
+                <div class="col-md-4">
+                  <h5>Breadcrumbs with icons</h5>
+                  <p>You can use icons before your items.</p>
+                  <ol class="breadcrumb">
+                    <li><a href="#"><i class="zmdi zmdi-home"></i>Home</a></li>
+                    <li class="active">Library</li>
+                  </ol>
+
+                  <ol class="breadcrumb breadcrumb-arrow">
+                    <li><a href="#"><i class="zmdi zmdi-home"></i>Home</a></li>
+                    <li><a href="#"><i class="zmdi zmdi-book"></i>Library</a></li>
+                    <li class="active">Data</li>
+                  </ol>
+
+                  <ol class="breadcrumb breadcrumb-arrow">
+                    <li><a href="#"><i class="zmdi zmdi-home"></i>Home</a></li>
+                    <li><a href="#"><i class="zmdi zmdi-book"></i>Library</a></li>
+                    <li><a href="#"><i class="zmdi zmdi-playlist-audio"></i>Media</a></li>
+                    <li class="active">Data</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+</body>
+</html>

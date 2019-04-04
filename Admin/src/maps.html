@@ -1,0 +1,357 @@
+  @@include('./_head.html', {
+    "title": "Maps"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Maps"
+   })
+    <div class="container-fluid">
+      <div class="row">
+       <div class="col-md-12">
+         <h4>Google Maps</h4>
+       </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Markers</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="gmap-marker" class="gmap"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Overlays</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="gmap-overlay" class="gmap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head primary-bg clearfix">
+              <h5 class="content-title pull-left">Context Menu</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="gmap-context" class="gmap"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head danger-bg clearfix">
+              <h5 class="content-title pull-left">Geolocation</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="gmap-geo" class="gmap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+       <div class="col-md-12">
+         <h4 class="m-t-40">Vector Maps</h4>
+       </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">World Map</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="world-map" style="height: 500px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Usa Map</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="usa-map" style="height: 500px;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">France Map</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="france-map" style="height: 500px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Germany Map</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="germany-map" style="height: 500px;"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Brazil Map</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="brazil-map" style="height: 500px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="bower_components/gmaps/gmaps.js"></script>
+  
+  <script src="bower_components/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="bower_components/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="bower_components/jqvmap/dist/maps/jquery.vmap.usa.js"></script>
+  <script src="bower_components/jqvmap/dist/maps/jquery.vmap.france.js"></script>
+  <script src="bower_components/jqvmap/dist/maps/jquery.vmap.germany.js"></script>
+  <script src="bower_components/jqvmap/dist/maps/jquery.vmap.brazil.js"></script>
+
+  
+  @@include('./_commonjs.html')
+  
+  <script>
+   var mapMarker = new GMaps({
+      el: '#gmap-marker',
+      lat: 50.450102,
+      lng: 30.522079
+    });
+    
+    mapMarker.addMarker({
+      lat: 50.450102,
+      lng: 30.522079,
+      infoWindow: {
+        content: '<p>HTML Content</p>'
+      }
+    });
+    
+    mapMarker.addMarker({
+      lat: 50.451202,
+      lng: 30.523179,
+      infoWindow: {
+        content: '<p>HTML Content</p>'
+      }
+    });
+    
+    var mapOverlay = new GMaps({
+      el: '#gmap-overlay',
+      lat: 50.450102,
+      lng: 30.522079
+    });
+    
+    mapOverlay.drawOverlay({
+      lat: 50.450102,
+      lng: 30.522079,
+      content: '<div class="overlay">Kyiv</div>'
+    });
+    
+    var mapContext = new GMaps({
+      el: '#gmap-context',
+      lat: 50.450102,
+      lng: 30.522079
+    });
+    
+    mapContext.setContextMenu({
+      control: 'map',
+      options: [{
+        title: 'Add marker',
+        name: 'add_marker',
+        action: function(e) {
+          this.addMarker({
+            lat: e.latLng.lat(),
+            lng: e.latLng.lng(),
+            title: 'New marker'
+          });
+        }
+      }, {
+        title: 'Center here',
+        name: 'center_here',
+        action: function(e) {
+          this.setCenter(e.latLng.lat(), e.latLng.lng());
+        }
+      }]
+    });
+    
+    var mapGeo = new GMaps({
+      el: '#gmap-geo',
+      lat: 50.450102,
+      lng: 30.522079
+    });
+    
+    GMaps.geolocate({
+      success: function(position) {
+        mapGeo.setCenter(position.coords.latitude, position.coords.longitude);
+      },
+      error: function(error) {
+        alert('Geolocation failed: '+error.message);
+      },
+      not_supported: function() {
+        alert("Your browser does not support geolocation");
+      }
+    });
+    
+
+    $('#world-map').vectorMap({
+      map: 'world_en',
+      backgroundColor: null,
+      color: '#ffffff',
+      hoverOpacity: 0.7,
+      selectedColor: '#009FDA',
+      enableZoom: true,
+      showTooltip: true,
+      color: "#49ceff",
+      borderColor: "#fff",
+      normalizeFunction: 'polynomial'
+    });
+    
+    $('#usa-map').vectorMap({
+      map: 'usa_en',
+      backgroundColor: null,
+      color: '#ffffff',
+      hoverOpacity: 0.7,
+      selectedColor: '#009FDA',
+      enableZoom: true,
+      showTooltip: true,
+      color: "#49ceff",
+      borderColor: "#fff",
+      normalizeFunction: 'polynomial'
+    });
+    
+    $('#france-map').vectorMap({
+      map: 'france_fr',
+      backgroundColor: null,
+      color: '#ffffff',
+      hoverOpacity: 0.7,
+      selectedColor: '#009FDA',
+      enableZoom: true,
+      showTooltip: true,
+      color: "#49ceff",
+      borderColor: "#fff",
+      normalizeFunction: 'polynomial'
+    });
+    
+    $('#germany-map').vectorMap({
+      map: 'germany_en',
+      backgroundColor: null,
+      color: '#ffffff',
+      hoverOpacity: 0.7,
+      selectedColor: '#009FDA',
+      enableZoom: true,
+      showTooltip: true,
+      color: "#49ceff",
+      borderColor: "#fff",
+      normalizeFunction: 'polynomial'
+    });
+    
+    $('#brazil-map').vectorMap({
+      map: 'brazil_br',
+      backgroundColor: null,
+      color: '#ffffff',
+      hoverOpacity: 0.7,
+      selectedColor: '#009FDA',
+      enableZoom: true,
+      showTooltip: true,
+      color: "#49ceff",
+      borderColor: "#fff",
+      normalizeFunction: 'polynomial'
+    });
+
+  </script>
+</body>
+</html>

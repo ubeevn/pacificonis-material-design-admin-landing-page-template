@@ -1,0 +1,517 @@
+  @@include('./_head.html', {
+    "title": "Form Wizard"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Form Wizard"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Basic Wizard</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="basic-wizard" class="form-wizard">
+                <ul class="nav nav-tabs fw-nav">
+                  <li class="active">
+                    <a href="#tab-11" data-toggle="tab">Login</a>
+                  </li>
+                  <li>
+                    <a href="#tab-12" data-toggle="tab">Password</a>
+                  </li>
+                  <li>
+                    <a href="#tab-13" data-toggle="tab">Finish</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="tab-11">
+                    <form>
+                      <div class="form-group">
+                        <label class="control-label">Username</label>
+                        <input type="text" class="form-control" placeholder="Username">
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="tab-12">
+                    <form>
+                      <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <input type="password" class="form-control" value="password">
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Repeat password</label>
+                        <input type="password" class="form-control" value="password">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="tab-13">
+                    <form>
+                      <div class="form-group">
+                        <div class="checkbox checkbox-success">
+                          <label><input type="checkbox">
+                            <i></i></label>
+                            <span class="m-l-5">Hide my email</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="checkbox checkbox-primary">
+                          <label><input type="checkbox">
+                            <i></i></label>
+                            <span class="m-l-5">Subscribe</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="checkbox checkbox-info">
+                          <label><input type="checkbox">
+                            <i></i></label>
+                            <span class="m-l-5">Remember me</span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <ul class="fw-footer pagination pagination-lg wizard m-0">
+                      <li class="button-first"><a class="a-prevent" href=""><i class="zmdi zmdi-more-horiz"></i></a></li>
+                      <li class="previous"><a class="a-prevent" href=""><i class="zmdi zmdi-chevron-left"></i></a></li>
+                      <li class="next"><a class="a-prevent" href=""><i class="zmdi zmdi-chevron-right"></i></a></li>
+                      <li class="button-last"><a class="a-prevent" href=""><i class="zmdi zmdi-more-horiz"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Button Wizard</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="btn-wizard" class="form-wizard">
+                <ul class="nav nav-tabs fw-nav">
+                  <li class="active">
+                    <a href="#tab-21" data-toggle="tab">Login</a>
+                  </li>
+                  <li>
+                    <a href="#tab-22" data-toggle="tab">Password</a>
+                  </li>
+                  <li>
+                    <a href="#tab-23" data-toggle="tab">Finish</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="tab-21">
+                    <form>
+                      <div class="form-group">
+                        <label class="control-label">Username</label>
+                        <input type="text" class="form-control" placeholder="Username">
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="tab-22">
+                    <form>
+                      <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <input type="password" class="form-control" value="password">
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Repeat password</label>
+                        <input type="password" class="form-control" value="password">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="tab-23">
+                    <form>
+                      <div class="form-group">
+                        <div class="checkbox checkbox-success">
+                          <label><input type="checkbox">
+                            <i></i></label>
+                            <span class="m-l-5">Hide my email</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="checkbox checkbox-primary">
+                          <label><input type="checkbox">
+                            <i></i></label>
+                            <span class="m-l-5">Subscribe</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="checkbox checkbox-info">
+                          <label><input type="checkbox">
+                            <i></i></label>
+                            <span class="m-l-5">Remember me</span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="fw-footer">
+                    <div class="pull-right">
+                      <button type="button" class="btn btn-primary m-b-5 next" name="next" value="Next">Next</button>
+                      <button type="button" class="btn btn-primary m-b-5 button-last" name="last" value="Last">Last</button>
+                    </div>
+                    <div class="pull-left">
+                      <button type="button" class="btn btn-primary m-b-5 button-first" name="first">First</button>
+                      <button type="button" class="btn btn-primary m-b-5 previous" name="previous" value="Previous">Previous</button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head primary-bg clearfix">
+              <h5 class="content-title pull-left">Progress Wizard</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div id="progress-wizard" class="form-wizard">
+                <ul class="nav nav-tabs fw-nav">
+                  <li class="active">
+                    <a href="#tab-31" data-toggle="tab">Login</a>
+                  </li>
+                  <li>
+                    <a href="#tab-32" data-toggle="tab">Password</a>
+                  </li>
+                  <li>
+                    <a href="#tab-33" data-toggle="tab">Finish</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div id="progressbar-wizard" class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100" style="width: 26%">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade in active" id="tab-31">
+                    <form>
+                      <div class="form-group">
+                        <label class="control-label">Username</label>
+                        <input type="text" class="form-control" placeholder="Username">
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="tab-32">
+                    <form>
+                      <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <input type="password" class="form-control" value="password">
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Repeat password</label>
+                        <input type="password" class="form-control" value="password">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="tab-33">
+                    <form>
+                      <div class="form-group">
+                        <div class="checkbox checkbox-success">
+                          <label><input type="checkbox">
+                            <i></i></label>
+                            <span class="m-l-5">Hide my email</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="checkbox checkbox-primary">
+                          <label><input type="checkbox">
+                            <i></i></label>
+                            <span class="m-l-5">Subscribe</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="checkbox checkbox-info">
+                          <label><input type="checkbox">
+                            <i></i></label>
+                            <span class="m-l-5">Remember me</span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="fw-footer">
+                    <div class="pull-right">
+                      <button type="button" class="btn btn-primary next" name="next" value="Next">Next</button>
+                    </div>
+                    <div class="pull-left">
+                      <button type="button" class="btn btn-primary previous" name="previous" value="Previous">Previous</button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Wizard with Form validation</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <form id="wizard-form" method="get" novalidate>
+                <div id="root-wizard" class="form-wizard">
+                  <ul class="nav nav-tabs fw-nav">
+                    <li class="active">
+                      <a href="#tab-41" data-toggle="tab">Login</a>
+                    </li>
+                    <li>
+                      <a href="#tab-42" data-toggle="tab">Password</a>
+                    </li>
+                    <li>
+                      <a href="#tab-43" data-toggle="tab">Finish</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab-41">
+                 
+                        <div class="form-group">
+                          <label class="control-label">Username</label>
+                          <input type="text" id="username" name="username" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label">Email</label>
+                          <input type="email" id="emailfield" name="emailfield" class="form-control" placeholder="Email">
+                        </div>
+                 
+                    </div>
+                    <div class="tab-pane fade" id="tab-42">
+                      
+                        <div class="form-group">
+                          <label class="control-label">Password</label>
+                          <input type="password" id="password" name="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label">Repeat password</label>
+                          <input type="password" id="password2" name="password2" class="form-control">
+                        </div>
+                      
+                    </div>
+                    <div class="tab-pane fade" id="tab-43">
+                      
+                        <div class="form-group">
+                          <div class="checkbox checkbox-success">
+                            <label><input type="checkbox">
+                              <i></i></label>
+                              <span class="m-l-5">Hide my email</span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="checkbox checkbox-primary">
+                            <label><input type="checkbox">
+                              <i></i></label>
+                              <span class="m-l-5">Subscribe</span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="checkbox checkbox-info">
+                            <label><input type="checkbox">
+                              <i></i></label>
+                              <span class="m-l-5">Remember me</span>
+                          </div>
+                        </div>
+                      
+                    </div>
+                    <div class="fw-footer">
+                      <div class="pull-right">
+                        <button type="button" class="btn btn-primary next" name="next" value="Next">Next</button>
+                      </div>
+                      <div class="pull-left">
+                        <button type="button" class="btn btn-primary previous" name="previous" value="Previous">Previous</button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  <script src="bower_components/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+  <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+  @@include('./_commonjs.html')
+  
+  <script>
+  $(document).ready(function() {
+    $('#basic-wizard').bootstrapWizard({
+        tabClass: 'fw-nav',
+        'nextSelector': '.next',
+        'previousSelector': '.previous',
+        'firstSelector': '.button-first', 
+        'lastSelector': '.button-last'
+    });
+    
+    $('#btn-wizard').bootstrapWizard({
+        tabClass: 'fw-nav',
+        'nextSelector': '.next',
+        'previousSelector': '.previous',
+        'firstSelector': '.button-first', 
+        'lastSelector': '.button-last'
+    });
+    
+    $('#progress-wizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+        var $total = navigation.find('li').length;
+        var $current = index+1;
+        var $percent = ($current/$total) * 100;
+        $('#progressbar-wizard').find('.progress-bar').css({width:$percent+'%'});
+    },
+    'tabClass': 'fw-nav',
+    'nextSelector': '.next',
+    'previousSelector': '.previous'
+    });
+    
+    $('#root-wizard').bootstrapWizard({
+        'tabClass': 'fw-nav',
+        'nextSelector': '.next',
+        'previousSelector': '.previous',
+        'onNext': function (tab, navigation, index) {
+            var $valid = $("#wizard-form").valid();
+            if (!$valid) {
+                $validator.focusInvalid();
+                return false;
+            }
+        }
+    });
+    
+    var $validator = $("#wizard-form").validate({
+        rules: {
+            emailfield: {
+                required: true,
+                email: true,
+                minlength: 3
+            },
+            username: {
+                required: true,
+                minlength: 3
+            },
+            password: {
+                required: true,
+                minlength: 5
+            },
+            password2: {
+                required: true,
+                minlength: 5,
+                equalTo: "#password"
+            }
+        },
+        messages: {
+            password: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 5 characters long"
+            },
+            password2: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 5 characters long",
+                equalTo: "Please enter the same password as above"
+            }
+        }
+    });
+
+    $('body').on('click', '.a-prevent', function(e){
+        e.preventDefault();
+    });
+  });
+  </script>
+  
+  <script type="text/javascript">
+            $(document).ready(function() {
+//                $('#basicwizard').bootstrapWizard({'tabClass': 'nav nav-tabs navtab-wizard nav-justified bg-muted'});
+
+//                $('#progressbarwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+//                    var $total = navigation.find('li').length;
+//                    var $current = index+1;
+//                    var $percent = ($current/$total) * 100;
+//                    $('#progressbarwizard').find('.bar').css({width:$percent+'%'});
+//                },
+//                'tabClass': 'nav nav-tabs navtab-wizard nav-justified bg-muted'});
+
+//                $('#btnwizard').bootstrapWizard({'tabClass': 'nav nav-tabs navtab-wizard','nextSelector': '.button-next', 'previousSelector': '.button-previous', 'firstSelector': '.button-first', 'lastSelector': '.button-last'});
+
+//                var $validator = $("#commentForm").validate({
+//                    rules: {
+//                        emailfield: {
+//                            required: true,
+//                            email: true,
+//                            minlength: 3
+//                        },
+//                        namefield: {
+//                            required: true,
+//                            minlength: 3
+//                        },
+//                        urlfield: {
+//                            required: true,
+//                            minlength: 3,
+//                            url: true
+//                        }
+//                    }
+//                });
+
+//                $('#rootwizard').bootstrapWizard({
+//                    'tabClass': 'nav nav-tabs navtab-wizard nav-justified bg-muted',
+//                    'onNext': function (tab, navigation, index) {
+//                        var $valid = $("#commentForm").valid();
+//                        if (!$valid) {
+//                            $validator.focusInvalid();
+//                            return false;
+//                        }
+//                    }
+//                });
+            });
+
+        </script>
+</body>
+</html>

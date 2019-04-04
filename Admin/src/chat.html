@@ -1,0 +1,155 @@
+  @@include('./_head.html', {
+    "title": "Chat"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Chat"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box chat-widget">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Chat</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="chat-container" class="big">
+                <div class="content-box p-20 clearfix">
+                  <div class="pull-left text-center">
+                    <img src="img/avatar.png" alt="avatar"><br>
+                    <time>12:04</time>
+                  </div>
+                  <div class="message">
+                    <p><em>Must you with him from him her were more. In eldest be it result should remark vanity square.</em></p>
+                  </div>
+                </div>
+                <div class="content-box p-20 clearfix reply">
+                  <div class="pull-left message">
+                    <p><em>His not get talked effect worthy barton. Household shameless incommode at no objection behaviour.</em></p>
+                    <p><em>Especially do at he possession insensible sympathize boisterous it.</em></p>
+                  </div>
+                  <div class="pull-right text-center">
+                    <img src="img/avatar2.png" alt="avatar"><br>
+                    <time>12:06</time>
+                  </div>
+                </div>
+                <div class="content-box p-20 clearfix">
+                  <div class="pull-left text-center">
+                    <img src="img/avatar.png" alt="avatar"><br>
+                    <time>12:17</time>
+                  </div>
+                  <div class="message">
+                    <p><em>Subjects to ecstatic children he. Could ye leave up as built match.</em></p>
+                  </div>
+                </div>
+                <div class="content-box p-20 clearfix reply">
+                  <div class="pull-left message">
+                    <p><em>Out believe has request not how comfort evident. Up delight cousins we feeling minutes. Genius has looked end piqued spring.</em></p>
+                    <p><em> Old had conviction discretion understood put principles you. Match means keeps round one her quick.</em></p>
+                  </div>
+                  <div class="pull-right text-center">
+                    <img src="img/avatar2.png" alt="avatar"><br>
+                    <time>13:24</time>
+                  </div>
+                </div>
+                <div class="content-box p-20 clearfix">
+                  <div class="pull-left text-center">
+                    <img src="img/avatar.png" alt="avatar"><br>
+                    <time>12:17</time>
+                  </div>
+                  <div class="message">
+                    <p><em>Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation. </em></p>
+                  </div>
+                </div>
+                <div class="content-box p-20 clearfix reply">
+                  <div class="pull-left message">
+                    <p><em>Left till here away at to whom past. Feelings laughing at no wondered repeated provided finished. It acceptance thoroughly my advantages everything as. Are projecting inquietude affronting preference saw who. Marry of am do avoid ample as.</em></p>
+                  </div>
+                  <div class="pull-right text-center">
+                    <img src="img/avatar2.png" alt="avatar"><br>
+                    <time>13:24</time>
+                  </div>
+                </div>
+              </div>
+              <form id="chat">
+                <div class="form-group fg-float pull-left m-r-10">
+                    <input class="form-control" type="text" placeholder="Type message">
+                    <input id="fileinput" type="file" class="hidden">
+                </div>
+                <button id="fileinputbtn" type="button" class="btn btn-info btn-lg icon">
+                  <i class="zmdi zmdi-attachment-alt"></i>
+                </button>
+                <button type="submit" class="btn btn-info btn-lg icon">
+                  <i class="zmdi zmdi-mail-send"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+
+  <script>
+    //Chat
+      $("#chat").on('submit', function (e) {
+        e.preventDefault();
+
+        var message = $(this).find('.form-control'),
+          messageText = message.val();
+
+
+        if (messageText.length >= 3) {
+          // Create Event Entry
+          $("#chat-container .content-box:last").after(
+            '<div class="content-box p-20 clearfix reply"><div class="pull-left message"><p><em>'+ messageText +'</em></p></div><div class="pull-right text-center"><img src="img/avatar2.png" alt="avatar"><br><time>12:04</time></div></div>'
+          );
+
+          var eventObject = {
+            title: $.trim(message.text()),
+
+          };
+          // store the Event Object in the DOM element so we can get to it later
+          message.data('eventObject', eventObject);
+
+          // Reset input
+          message.val('').focus();
+        } else {
+          message.focus();
+        }
+        $("#chat-container").mCustomScrollbar("scrollTo","bottom");
+      });
+      $("#chat-container").mCustomScrollbar({
+        theme: "minimal-dark",
+        scrollInertia: 50,
+        mouseWheel:{ preventDefault: true },
+        callbacks:{
+          onInit: function(){
+            $(this).mCustomScrollbar("scrollTo","bottom");
+          }
+        }
+      });
+
+
+      $('#fileinputbtn').on('click', function() {
+          $('#fileinput').trigger('click');
+      });
+  </script>
+  @@include('./_commonjs.html')
+</body>
+</html>

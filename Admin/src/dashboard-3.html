@@ -1,0 +1,535 @@
+  @@include('./_head.html', {
+    "title": "Dashboard 3"
+  })
+
+  <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.min.css">
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Dashboard 3"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="data-danger">
+              <table id="table" class="display datatable">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Number of Orders</th>
+                    <th>Customer</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Coats Tony Taylor</td>
+                    <td>Mens</td>
+                    <td>3 324</td>
+                    <td class="danger-color">Alisa Kito</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$245</td>
+                  </tr>
+                  <tr>
+                    <td>Nike sneakers</td>
+                    <td>Womans</td>
+                    <td>5 467</td>
+                    <td class="danger-color">John Tredmont</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$560</td>
+                  </tr>
+                  <tr>
+                    <td>Adidas T-shirt</td>
+                    <td>Children</td>
+                    <td>2 546</td>
+                    <td class="danger-color">Kyle Jackson</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$2764</td>
+                  </tr>
+                  <tr>
+                    <td>Jacket</td>
+                    <td>Womans</td>
+                    <td>1 875</td>
+                    <td class="danger-color">CJ Watson</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$1329</td>
+                  </tr>
+                  <tr>
+                    <td>Shirt Diamond</td>
+                    <td>Mens</td>
+                    <td>6 032</td>
+                    <td class="danger-color">Olga Lutchkova</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$896</td>
+                  </tr>
+                  <tr>
+                    <td>Summer Shorts</td>
+                    <td>Children</td>
+                    <td>1 358</td>
+                    <td class="danger-color">Silvia Blake</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$8 907</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head head-with-btns clearfix">
+              <h5 class="content-title text-color pull-left">Number of visitors by country</h5>
+              <div class="functions-btns pull-right">
+                 <button type="button" class="btn btn-info">Week</button>
+                 <button type="button" class="btn btn-default">Month</button>
+                 <button type="button" class="btn btn-default">Year</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="data-white">
+                  <table id="table3" class="display datatable no-stripes">
+                    <thead>
+                      <tr>
+                        <th>Visitors</th>
+                        <th>Country</th>
+                        <th>Last visit</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>863</td>
+                        <td>USA</td>
+                        <td>12.02.2015</td>
+                        <td>27 <span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span></td>
+                      </tr>
+                      <tr>
+                        <td>563</td>
+                        <td>Columbia</td>
+                        <td>12.02.2015</td>
+                        <td>32 <span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span></td>
+                      </tr>
+                      <tr>
+                        <td>663</td>
+                        <td>Ukraine</td>
+                        <td>12.02.2015</td>
+                        <td>24 <span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span></td>
+                      </tr>
+                      <tr>
+                        <td>393</td>
+                        <td>Italy</td>
+                        <td>12.02.2015</td>
+                        <td>25 <span class="zmdi zmdi-long-arrow-up success-color f-s-18"></span></td>
+                      </tr>
+                      <tr>
+                        <td>267</td>
+                        <td>Germany</td>
+                        <td>12.02.2015</td>
+                        <td>16 <span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span></td>
+                      </tr>
+                      <tr>
+                        <td>65</td>
+                        <td>Romania</td>
+                        <td>12.02.2015</td>
+                        <td>33 <span class="zmdi zmdi-long-arrow-down danger-color f-s-18"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div id="map" class="map-widget"></div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-box">
+             <div class="head success-bg clearfix">
+               <h5 class="content-title pull-left">Statistics orders and returns</h5>
+               <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+             </div>
+             <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, mollitia quasi quibusdam.</p>
+               <div class="row">
+                 <div class="col-lg-6 col-md-2 col-sm-9">
+                   <div id="js-legend-4" class="chart-legend rounded vertical"></div>
+                 </div>
+                 <div class="col-lg-6 col-md-10 col-sm-3">
+                   <div class="chartjs-container">
+                    <canvas id="chart-pie-2" height="410"></canvas>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box product-widget clearfix">
+            <img class="img-responsive center-block" src="img/shirt.jpg" alt="image" style="max-height: 348px; min-height: 348px;">
+            <span class="price danger-bg text-uppercase p-absolute t-30 r-0 white">60 eur</span>
+            <div class="p-l-20 p-t-20 p-r-20">
+                <h5 class="text-color zero-m">Man`s shirt "Independence"</h5>
+                <span class="m-r-20">Sizes:</span>
+                <div class="radio radio-danger radio-alt radio-text">
+                  <label><input type="radio" name="radio" id="radio1" value="option13">
+                    <i></i>
+                    <span>XS</span>
+                    </label>
+                </div>
+                <div class="radio radio-danger radio-alt radio-text">
+                  <label><input type="radio" name="radio" id="radio2" value="option13">
+                    <i></i>
+                    <span>S</span>
+                    </label>
+                </div>
+                <div class="radio radio-danger radio-alt radio-text">
+                  <label><input type="radio" name="radio" id="radio3" value="option13">
+                    <i></i>
+                    <span>M</span>
+                    </label>
+                </div>
+                <div class="radio radio-danger radio-alt radio-text">
+                  <label><input type="radio" name="radio" id="radio4" value="option13">
+                    <i></i>
+                    <span>L</span>
+                    </label>
+                </div>
+                <div class="radio radio-danger radio-alt radio-text">
+                  <label><input type="radio" name="radio" id="radio5" value="option13">
+                    <i></i>
+                    <span>XL</span>
+                    </label>
+                </div>
+
+                <br>
+
+                <span class="m-r-20">Color:</span>
+                <div class="radio radio-alt">
+                  <label>
+                    <input type="radio" name="radio2" id="radio8" value="option8">
+                    <i></i>
+                  </label>
+                </div>
+
+                <div class="radio radio-primary radio-alt">
+                  <label>
+                    <input type="radio" name="radio2" id="radio9" value="option9" checked>
+                    <i></i>
+                  </label>
+                </div>
+
+                <div class="radio radio-success radio-alt">
+                  <label>
+                    <input type="radio" name="radio2" id="radio10" value="option10">
+                    <i></i>
+                  </label>
+                </div>
+
+                <div class="radio radio-info radio-alt">
+                  <label>
+                    <input type="radio" name="radio2" id="radio11" value="option11">
+                    <i></i>
+                  </label>
+                </div>
+
+                <div class="radio radio-warning radio-alt">
+                  <label>
+                    <input type="radio" name="radio2" id="radio12" value="option12">
+                    <i></i>
+                  </label>
+                </div>
+
+              <div class="clearfix m-t-15 m-b-10">
+                <div class="rating m-t-5 pull-left">
+                  <span class="zmdi zmdi-star active"></span>
+                  <span class="zmdi zmdi-star active"></span>
+                  <span class="zmdi zmdi-star"></span>
+                  <span class="zmdi zmdi-star"></span>
+                  <span class="zmdi zmdi-star"></span>
+                </div>
+                <button type="button" class="btn btn-info raised pull-right">Add to cart</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box warning-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Orders</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-3" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total orders</p>
+              <p class="zero-m f-30">45,245,659</p>
+            </div>
+          </div>
+          <div class="content-box info-bg white">
+            <div class="head clearfix">
+              <h5 class="content-title pull-left">Returns</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <div id="line-chart-2" class="flot-chart"></div>
+              <p class="text-uppercase zero-m">Total returns</p>
+              <p class="zero-m f-30">573,935</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+            <div class="profile-sidebar profile-widget border-radius shadow-1 m-b-20 text-center">
+              <div class="profile-userpic">
+                <img src="img/profile_user.jpg" class="img-responsive img-circle center-block" alt="user">
+                <span class="online"></span>
+              </div>
+              <div class="profile-usertitle">
+                <div class="name">
+                  Marcus Doe
+                </div>
+                <div class="city">
+                  <i class="zmdi zmdi-pin"></i>San Francisco, CA
+                </div>
+              </div>
+              <div class="profile-activity clearfix m-t-20">
+                <div class="pull-left">
+                  Photos
+                  <br>
+                  <span>56</span>
+                </div>
+                <div class="pull-left">
+                  Followers
+                  <br>
+                  <span>153</span>
+                </div>
+                <div class="pull-right">
+                  Videos
+                  <br>
+                  <span>18</span>
+                </div>
+              </div>
+              <a href="profile.html" class="btn btn-danger btn-link raised m-t-20 m-b-20">Follow</a>
+            </div>
+          </div>
+        <div class="col-md-4">
+            <div class="content-box product-widget">
+              <img class="img-responsive center-block" src="img/watch.jpg" alt="image" style="max-height: 310px;">
+              <span class="price danger-bg text-uppercase p-absolute t-30 r-0 white">160 eur</span>
+              <div class="head head-with-btns clearfix">
+                <h5 class="content-title text-color pull-left">Man`s watch</h5>
+                <button type="button" class="btn btn-info raised pull-right">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-4">
+            <div class="content-box splited product-widget">
+             <div id="gmap" class="gmap"></div>
+              <div class="head">
+                <h5 class="content-title text-color">Map</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+
+  <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-responsive/js/dataTables.responsive.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+
+  <script src="bower_components/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="bower_components/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="bower_components/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+
+  <script src="bower_components/Chart.js/Chart.js"></script>
+  <script src="bower_components/flot/jquery.flot.js"></script>
+  <script src="bower_components/flot/jquery.flot.resize.js"></script>
+  <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
+
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="bower_components/gmaps/gmaps.js"></script>
+
+  <script>
+    var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+    var pieData2 = [
+        {
+            value: 260,
+            color: "rgb(139, 195, 74)",
+            highlight: "rgba(139, 195, 74, 0.8)",
+            label: "Orders"
+        },
+        {
+            value: 80,
+            color:"rgb(3, 169, 244)",
+            highlight: "rgba(3, 169, 244, 0.8)",
+            label: "Returns"
+        }
+
+    ];
+
+
+  window.onload = function(){
+      var ctx4 = document.getElementById("chart-pie-2").getContext("2d");
+      var myPie2 = new Chart(ctx4).Pie(pieData2, {
+        segmentStrokeWidth : 5,
+        percentageInnerCutout : 0
+      });
+
+      document.getElementById('js-legend-4').innerHTML = myPie2.generateLegend();
+
+  }
+
+
+
+  </script>
+
+  <script>
+  $(function () {
+  /* Make some random data for the Chart*/
+
+      var d2 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d2.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      var d3 = [];
+      for (var i = 0; i <= 10; i += 1) {
+          d3.push([i, parseInt(Math.random() * 100)]);
+      }
+
+      /* Chart Options */
+
+      var options = {
+          series: {
+            shadowSize: 0,
+            label: "Qty",
+            lines: {
+                show: true,
+                lineWidth: 2
+            },
+            points: {
+              show: true
+            }
+          },
+          grid: {
+            margin: 10,
+            show: false,
+            hoverable: true,
+            clickable: true
+          },
+          yaxis: {
+              max: 100,
+              min: 0
+          },
+          legend: {
+            show: false
+          },
+          tooltip: {
+            show: true,
+            cssClass: "flot-tooltip",
+            defaultTheme: false,
+            content: '%y.2',
+            shifts: {
+                x: 1,
+                y: -45
+            }
+          }
+      };
+
+
+
+      /* Let's create the chart */
+     if ($("#line-chart-2")[0]) {
+          $.plot($("#line-chart-2"), [
+              {data: d2, color: '#fff' }
+          ], options);
+      }
+
+      if ($("#line-chart-3")[0]) {
+          $.plot($("#line-chart-3"), [
+              {data: d3, color: '#fff' }
+          ], options);
+      }
+
+  });
+  </script>
+
+    <script>
+    $('#table').DataTable({
+     "dom": '<"toolbar tool"><"clear-filter">frtip',
+      info: false,
+      paging: false,
+      responsive: true,
+      "oLanguage": { "sSearch": "" }
+    });
+
+    $("div.tool").html('<h5 class="zero-m">Top shopping cart</h5>');
+
+    $('.dataTables_filter input').attr("placeholder", "Search");
+
+    $('#table3').DataTable({
+      info: false,
+      paging: false,
+      filter: false,
+      responsive: true
+    });
+
+    $('#map').vectorMap({
+      map: 'world_en',
+      backgroundColor: null,
+      color: '#ffffff',
+      hoverOpacity: 0.7,
+      selectedColor: '#666666',
+      enableZoom: true,
+      showTooltip: true,
+      values: sample_data,
+      scaleColors: ['#d1e2f5', '#0f486f'],
+      normalizeFunction: 'polynomial'
+    });
+
+
+
+    var map = new GMaps({
+      el: '#gmap',
+      lat: 50.450102,
+      lng: 30.522079
+    });
+  </script>
+
+  @@include('./_commonjs.html')
+</body>
+</html>

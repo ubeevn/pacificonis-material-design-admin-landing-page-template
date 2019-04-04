@@ -1,0 +1,473 @@
+  @@include('./_head.html', {
+    "title": "Invoice List"
+  })
+
+  <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.min.css">
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Invoice List"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="data-info">
+            <table id="table2" class="display datatable">
+              <thead>
+                <tr>
+                  <th>№ of invoice</th>
+                  <th>Details</th>
+                  <th>For company</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>001</td>
+                  <td>Mens goods</td>
+                  <td>Tiger Art Studio</td>
+                  <td>28.01.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$245</td>
+                </tr>
+                <tr>
+                  <td>002</td>
+                  <td>Womans goods</td>
+                  <td>TDesign</td>
+                  <td>12.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>003</td>
+                  <td>Children goods</td>
+                  <td>Onlicon</td>
+                  <td>17.02.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>004</td>
+                  <td>Womans goods</td>
+                  <td>Ingay</td>
+                  <td>11.12.2015</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>005</td>
+                  <td>Mens goods</td>
+                  <td>Mentor</td>
+                  <td>06.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>006</td>
+                  <td>Children goods</td>
+                  <td>Ingay</td>
+                  <td>15.02.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr>
+                <tr>
+                  <td>007</td>
+                  <td>Mens goods</td>
+                  <td>Tiger Art Studio</td>
+                  <td>28.01.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$245</td>
+                </tr>
+                <tr>
+                  <td>008</td>
+                  <td>Womans goods</td>
+                  <td>TDesign</td>
+                  <td>12.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>009</td>
+                  <td>Children goods</td>
+                  <td>Onlicon</td>
+                  <td>17.02.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>010</td>
+                  <td>Womans goods</td>
+                  <td>Ingay</td>
+                  <td>11.12.2015</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>011</td>
+                  <td>Mens goods</td>
+                  <td>Mentor</td>
+                  <td>06.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>012</td>
+                  <td>Children goods</td>
+                  <td>Ingay</td>
+                  <td>15.02.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr>
+                <tr>
+                  <td>013</td>
+                  <td>Mens goods</td>
+                  <td>Tiger Art Studio</td>
+                  <td>28.01.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$245</td>
+                </tr>
+                <tr>
+                  <td>014</td>
+                  <td>Womans goods</td>
+                  <td>TDesign</td>
+                  <td>12.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>015</td>
+                  <td>Children goods</td>
+                  <td>Onlicon</td>
+                  <td>17.02.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>016</td>
+                  <td>Womans goods</td>
+                  <td>Ingay</td>
+                  <td>11.12.2015</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>017</td>
+                  <td>Mens goods</td>
+                  <td>Mentor</td>
+                  <td>06.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>018</td>
+                  <td>Children goods</td>
+                  <td>Ingay</td>
+                  <td>15.02.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr>
+                <tr>
+                  <td>019</td>
+                  <td>Mens goods</td>
+                  <td>Tiger Art Studio</td>
+                  <td>28.01.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$245</td>
+                </tr>
+                <tr>
+                  <td>020</td>
+                  <td>Womans goods</td>
+                  <td>TDesign</td>
+                  <td>12.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>021</td>
+                  <td>Children goods</td>
+                  <td>Onlicon</td>
+                  <td>17.02.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>022</td>
+                  <td>Womans goods</td>
+                  <td>Ingay</td>
+                  <td>11.12.2015</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>023</td>
+                  <td>Mens goods</td>
+                  <td>Mentor</td>
+                  <td>06.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>024</td>
+                  <td>Children goods</td>
+                  <td>Ingay</td>
+                  <td>15.02.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr><tr>
+                  <td>025</td>
+                  <td>Mens goods</td>
+                  <td>Tiger Art Studio</td>
+                  <td>28.01.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$245</td>
+                </tr>
+                <tr>
+                  <td>026</td>
+                  <td>Womans goods</td>
+                  <td>TDesign</td>
+                  <td>12.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>027</td>
+                  <td>Children goods</td>
+                  <td>Onlicon</td>
+                  <td>17.02.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>028</td>
+                  <td>Womans goods</td>
+                  <td>Ingay</td>
+                  <td>11.12.2015</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>029</td>
+                  <td>Mens goods</td>
+                  <td>Mentor</td>
+                  <td>06.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>030</td>
+                  <td>Children goods</td>
+                  <td>Ingay</td>
+                  <td>15.02.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr>
+                <tr>
+                  <td>031</td>
+                  <td>Womans goods</td>
+                  <td>TDesign</td>
+                  <td>12.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>032</td>
+                  <td>Children goods</td>
+                  <td>Onlicon</td>
+                  <td>17.02.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>033</td>
+                  <td>Womans goods</td>
+                  <td>Ingay</td>
+                  <td>11.12.2015</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>034</td>
+                  <td>Mens goods</td>
+                  <td>Mentor</td>
+                  <td>06.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>035</td>
+                  <td>Children goods</td>
+                  <td>Ingay</td>
+                  <td>15.02.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr><tr>
+                  <td>036</td>
+                  <td>Mens goods</td>
+                  <td>Tiger Art Studio</td>
+                  <td>28.01.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$245</td>
+                </tr>
+                <tr>
+                  <td>037</td>
+                  <td>Womans goods</td>
+                  <td>TDesign</td>
+                  <td>12.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>038</td>
+                  <td>Children goods</td>
+                  <td>Onlicon</td>
+                  <td>17.02.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>039</td>
+                  <td>Womans goods</td>
+                  <td>Ingay</td>
+                  <td>11.12.2015</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>040</td>
+                  <td>Mens goods</td>
+                  <td>Mentor</td>
+                  <td>06.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>041</td>
+                  <td>Children goods</td>
+                  <td>Ingay</td>
+                  <td>15.02.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr>
+                <tr>
+                  <td>042</td>
+                  <td>Womans goods</td>
+                  <td>TDesign</td>
+                  <td>12.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>043</td>
+                  <td>Children goods</td>
+                  <td>Onlicon</td>
+                  <td>17.02.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>044</td>
+                  <td>Womans goods</td>
+                  <td>Ingay</td>
+                  <td>11.12.2015</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>045</td>
+                  <td>Mens goods</td>
+                  <td>Mentor</td>
+                  <td>06.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>046</td>
+                  <td>Children goods</td>
+                  <td>Ingay</td>
+                  <td>15.02.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr><tr>
+                  <td>047</td>
+                  <td>Mens goods</td>
+                  <td>Tiger Art Studio</td>
+                  <td>28.01.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$245</td>
+                </tr>
+                <tr>
+                  <td>048</td>
+                  <td>Womans goods</td>
+                  <td>TDesign</td>
+                  <td>12.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$560</td>
+                </tr>
+                <tr>
+                  <td>049</td>
+                  <td>Children goods</td>
+                  <td>Onlicon</td>
+                  <td>17.02.2016</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$2764</td>
+                </tr>
+                <tr>
+                  <td>050</td>
+                  <td>Womans goods</td>
+                  <td>Ingay</td>
+                  <td>11.12.2015</td>
+                  <td><span class="label label-primary">Paid</span></td>
+                  <td>$1329</td>
+                </tr>
+                <tr>
+                  <td>051</td>
+                  <td>Mens goods</td>
+                  <td>Mentor</td>
+                  <td>06.01.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$896</td>
+                </tr>
+                <tr>
+                  <td>052</td>
+                  <td>Children goods</td>
+                  <td>Ingay</td>
+                  <td>15.02.2016</td>
+                  <td><span class="label label-default">Closed</span></td>
+                  <td>$8 907</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-responsive/js/dataTables.responsive.js"></script>
+  <script>
+    $('#table2').DataTable({
+     "dom": '<"toolbar tool2"><"clear-filter">frtip',
+      info: false,
+      responsive: true,
+      "lengthMenu": [[20]],
+      "oLanguage": { "sSearch": "" }
+    });
+
+    $("div.tool2").html('<h5 class="zero-m">Invoice List</h5>');
+
+    $('.dataTables_filter input').attr("placeholder", "Search");
+  </script>
+  @@include('./_commonjs.html')
+</body>
+</html>

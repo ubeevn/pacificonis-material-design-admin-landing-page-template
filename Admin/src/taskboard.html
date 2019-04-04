@@ -1,0 +1,388 @@
+  @@include('./_head.html', {
+    "title": "Taskboard"
+  })
+
+  <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Taskboard"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">To do</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-warning pull-left m-t-10">High</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="John Mayer"><img class="img-circle thumb-sm" src="img/contacts/3.png" alt="user"></a>
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="Melisa Moore"><img class="img-circle thumb-sm" src="img/contacts/7.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">Improve contact form</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="35 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="12 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-danger pull-left m-t-10">Urgent</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="John Kavinsky"><img class="img-circle thumb-sm" src="img/contacts/4.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">Financial report</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="11 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="4 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-info pull-left m-t-10">Low</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="Peter Crouch"><img class="img-circle thumb-sm" src="img/contacts/2.png" alt="user"></a>
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="Melisa Moore"><img class="img-circle thumb-sm" src="img/contacts/7.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">Upload new photos</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="3 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="44 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-warning pull-left m-t-10">High</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="Olga Luchkova"><img class="img-circle thumb-sm" src="img/contacts/5.png" alt="user"></a>
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="Maria Candal"><img class="img-circle thumb-sm" src="img/contacts/6.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">New design fo ios app</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="78 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="6 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-warning pull-left m-t-10">High</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="John Petrucci"><img class="img-circle thumb-sm" src="img/contacts/4.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">Android app</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="58 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="41 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <button type="button" class="btn btn-success raised pull-right" data-toggle="modal" data-target="#modal-task">Add new</button>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">In progress</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-info pull-left m-t-10">Low</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="John Petrucci"><img class="img-circle thumb-sm" src="img/contacts/4.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">Update contact information</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="2 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="1 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-warning pull-left m-t-10">High</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="Helen Doe"><img class="img-circle thumb-sm" src="img/contacts/1.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">Upgrade all computers</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="3 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="2 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <button type="button" class="btn btn-success raised pull-right" data-toggle="modal" data-target="#modal-task">Add new</button>
+              <div class="clearfix"></div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="content-box">
+            <div class="head primary-bg clearfix">
+              <h5 class="content-title pull-left">Done</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-warning pull-left m-t-10">High</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="John Petrucci"><img class="img-circle thumb-sm" src="img/contacts/2.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">Send invitations</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="2 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="1 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-info pull-left m-t-10">Low</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="Helen Doe"><img class="img-circle thumb-sm" src="img/contacts/5.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">Translate all articles</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="3 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="2 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <div class="task-item content-box m-b-20">
+               <div class="clearfix">
+                 <span class="label label-danger pull-left m-t-10">Urgent</span>
+                 <div class="pull-right">
+                   <a href="#" class="di-block" data-toggle="tooltip" data-placement="top" title="Helen Doe"><img class="img-circle thumb-sm" src="img/contacts/3.png" alt="user"></a>
+                 </div>
+               </div>
+                <div class="checkbox m-t-5">
+                  <label><input type="checkbox">
+                    <i></i><span class="p-l-10 f-w-500">Sign contract</span></label>
+                </div>
+
+                <br>
+
+                <div class="p-l-35 m-t-5 f-s-18">
+                  <a href="#" class="text-color m-r-20" data-toggle="tooltip" data-placement="top" title="3 Comments"><i class="zmdi zmdi-comment-text-alt"></i></a>
+
+                  <a href="#" class="text-color" data-toggle="tooltip" data-placement="top" title="2 Attachments"><i class="zmdi zmdi-file-text"></i></a>
+                </div>
+
+              </div>
+
+              <button type="button" class="btn btn-success raised pull-right" data-toggle="modal" data-target="#modal-task">Add new</button>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-task" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add new</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                      <label class="control-label">Task name</label>
+                      <input type="text" class="form-control">
+                    </div>
+
+                    <div class="form-horizontal">
+                      <div class="form-group">
+                        <div class="col-sm-6">
+                          <label class="control-label">Assign to</label>
+                          <input type="text" class="form-control">
+                        </div>
+
+                        <div class="col-sm-6">
+                          <label class="control-label">Priority</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Start date</label>
+                        <div class="input-group date">
+                            <span class="input-group-addon">
+                                <span class="zmdi zmdi-calendar"></span>
+                            </span>
+                            <input id="datetimepicker1" type="text" class="form-control"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Due date</label>
+                        <div class="input-group date">
+                            <span class="input-group-addon">
+                                <span class="zmdi zmdi-calendar"></span>
+                            </span>
+                            <input id="datetimepicker2" type="text" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info m-b-5">Save changes</button>
+                    <button type="button" class="btn btn-default m-b-5" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+  <script src="js/jqueri_ui_custom/jquery-ui.min.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script>
+    $(".content").sortable();
+
+    $("#datetimepicker1").datetimepicker({
+            icons: {
+            time: "zmdi zmdi-time",
+            date: "zmdi zmdi-calendar",
+            up: "zmdi zmdi-chevron-up",
+            down: "zmdi zmdi-chevron-down",
+            previous: "zmdi zmdi-chevron-left",
+            next: "zmdi zmdi-chevron-right"
+        }
+    });
+
+    $("#datetimepicker2").datetimepicker({
+            icons: {
+            time: "zmdi zmdi-time",
+            date: "zmdi zmdi-calendar",
+            up: "zmdi zmdi-chevron-up",
+            down: "zmdi zmdi-chevron-down",
+            previous: "zmdi zmdi-chevron-left",
+            next: "zmdi zmdi-chevron-right"
+        }
+    });
+  </script>
+</body>
+</html>

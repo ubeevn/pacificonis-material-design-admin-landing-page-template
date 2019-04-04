@@ -1,0 +1,276 @@
+  @@include('./_head.html', {
+    "title": "DataTables"
+  })
+  <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.min.css">
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "DataTables"
+   })
+    <div class="container-fluid">
+     <div class="row">
+        <div class="col-lg-12">
+            <div class="data-info">
+              <table id="table1" class="display datatable no-stripes table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Number of Orders</th>
+                    <th>Customer</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="info-color">Coats Tony Taylor</td>
+                    <td>Mens</td>
+                    <td>3 324</td>
+                    <td>Alisa Kito</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$245</td>
+                  </tr>
+                  <tr>
+                    <td class="info-color">Nike sneakers</td>
+                    <td>Womans</td>
+                    <td>5 467</td>
+                    <td>John Tredmont</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$560</td>
+                  </tr>
+                  <tr>
+                    <td class="info-color">Adidas T-shirt</td>
+                    <td>Children</td>
+                    <td>2 546</td>
+                    <td>Kyle Jackson</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$2764</td>
+                  </tr>
+                  <tr>
+                    <td class="info-color">Jacket</td>
+                    <td>Womans</td>
+                    <td>1 875</td>
+                    <td>CJ Watson</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$1329</td>
+                  </tr>
+                  <tr>
+                    <td class="info-color">Shirt Diamond</td>
+                    <td>Mens</td>
+                    <td>6 032</td>
+                    <td>Olga Lutchkova</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$896</td>
+                  </tr>
+                  <tr>
+                    <td class="info-color">Summer Shorts</td>
+                    <td>Children</td>
+                    <td>1 358</td>
+                    <td>Silvia Saint</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$8 907</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="data-danger">
+              <table id="table2" class="display datatable">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Number of Orders</th>
+                    <th>Customer</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Coats Tony Taylor</td>
+                    <td>Mens</td>
+                    <td>3 324</td>
+                    <td class="danger-color">Alisa Kito</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$245</td>
+                  </tr>
+                  <tr>
+                    <td>Nike sneakers</td>
+                    <td>Womans</td>
+                    <td>5 467</td>
+                    <td class="danger-color">John Tredmont</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$560</td>
+                  </tr>
+                  <tr>
+                    <td>Adidas T-shirt</td>
+                    <td>Children</td>
+                    <td>2 546</td>
+                    <td class="danger-color">Kyle Jackson</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$2764</td>
+                  </tr>
+                  <tr>
+                    <td>Jacket</td>
+                    <td>Womans</td>
+                    <td>1 875</td>
+                    <td class="danger-color">CJ Watson</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$1329</td>
+                  </tr>
+                  <tr>
+                    <td>Shirt Diamond</td>
+                    <td>Mens</td>
+                    <td>6 032</td>
+                    <td class="danger-color">Olga Lutchkova</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$896</td>
+                  </tr>
+                  <tr>
+                    <td>Summer Shorts</td>
+                    <td>Children</td>
+                    <td>1 358</td>
+                    <td class="danger-color">Silvia Blake</td>
+                    <td><span class="label label-default">Closed</span></td>
+                    <td>$8 907</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="content-box">
+              <div class="head head-with-btns clearfix">
+                <h5 class="content-title text-color pull-left">Basic example</h5>
+                <div class="functions-btns pull-right">
+                   <button type="button" class="btn btn-info">Week</button>
+                   <button type="button" class="btn btn-default">Month</button>
+                   <button type="button" class="btn btn-default">Year</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="data-white">
+                    <table id="table3" class="display datatable no-stripes">
+                      <thead>
+                        <tr>
+                          <th>Visitors</th>
+                          <th>Country</th>
+                          <th>Last visit</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>863</td>
+                          <td>USA</td>
+                          <td>12.02.2015</td>
+                          <td>27 <span class="zmdi zmdi-long-arrow-up success-color f-18"></span></td>
+                        </tr>
+                        <tr>
+                          <td>563</td>
+                          <td>Columbia</td>
+                          <td>12.02.2015</td>
+                          <td>32 <span class="zmdi zmdi-long-arrow-down danger-color f-18"></span></td>
+                        </tr>
+                        <tr>
+                          <td>663</td>
+                          <td>Ukraine</td>
+                          <td>12.02.2015</td>
+                          <td>24 <span class="zmdi zmdi-long-arrow-up success-color f-18"></span></td>
+                        </tr>
+                        <tr>
+                          <td>393</td>
+                          <td>Italy</td>
+                          <td>12.02.2015</td>
+                          <td>25 <span class="zmdi zmdi-long-arrow-up success-color f-18"></span></td>
+                        </tr>
+                        <tr>
+                          <td>267</td>
+                          <td>Germany</td>
+                          <td>12.02.2015</td>
+                          <td>16 <span class="zmdi zmdi-long-arrow-down danger-color f-18"></span></td>
+                        </tr>
+                        <tr>
+                          <td>65</td>
+                          <td>Romania</td>
+                          <td>12.02.2015</td>
+                          <td>33 <span class="zmdi zmdi-long-arrow-down danger-color f-18"></span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div id="map" class="map-widget"></div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-responsive/js/dataTables.responsive.js"></script>
+  <script src="bower_components/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="bower_components/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="bower_components/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+
+  @@include('./_commonjs.html')
+
+  <script>
+    //Data Tables
+    $('#table1').DataTable({
+     "dom": '<"toolbar tool1">rtip',
+      info: false,
+      paging: false,
+      responsive: true,
+    });
+
+    $("div.tool1").html('<h5 class="zero-m">Info table</h5>');
+
+    $('#table2').DataTable({
+     "dom": '<"toolbar tool2"><"clear-filter">frtip',
+      info: false,
+      paging: false,
+      responsive: true,
+      "oLanguage": { "sSearch": "" }
+    });
+
+    $("div.tool2").html('<h5 class="zero-m">Danger table</h5>');
+
+    $('.dataTables_filter input').attr("placeholder", "Search");
+
+    $('#table3').DataTable({
+      info: false,
+      paging: false,
+      filter: false,
+      responsive: true
+    });
+
+    $('#map').vectorMap({
+      map: 'world_en',
+      backgroundColor: null,
+      color: '#ffffff',
+      hoverOpacity: 0.7,
+      selectedColor: '#666666',
+      enableZoom: true,
+      showTooltip: true,
+      values: sample_data,
+      scaleColors: ['#d1e2f5', '#0f486f'],
+      normalizeFunction: 'polynomial'
+    });
+  </script>
+</body>
+</html>

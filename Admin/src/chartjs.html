@@ -1,0 +1,500 @@
+  @@include('./_head.html', {
+    "title": "Chart.js"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Chart.js"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head head-with-btns clearfix">
+              <h5 class="content-title text-color pull-left">Total sales statistics</h5>
+              <div class="functions-btns pull-right">
+                <button type="button" class="btn btn-info">
+                 Week
+                </button>
+                <button type="button" class="btn btn-default">
+                 Month
+                </button>
+                <button type="button" class="btn btn-default">
+                 Year
+                </button>
+              </div>
+            </div>
+             <div class="content">
+               <div id="js-legend" class="chart-legend"></div>
+               <div class="chartjs-container full-page-chart">
+                <canvas id="chart-line"></canvas>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+       <div class="col-md-6">
+          <div class="content-box">
+             <div class="head head-with-btns primary-bg clearfix">
+               <h5 class="content-title pull-left">Best selling products</h5>
+               <div class="functions-btns pull-right">
+                 <button type="button" class="btn btn-warning raised">Today</button>
+                 <button type="button" class="btn btn-default">Week</button>
+                 <button type="button" class="btn btn-default">Month</button>
+               </div>
+             </div>
+             <div class="content">
+                <div class="row">
+                 <div class="col-sm-7">
+                   <div class="chartjs-container">
+                    <canvas id="chart-bar" height="200"></canvas>
+                   </div>
+                 </div>
+                 <div class="col-sm-5">
+                   <div id="js-legend-bar" class="chart-legend rounded vertical"></div>
+                 </div>
+                </div>
+                <!-- Used for demo purposes. Remove if it is needed-->
+                <div class="visible-lg visible-md" style="height: 20px;"></div>
+             </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content-box">
+            <div class="head clearfix">
+              <h5 class="content-title text-color pull-left">Statistics order status</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn text-color" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn text-color" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn text-color" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+             <div class="content">
+               <div class="row">
+                 <div class="col-sm-6">
+                   <div id="js-legend-3" class="chart-legend rounded vertical"></div>
+                 </div>
+                 <div class="col-sm-6">
+                   <div class="chartjs-container">
+                    <canvas id="chart-pie" height="250"></canvas>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-box">
+            <div class="head clearfix">
+              <h5 class="content-title text-color pull-left">Using the methods of payment</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn text-color" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn text-color" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn text-color" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+            <div class="p-l-20">
+              <button type="button" class="btn btn-info m-b-5">
+               Week
+              </button>
+              <button type="button" class="btn btn-default m-b-5">
+               Month
+              </button>
+              <button type="button" class="btn btn-default m-b-5">
+               Year
+              </button>
+            </div>
+           <div class="content">
+             <div class="chartjs-container">
+               <canvas id="chart-radar" height="205"></canvas>
+             </div>
+           </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box">
+             <div class="head success-bg clearfix">
+               <h5 class="content-title pull-left">Statistics orders and returns</h5>
+               <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+             </div>
+             <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, mollitia quasi quibusdam.</p>
+               <div class="row">
+                 <div class="col-sm-6">
+                   <div id="js-legend-4" class="chart-legend rounded vertical"></div>
+                 </div>
+                 <div class="col-sm-6">
+                   <div class="chartjs-container">
+                    <canvas id="chart-pie-2" height="410"></canvas>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-box">
+             <div class="head warning-bg clearfix">
+               <h5 class="content-title pull-left">Currency</h5>
+               <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+             </div>
+             <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, mollitia quasi quibusdam.</p>
+               <div class="row">
+                 <div class="col-sm-6">
+                   <div id="js-legend-5" class="chart-legend rounded vertical"></div>
+                 </div>
+                 <div class="col-sm-6">
+                   <div class="chartjs-container">
+                    <canvas id="chart-pie-3" height="410"></canvas>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+             <div class="head head-with-btns clearfix">
+              <h5 class="content-title text-color pull-left">Compare carts and orders</h5>
+              <div class="functions-btns pull-right">
+                <button type="button" class="btn btn-warning">
+                 Week
+                </button>
+                <button type="button" class="btn btn-default">
+                 Month
+                </button>
+                <button type="button" class="btn btn-default">
+                 Year
+                </button>
+              </div>
+             </div>
+             <div class="content">
+               <div id="js-legend-2" class="chart-legend"></div>
+               <div class="chartjs-container full-page-chart">
+                <canvas id="chart-line-2" height="65"></canvas>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+  @@include('./_footer.html')
+  <script src="bower_components/Chart.js/Chart.js"></script>
+
+  @@include('./_commonjs.html')
+
+  <script>
+    var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+    var lineChartData = {
+        labels : ["MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY"],
+        datasets : [
+            {
+                label: "Mens goods",
+                fillColor : "rgba(255, 193, 7, 0.5)",
+                strokeColor : "#fff",
+                pointColor : "rgba(255, 193, 7, 1)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(255, 193, 7, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+            {
+                label: "Women goods",
+                fillColor : "rgba(244, 67, 54, 0.5)",
+                strokeColor : "#fff",
+
+                pointColor : "rgba(244, 67, 54, 1)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(244, 67, 54, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+            {
+                label: "Children goods",
+                fillColor : "rgba(33, 150, 243, 0.7)",
+                strokeColor : "#fff",
+                pointColor : "rgba(33, 150, 243, 1)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(33, 150, 243, 1)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            }
+        ]
+
+    }
+
+    var lineChartData2 = {
+        labels : ["MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY"],
+        datasets : [
+            {
+                label: "Products added to cart",
+                fillColor : "rgba(3, 169, 244, 0.65)",
+                strokeColor : "#fff",
+                pointColor : "rgba(3, 169, 244, 0.65)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(3, 169, 244, 0.65)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            },
+            {
+                label: "Actually purchased goods",
+                fillColor : "rgba(139, 195, 74, 0.65)",
+                strokeColor : "#fff",
+                pointColor : "rgba(139, 195, 74, 0.65)",
+                pointStrokeColor : "#fff",
+                pointHighlightFill : "rgba(139, 195, 74, 0.65)",
+                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+            }
+        ]
+
+    }
+
+    var radarChartData = {
+    labels: ["YANDEX MONEY", "VISA", "PAYPAL", "MASTERCARD", "WEBMONEY", "QIWI"],
+    datasets: [
+      {
+        fillColor: "#8BC34A",
+        pointColor: "#8BC34A",
+        strokeColor: "#72a13d",
+        data: [65,59,90,81,56,55]
+      },
+      {
+        fillColor: "#673AB7",
+        pointColor: "#673AB7",
+        strokeColor: "#563098",
+        data: [28,48,40,19,96,27]
+      }
+    ]
+  };
+
+    var pieData = [
+        {
+            value: 260,
+            color: "rgb(76, 175, 80)",
+            highlight: "rgba(76, 175, 80, 0.8)",
+            label: "Coats Tony Taylor"
+        },
+        {
+            value: 50,
+            color:"rgb(244, 67, 54)",
+            highlight: "rgba(244, 67, 54, 0.8)",
+            label: "Sketchers sneakers"
+        },
+        {
+            value: 100,
+            color: "rgb(255, 193, 7)",
+            highlight: "rgba(255, 193, 7, 0.8)",
+            label: "Sweater Deer"
+        },
+        {
+            value: 40,
+            color: "rgb(33, 150, 243)",
+            highlight: "rgba(33, 150, 243, 0.8)",
+            label: "Jacket"
+        },
+        {
+            value: 120,
+            color: "rgb(103, 58, 183)",
+            highlight: "rgba(103, 58, 183, 0.8)",
+            label: "Shirt Diamont"
+        }
+
+    ];
+
+    var pieData2 = [
+        {
+            value: 260,
+            color: "rgb(139, 195, 74)",
+            highlight: "rgba(139, 195, 74, 0.8)",
+            label: "Orders"
+        },
+        {
+            value: 80,
+            color:"rgb(3, 169, 244)",
+            highlight: "rgba(3, 169, 244, 0.8)",
+            label: "Returns"
+        }
+
+    ];
+    
+    var pieData3 = [
+        {
+            value: 160,
+            color:"rgb(244, 67, 54)",
+            highlight: "rgba(244, 67, 54, 0.8)",
+            label: "Dollars"
+        },
+        {
+            value: 180,
+            color: "rgb(103, 58, 183)",
+            highlight: "rgba(103, 58, 183, 0.8)",
+            label: "Euro"
+        }
+
+    ];
+
+    var barChartData = {
+    labels : ["TODAY"],
+    datasets : [
+      {
+        fillColor : "rgba(3, 169, 244, 0.65)",
+        strokeColor : "rgba(3, 169, 244, 0.65)",
+        highlightFill: "rgba(3, 169, 244, 0.75)",
+        highlightStroke: "rgba(3, 169, 244, 1)",
+                label: "Coats Tony Taylor",
+        data : [randomScalingFactor()]			},
+      {
+        fillColor : "rgba(139, 195, 74, 0.65)",
+        strokeColor : "rgba(139, 195, 74, 0.65)",
+        highlightFill : "rgba(139, 195, 74, 0.75)",
+        highlightStroke : "rgba(139, 195, 74, 1)",
+                label: "Sketchers sneakers",
+        data : [randomScalingFactor()]			},
+      {
+        fillColor : "rgba(244, 67, 54, 0.65)",
+        strokeColor : "rgba(244, 67, 54, 0.65)",
+        highlightFill : "rgba(244, 67, 54, 0.75)",
+        highlightStroke : "rgba(244, 67, 54, 1)",
+                label: "Sweater Deer",
+        data : [randomScalingFactor()]
+      },
+      {
+        fillColor : "rgba(255, 193, 7, 0.65)",
+        strokeColor : "rgba(255, 193, 7, 0.65)",
+        highlightFill : "rgba(255, 193, 7, 0.75)",
+        highlightStroke : "rgba(255, 193, 7, 1)",
+                label: "Jacket",
+        data : [randomScalingFactor()]
+      },
+      {
+        fillColor : "rgba(103, 58, 183, 0.65)",
+        strokeColor : "rgba(103, 58, 183, 0.65)",
+        highlightFill : "rgba(103, 58, 183, 0.75)",
+        highlightStroke : "rgba(103, 58, 183, 1)",
+                label: "Shirt Diamont",
+        data : [randomScalingFactor()]
+      },
+      {
+        fillColor : "rgba(205, 220, 57, 0.65)",
+        strokeColor : "rgba(205, 220, 57, 0.65)",
+        highlightFill : "rgba(205, 220, 57, 0.75)",
+        highlightStroke : "rgba(205, 220, 57, 1)",
+                label: "Shoos",
+        data : [randomScalingFactor()]
+      },
+      {
+        fillColor : "rgba(158, 158, 158, 0.65)",
+        strokeColor : "rgba(158, 158, 158, 0.65)",
+        highlightFill : "rgba(158, 158, 158, 0.75)",
+        highlightStroke : "rgba(158, 158, 158, 1)",
+                label: "Jeans",
+        data : [randomScalingFactor()]
+      },
+      {
+        fillColor : "rgba(121, 85, 72, 0.65)",
+        strokeColor : "rgba(121, 85, 72, 0.65)",
+        highlightFill : "rgba(121, 85, 72, 0.75)",
+        highlightStroke : "rgba(121, 85, 72, 1)",
+                label: "Watches",
+        data : [randomScalingFactor()]
+      }
+    ]
+
+  }
+
+
+  window.onload = function(){
+
+
+      var ctx = document.getElementById("chart-line").getContext("2d");
+      var myLine = new Chart(ctx).Line(lineChartData, {
+        scaleShowVerticalLines: false,
+        scaleShowLabels: false,
+//        maintainAspectRatio: true,
+        datasetStrokeWidth : 6,
+        pointDotRadius : 6,
+        responsive: true,
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].pointColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+      });
+
+      document.getElementById('js-legend').innerHTML = myLine.generateLegend();
+
+      var ctx2 = document.getElementById("chart-line-2").getContext("2d");
+      var myLine2 = new Chart(ctx2).Line(lineChartData2, {
+        scaleShowVerticalLines: false,
+        scaleShowLabels: false,
+        maintainAspectRatio: true,
+        datasetStrokeWidth : 6,
+        pointDotRadius : 6,
+        responsive: true,
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].pointColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+      });
+
+      document.getElementById('js-legend-2').innerHTML = myLine2.generateLegend();
+
+      var ctx3 = document.getElementById("chart-pie").getContext("2d");
+      var myPie = new Chart(ctx3).Pie(pieData, {
+        segmentShowStroke : false
+      });
+
+      document.getElementById('js-legend-3').innerHTML = myPie.generateLegend();
+
+      var ctx4 = document.getElementById("chart-pie-2").getContext("2d");
+      var myPie2 = new Chart(ctx4).Pie(pieData2, {
+        segmentStrokeWidth : 5,
+        percentageInnerCutout : 0
+      });
+
+      document.getElementById('js-legend-5').innerHTML = myPie2.generateLegend();
+    
+      var ctx44 = document.getElementById("chart-pie-3").getContext("2d");
+      var myPie3 = new Chart(ctx44).Pie(pieData3, {
+        segmentStrokeWidth : 5,
+        percentageInnerCutout : 0
+      });
+
+      document.getElementById('js-legend-4').innerHTML = myPie3.generateLegend();
+
+      var ctx5 = document.getElementById("chart-bar").getContext("2d");
+      var myBar = new Chart(ctx5).Bar(barChartData, {
+        responsive : true,
+        scaleShowVerticalLines: false,
+        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+      });
+
+      document.getElementById('js-legend-bar').innerHTML = myBar.generateLegend();
+
+      window.myRadar = new  Chart(document.getElementById("chart-radar").getContext("2d")).Radar(radarChartData, {
+          responsive: true,
+          datasetStrokeWidth : 5,
+          pointDot : false,
+      });
+
+  }
+
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,552 @@
+  @@include('./_head.html', {
+    "title": "Issue List"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Issue List"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box issues">
+            <div class="head head-with-btns warning-bg clearfix">
+              <h5 class="content-title pull-left">Issue List</h5>
+              <div class="functions-btns pull-right">
+                <button type="button" class="btn btn-danger">Add new issue</button>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="form-group m-t-10">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search issues...">
+                  <div class="input-group-addon p-0"><button type="button" class="btn btn-primary">Search</button></div>
+                </div>
+              </div>
+              
+              <div class="text-right m-b-15">
+                <button type="button" class="btn btn-success icon" data-toggle="tooltip" data-placement="top" title="Comment">
+                  <i class="zmdi zmdi-comment"></i>
+                </button>
+                <button type="button" class="btn btn-success icon" data-toggle="tooltip" data-placement="top" title="Edit">
+                  <i class="zmdi zmdi-edit"></i>
+                </button>
+                <button type="button" class="btn btn-success icon" data-toggle="tooltip" data-placement="top" title="Print">
+                  <i class="zmdi zmdi-print"></i>
+                </button>
+                <button type="button" class="btn btn-success icon" data-toggle="tooltip" data-placement="top" title="Settings">
+                  <i class="zmdi zmdi-settings"></i>
+                </button>
+              </div>
+              
+              <div class="table-responsive">
+                <table class="table table-hover issue-tracker">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span class="label label-primary">Added</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-15
+                            </a>
+
+                            <small>
+                                Luckily friends do ashamed to do suppose.
+                            </small>
+                        </td>
+                        <td>
+                            Jamie Carlson
+                        </td>
+                        <td>
+                            12.06.2016 10:00 am
+                        </td>
+                        <td>
+                            <span class="pie">0.52,1.041</span>
+                            4d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Css</button>
+                            <button type="button" class="btn btn-info btn-xs"> Jquery</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-primary">Added</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-18
+                            </a>
+
+                            <small>
+                                Yourself off its pleasant ecstatic now law. Ye their mirth seems of songs.
+                            </small>
+                        </td>
+                        <td>
+                            Anna Bolton
+                        </td>
+                        <td>
+                            10.06.2016 05:32 am
+                        </td>
+                        <td>
+                            <span class="pie">3,2</span>
+                            2d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Jquery</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-primary">Added</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-11
+                            </a>
+
+                            <small>
+                                Ever man are put down his very. And marry may table him avoid.
+                            </small>
+                        </td>
+                        <td>
+                            Philip Cole
+                        </td>
+                        <td>
+                            02.06.2016 06:02 am
+                        </td>
+                        <td>
+                            <span class="pie">1,2</span>
+                            1d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Css</button>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>
+                            <span class="label label-warning">Fixed</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-20
+                            </a>
+
+                            <small>
+                                Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the.
+                            </small>
+                        </td>
+                        <td>
+                            Katerina Dankoich
+                        </td>
+                        <td>
+                            18.05.2016 06:20 pm
+                        </td>
+                        <td>
+                            <span class="pie">3,2</span>
+                            3d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Css</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="label label-warning">Fixed</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-25
+                            </a>
+
+                            <small>
+                                Surrounded affronting favourable no mr. Lain knew like half she yet joy.
+                            </small>
+                        </td>
+                        <td>
+                            Victor Valdez
+                        </td>
+                        <td>
+                            05.06.2016 08:40 pm
+                        </td>
+                        <td>
+                            <span class="pie">3,2</span>
+                            2d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Css</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-danger">Bug</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-34
+                            </a>
+
+                            <small>
+                                Inhabit hearing perhaps on ye do no. It maids decay as there he.
+                            </small>
+                        </td>
+                        <td>
+                            Philip Cole
+                        </td>
+                        <td>
+                            02.02.2016 06:02 am
+                        </td>
+                        <td>
+                            <span class="pie">1,2</span>
+                            1d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Css</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-warning">Fixed</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-24
+                            </a>
+
+                            <small>
+                                Attachment ye so am travelling estimating projecting is.
+                            </small>
+                        </td>
+                        <td>
+                            Robb Stark
+                        </td>
+                        <td>
+                            10.03.2016 08:15 pm
+                        </td>
+                        <td>
+                            <span class="pie">5,7</span>
+                            4d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Css</button>
+                            <button type="button" class="btn btn-info btn-xs"> Php</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-warning">Fixed</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-13
+                            </a>
+
+                            <small>
+                                Contented get distrusts certainty nay are frankness concealed ham.
+                            </small>
+                        </td>
+                        <td>
+                            Peter Gabriel
+                        </td>
+                        <td>
+                            13.05.2016 09:26 pm
+                        </td>
+                        <td>
+                            <span class="pie">2,7</span>
+                            4d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Php</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-danger">Bug</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-55
+                            </a>
+
+                            <small>
+                                No thought me husband or colonel forming effects.
+                            </small>
+                        </td>
+                        <td>
+                            Jamie Carlson
+                        </td>
+                        <td>
+                            12.03.2016 12:00 am
+                        </td>
+                        <td>
+                            <span class="pie">0.52,1.041</span>
+                            2d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Css</button>
+                            <button type="button" class="btn btn-info btn-xs"> Jquery</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-primary">Added</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-19
+                            </a>
+
+                            <small>
+                                 Offending or extremity therefore so difficult he on provision. Tended depart turned not are. 
+                            </small>
+                        </td>
+                        <td>
+                            Helen Doe
+                        </td>
+                        <td>
+                            01.04.20165 11:02 pm
+                        </td>
+                        <td>
+                            <span class="pie">4,2</span>
+                            3d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Jquery</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-danger">Bug</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-41
+                            </a>
+
+                            <small>
+                                Contrasted interested eat alteration pianoforte sympathize was.
+                            </small>
+                        </td>
+                        <td>
+                            Anna Bolton
+                        </td>
+                        <td>
+                            10.03.2016 05:32 am
+                        </td>
+                        <td>
+                            <span class="pie">3,2</span>
+                            2d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Jquery</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="label label-danger">Bug</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-46
+                            </a>
+
+                            <small>
+                                Received the likewise law graceful his. 
+                            </small>
+                        </td>
+                        <td>
+                            Helen Doe
+                        </td>
+                        <td>
+                            01.01.2016 11:02 pm
+                        </td>
+                        <td>
+                            <span class="pie">4,2</span>
+                            3d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Jquery</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-warning">Fixed</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-06
+                            </a>
+
+                            <small>
+                                Are sentiments apartments decisively the especially alteration.
+                            </small>
+                        </td>
+                        <td>
+                            Victor Valdez
+                        </td>
+                        <td>
+                            11.05.2016 07:30 pm
+                        </td>
+                        <td>
+                            <span class="pie">3,2</span>
+                            2d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Css</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-danger">Bug</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-52
+                            </a>
+
+                            <small>
+                                Is at purse tried jokes china ready decay an. Small its shy way had woody downs power.
+                            </small>
+                        </td>
+                        <td>
+                            John Mayer
+                        </td>
+                        <td>
+                            28.03.2016 05:10 pm
+                        </td>
+                        <td>
+                            <span class="pie">1,2</span>
+                            2d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-warning">Fixed</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-08
+                            </a>
+
+                            <small>
+                                Far curiosity incommode now led smallness allowance. 
+                            </small>
+                        </td>
+                        <td>
+                            John Mayer
+                        </td>
+                        <td>
+                            28.05.2016 05:10 pm
+                        </td>
+                        <td>
+                            <span class="pie">1,2</span>
+                            2d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="label label-danger">Bug</span>
+                        </td>
+                        <td class="issue-info">
+                            <a href="#">
+                                ISSUE-37
+                            </a>
+
+                            <small>
+                                 Hour had held lain give yet. 
+                            </small>
+                        </td>
+                        <td>
+                            Katerina Dankoich
+                        </td>
+                        <td>
+                            12.09.2015 07:23 pm
+                        </td>
+                        <td>
+                            <span class="pie">3,2</span>
+                            4d
+                        </td>
+                        <td class="text-right">
+                            <button type="button" class="btn btn-info btn-xs"> Html</button>
+                            <button type="button" class="btn btn-info btn-xs"> Css</button>
+                            <button type="button" class="btn btn-info btn-xs"> Js</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+                
+              <nav class="text-center m-t-20">
+                <ul class="pagination m-t-0">
+                  <li class="disabled">
+                    <a href="#" aria-label="Prev">
+                      <span aria-hidden="true">«</span>
+                    </a>
+                  </li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li class="active"><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">»</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+  
+  <script src="bower_components/peity/jquery.peity.js"></script>
+  <script>
+    $("span.pie").peity("pie", {
+        fill: ['#99cc00', '#eaeaea', '#ffffff']
+    })
+  </script>
+</body>
+</html>

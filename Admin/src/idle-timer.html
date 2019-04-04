@@ -1,0 +1,98 @@
+  @@include('./_head.html', {
+    "title": "Idle Timer"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Idle Timer"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head primary-bg clearfix">
+              <h5 class="content-title pull-left">Idle Timer</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+              <p>
+                Idle plugin provides you a way to monitor user activity with a page.Idle is defined by not moving the mouse, scrolling the mouse wheel and using the keyboard.
+              </p>
+              
+              <p class="text-center text-muted m-t-20 m-b-40">
+                 <strong class="f-s-20">Please do not move the mouse for 5 seconds</strong><br>
+                 <i class="zmdi zmdi-mouse f-s-28"></i>
+              </p>
+              
+              <p>There are two ways to instantiate. Either statically, or on an element. Element bound timers will only watch for events inside of them. You may just want page-level activity, in which case you may set up your timers on <code>document</code>, <code>document.documentElement</code>, and <code>document.body</code>. Instantiate returns jQuery for chaining.</p>
+              
+              <pre>$(function()
+                // Set idle time
+                $( document ).idleTimer( 5000 );
+            });
+
+            $(function()
+                $( document ).on( "idle.idleTimer", function(event, elem, obj)
+                    // function you want to fire when the user goes idle
+                });
+
+                $( document ).on( "active.idleTimer", function(event, elem, obj, triggerevent)
+                    // function you want to fire when the user becomes active again
+                });
+
+            });</pre>
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+  
+  <script src="bower_components/jquery-idletimer/dist/idle-timer.min.js"></script>
+  <script>
+    $(document).ready(function($){
+      $( document ).idleTimer(5000);
+      
+      $( document ).on( "idle.idleTimer", function(event, elem, obj){
+          toastr.options = {
+            "debug": false,
+            "newestOnTop": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": true,
+            "showDuration": "300",
+            "hideDuration": "500",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "show",
+            "hideMethod": "hide"
+          };
+
+          toastr["warning"]('Your time is up!');
+
+        setTimeout(function(){
+          var url = "lock-screen.html";
+          $(location).attr('href',url);
+        }, 4000);
+      });
+    });
+  </script>
+</body>
+</html>

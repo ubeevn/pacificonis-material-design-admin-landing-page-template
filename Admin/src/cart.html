@@ -1,0 +1,101 @@
+  @@include('./_head.html', {
+    "title": "Cart"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Cart"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="content-box product-widget">
+              <img class="img-responsive center-block" src="img/goods/1.jpg" alt="image">
+              <span class="price danger-bg text-uppercase p-absolute t-30 r-0 white">350 eur</span>
+              <div class="head head-with-btns clearfix">
+                <h5 class="content-title text-color pull-left">Samsung</h5>
+                <button type="button" class="btn btn-info btn-remove-cart raised pull-right">Remove</button>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="content-box product-widget">
+              <img class="img-responsive center-block" src="img/goods/2.jpg" alt="image">
+              <span class="price danger-bg text-uppercase p-absolute t-30 r-0 white">110 eur</span>
+              <div class="head head-with-btns clearfix">
+                <h5 class="content-title text-color pull-left">Xiaomi</h5>
+                <button type="button" class="btn btn-info btn-remove-cart raised pull-right">Remove</button>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="content-box product-widget">
+              <img class="img-responsive center-block" src="img/goods/4.jpg" alt="image">
+              <span class="price danger-bg text-uppercase p-absolute t-30 r-0 white">135 eur</span>
+              <div class="head head-with-btns clearfix">
+                <h5 class="content-title text-color pull-left">Meizu</h5>
+                <button type="button" class="btn btn-info btn-remove-cart raised pull-right">Remove</button>
+              </div>
+            </div>
+        </div>
+    <div class="col-md-6 col-lg-4">
+            <div class="content-box product-widget">
+              <img class="img-responsive center-block" src="img/goods/7.jpg" alt="image">
+              <span class="price danger-bg text-uppercase p-absolute t-30 r-0 white">120 eur</span>
+              <div class="head head-with-btns clearfix">
+                <h5 class="content-title text-color pull-left">Xiaomi</h5>
+                <button type="button" class="btn btn-info btn-remove-cart raised pull-right">Remove</button>
+              </div>
+            </div>
+        </div>
+    <div class="col-md-6 col-lg-4">
+            <div class="content-box product-widget">
+              <img class="img-responsive center-block" src="img/goods/3.jpg" alt="image">
+              <span class="price danger-bg text-uppercase p-absolute t-30 r-0 white">700 eur</span>
+              <div class="head head-with-btns clearfix">
+                <h5 class="content-title text-color pull-left">Apple Ipad Air</h5>
+                <button type="button" class="btn btn-info btn-remove-cart raised pull-right">Remove</button>
+              </div>
+            </div>
+        </div>
+    <div class="col-md-6 col-lg-4">
+            <div class="content-box product-widget">
+              <img class="img-responsive center-block" src="img/goods/6.jpg" alt="image">
+              <span class="price danger-bg text-uppercase p-absolute t-30 r-0 white">160 eur</span>
+              <div class="head head-with-btns clearfix">
+                <h5 class="content-title text-color pull-left">Meizu</h5>
+                <button type="button" class="btn btn-info btn-remove-cart raised pull-right">Remove</button>
+              </div>
+            </div>
+        </div>
+    <div class="col-md-12">
+          <div class="content-box">
+            <div class="content">
+        <div class="text-right">
+          <span class="text-uppercase f-s-500">Total:</span> <span class="badge badge-danger badge-lg text-uppercase">180 eur</span>
+          <button type="button" class="btn btn-info raised m-l-5">Chekout</button>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+
+  <script>
+    $(".btn-remove-cart").on("click", function(){
+      $(this).closest(".product-widget").parent().remove();
+    });
+  </script>
+</body>
+</html>

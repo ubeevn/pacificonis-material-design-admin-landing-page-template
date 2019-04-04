@@ -1,0 +1,119 @@
+  @@include('./_head.html', {
+    "title": "Email Compose"
+  })
+  <link rel="stylesheet" href="bower_components/summernote/dist/summernote.css">
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Email Compose"
+   })
+    <div class="container-fluid">
+      <div class="row">
+       <div class="col-lg-3 col-sm-4">
+         <div class="content-box">
+            <div class="head success-bg clearfix">
+              <h5 class="content-title pull-left">Menu</h5>
+              <div class="functions-btns pull-right">
+                <a class="collapse-btn" href="#"><i class="zmdi zmdi-minus"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+              <div class="content p-0">
+                <a class="mail-menu-item clearfix" href="#">Inbox <span class="label label-primary pull-right m-t-10">14</span></a>
+                <a class="mail-menu-item clearfix" href="#">Sent <span class="label label-default pull-right m-t-10">45</span></a>
+                <a class="mail-menu-item clearfix" href="#">Archive <span class="label label-default pull-right m-t-10">65</span></a>
+                <a class="mail-menu-item clearfix" href="#">Trash <span class="label label-default pull-right m-t-10">12</span></a>
+              </div>
+
+          </div>
+
+          <div class="content-box">
+            <div class="head warning-bg clearfix">
+              <h5 class="content-title pull-left">Labels</h5>
+              <div class="functions-btns pull-right">
+                <a class="collapse-btn" href="#"><i class="zmdi zmdi-minus"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content p-0">
+              <a class="mail-menu-item clearfix" href="#">Photos <span class="label label-primary pull-right m-t-10"></span></a>
+              <a class="mail-menu-item clearfix" href="#">Videos <span class="label label-danger pull-right m-t-10"></span></a>
+              <a class="mail-menu-item clearfix" href="#">Documents <span class="label label-info pull-right m-t-10"></span></a>
+              <a class="mail-menu-item clearfix" href="#">Music <span class="label label-success pull-right m-t-10"></span></a>
+            </div>
+          </div>
+
+       </div>
+        <div class="col-lg-9 col-sm-8">
+          <div class="content-box">
+            <div class="head info-bg clearfix">
+              <h5 class="content-title pull-left">Create new message</h5>
+              <div class="functions-btns pull-right">
+                <a class="refresh-btn" href="#"><i class="zmdi zmdi-refresh"></i></a>
+                <a class="fullscreen-btn" href="#"><i class="zmdi zmdi-fullscreen"></i></a>
+                <a class="close-btn" href="#"><i class="zmdi zmdi-close"></i></a>
+              </div>
+            </div>
+
+            <div class="content">
+
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="to" class="col-md-1 control-label">To</label>
+                  <div class="col-md-11">
+                    <input type="text" class="form-control" id="to" placeholder="example@domain.com">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="col-md-1 control-label">Subject</label>
+                  <div class="col-md-11">
+                    <input type="text" class="form-control" id="subject">
+                  </div>
+                </div>
+              </form>
+
+              <div id="summernote">Barton waited twenty always repair in within we do. An delighted offending curiosity my is dashwoods at. Boy prosperous increasing surrounded companions her nor advantages sufficient put. John on time down give meet help as of. Him waiting and correct believe now cottage she another. Vexed six shy yet along learn maids her tiled. Through studied shyness evening bed him winding present. Become excuse hardly on my thirty it wanted.</div>
+
+              <button type="button" class="btn btn-lg btn-primary raised m-b-5 m-r-10">Send</button>
+              <button type="button" class="btn btn-lg btn-warning raised m-b-5 m-r-10">Save</button>
+              <button type="button" class="btn btn-lg btn-no-bg text-color m-b-5 ">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  <script src="bower_components/summernote/dist/summernote.min.js"></script>
+  @@include('./_commonjs.html')
+  <script>
+    $('#summernote').summernote({
+      minHeight: 250,
+      toolbar: [
+        // [groupName, [list of button]]
+        ['style', ['bold', 'italic', 'underline', 'clear']],
+        ['fontsize', ['fontsize']],
+        ['color', ['color']],
+        ['insert', ['link', 'picture', 'video']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['height', ['height']],
+        ['view', ['fullscreen', 'codeview', 'help']]
+      ]
+    });
+
+    $(".mail-favorite").on("click", function(){
+        $(this).toggleClass("zmdi-star zmdi-star-outline");
+    });
+  </script>
+</body>
+</html>

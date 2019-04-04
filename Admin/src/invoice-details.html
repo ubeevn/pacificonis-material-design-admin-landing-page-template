@@ -1,0 +1,149 @@
+  @@include('./_head.html', {
+    "title": "Invoice details"
+  })
+
+  @@include('./_head-end.html')
+</head>
+
+<body>
+  @@include('./_preloader.html')
+  <div class="wrapper">
+   @@include('./_menu.html', {
+    "page-name": "Invoice details"
+   })
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-box">
+            <div class="head head-with-btns warning-bg clearfix">
+              <h5 class="content-title pull-left">Invoice details</h5>
+              <div class="functions-btns pull-right">
+                <button type="button" class="btn btn-danger raised m-r-10">Download PDF</button>
+                <button type="button" class="btn btn-danger raised">Print</button>
+              </div>
+            </div>
+
+            <div class="content p-0">
+
+              <div class="p-20">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5>Invoice №001</h5>
+                    <img src="img/pacificonis.png" class="img-responsive m-b-20" alt="pacificonis">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <address>
+                          31 Street, <br>
+                          California USA <br>
+                          +31(095)492-280-22
+                        </address>
+                      </div>
+                      <div class="col-sm-6">
+                          www.exampledomain.com <br>
+                          info@exampledomain.com <br>
+                          admin@exampledomain.com
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>To</h5>
+                    <img src="img/tiger-art.png" class="img-responsive m-b-20" alt="tiger art">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <address>
+                          44 Street, <br>
+                          Texas USA <br>
+                          +31(095)582-758-58
+                        </address>
+                      </div>
+                      <div class="col-sm-6">
+                          www.exampledomain.com <br>
+                          info@exampledomain.com <br>
+                          admin@exampledomain.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="table-responsive m-0">
+                <table class="table">
+                  <thead class="warning-bg white text-uppercase shadow-1">
+                    <tr>
+                      <th>#</th>
+                      <th>Item</th>
+                      <th>Unit Price</th>
+                      <th>Unit</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">01</th>
+                      <td>Mens goods</td>
+                      <td>$ 615.50</td>
+                      <td>1</td>
+                      <td>$ 615.50</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">02</th>
+                      <td>Womans goods</td>
+                      <td>$ 225.50</td>
+                      <td>1</td>
+                      <td>$ 225.50</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">03</th>
+                      <td>Children goods</td>
+                      <td>$ 829.99</td>
+                      <td>1</td>
+                      <td>$ 829.99</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td></td>
+                      <td></td>
+                      <td><strong>Total</strong></td>
+                      <td><strong>$ 1,670.99</strong></td>
+                    </tr>
+                    <tr>
+                      <th class="b-0"></th>
+                      <td class="b-0"></td>
+                      <td class="b-0"></td>
+                      <td><strong>Tax</strong></td>
+                      <td><strong>12%</strong></td>
+                    </tr>
+                    <tr class="warning-bg white">
+                      <th class="b-0"></th>
+                      <td class="b-0"></td>
+                      <td class="b-0"></td>
+                      <td class="b-0"><strong>To pay</strong></td>
+                      <td class="b-0"><strong>$ 1,871.51</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="p-20 invoice-details-footer">
+                <div>19.04.2016</div>
+                <div>
+                  <img src="img/signature.png" alt="signature">
+                </div>
+                <div class="text-uppercase">
+                  Amanda Orton <br> Managing Director
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+  @@include('./_footer.html')
+  @@include('./_commonjs.html')
+</body>
+</html>

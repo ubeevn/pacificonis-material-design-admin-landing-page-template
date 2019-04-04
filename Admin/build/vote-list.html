@@ -1,0 +1,837 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no" />
+  
+  
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#49CEFF">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#49CEFF" />
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>Pacificonis - Vote list</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
+  <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="bower_components/Waves/dist/waves.min.css">
+  <link rel="stylesheet" href="bower_components/toastr/toastr.css">
+
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+<!--
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+-->
+    <!--[if lt IE 9]>
+      <script src="bower_components/html5shiv/dist/html5shiv.min,js"></script>
+      <script src="bower_components/respondJs/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!--Preloader-->
+<div id="preloader">
+      <div class="refresh-preloader"><div class="preloader"><i>.</i><i>.</i><i>.</i></div></div>
+</div>
+
+
+  <div class="wrapper">
+   <nav class="navbar">
+ <div class="navbar-header container">
+   <a href="#" class="menu-toggle"><i class="zmdi zmdi-menu"></i></a>
+   <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo Pacificonis"></a>
+   <a href="index.html" class="icon-logo"></a>
+ </div>
+  <div class="navbar-container clearfix">
+    <div class="pull-left">
+      <a href="#" class="page-title text-uppercase">Vote list</a>
+    </div>
+
+    <div class="pull-right">
+      <div class="pull-left search-container">
+        <form class="searchbox">
+          <input type="search" placeholder="Search" name="search" class="searchbox-input">
+          <input type="submit" class="searchbox-submit" value="">
+          <span class="searchbox-icon"><span class="zmdi zmdi-search search-icon"></span></span>
+        </form>
+      </div>
+
+      <ul class="nav pull-right right-menu">
+        <li class="more-options dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">
+            <i class="zmdi zmdi-account-circle"></i>
+          </a>
+
+          <div class="more-opt-container dropdown-menu">
+            <a href="#"><i class="zmdi zmdi-account-o"></i>Account<span class="badge badge-warning">3</span></a>
+            <a href="#"><i class="zmdi zmdi-storage"></i>Storage <span class="badge badge-danger">2</span></a>
+            <a href="#"><i class="zmdi zmdi-calendar-note"></i>Calendar <span class="badge badge-success">2</span></a>
+            <a href="#"><i class="zmdi zmdi-chart-donut"></i>Analytics <span class="badge badge-success">7</span></a>
+            <a href="#"><i class="zmdi zmdi-balance"></i>Balance <span class="badge badge-info">5</span></a>
+            <a href="#"><i class="zmdi zmdi-run"></i>Exit</a>
+          </div>
+        </li>
+        <li class="notification dropdown">
+          <a class="dropdown-toggle">
+            <i class="zmdi zmdi-notifications"></i>
+            <span class="badge badge-primary">8</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <h4 class="text-center info-color m-0">You have 19 new notifications</h4>
+            <div class="notification-container">
+              <a href="#"><i class="zmdi zmdi-email warning-color m-r-5"></i> You have 16 messages <span class="pull-right">4 minutes ago</span></a>
+              <a href="#"><i class="zmdi zmdi-twitter info-color m-r-5"></i> 3 new followers <span class="pull-right">12 minutes ago</span></a>
+              <a href="#"><i class="zmdi zmdi-dropbox info-color m-r-5"></i> 7 changed files <span class="pull-right">18 minutes ago</span></a>
+              <a href="#"><i class="zmdi zmdi-instagram warning-color m-r-5"></i> 26 new followers <span class="pull-right">22 minutes ago</span></a>
+              <a href="#"><i class="zmdi zmdi-twitter info-color m-r-5"></i> 8 new followers <span class="pull-right">23 minutes ago</span></a>
+            </div>
+            <a href="#" class="text-uppercase clear-all">Clear all notifications</a>
+            <div class="check-ok">
+              <i class="zmdi zmdi-check"></i>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a class="sidepanel-toggle" href="#">
+            <i class="zmdi zmdi-more-vert"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<aside class="sidebar">
+  <ul class="nav metismenu">
+    <li class="profile-sidebar-container">
+      <div class="profile-sidebar text-center">
+        <div class="profile-userpic">
+          <img src="img/profile_user.jpg" class="img-responsive img-circle center-block" alt="user">
+          <span class="online"></span>
+        </div>
+        <div class="profile-usertitle">
+          <div class="name">
+            Marcus Doe
+          </div>
+          <div class="city">
+            <i class="zmdi zmdi-pin"></i>San Francisco, CA
+          </div>
+        </div>
+        <div class="profile-activity clearfix">
+          <div class="pull-left">
+            Photos
+            <br>
+            <span>56</span>
+          </div>
+          <div class="pull-right">
+            Videos
+            <br>
+            <span>18</span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-view-dashboard"></i>Dashboard<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Dashboard</li>
+        <li><a href="index.html">Dashboard v1</a></li>
+        <li><a href="dashboard-2.html">Dashboard v2</a></li>
+        <li><a href="dashboard-3.html">Dashboard v3</a></li>
+        <li><a href="dashboard-4.html">Dashboard v4</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-view-compact"></i>Layouts<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Layouts</li>
+        <li><a href="three-column-layout.html">Three Column Layout</a></li>
+        <li><a href="boxed-layout.html">Boxed Layout</a></li>
+        <li><a href="fixed-menu-boxed.html">Fixed Menu&Boxed Layout</a></li>
+        <li><a href="fixed-sidebar.html">Fixed Sidebar</a></li>
+        <li><a href="icon-menu-vertical.html">Vertical Icon Menu</a></li>
+        <li><a href="icon-menu-horizontal.html">Horizontal Icon Menu</a></li>
+        <li><a href="coming-soon.html">Default Layout</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-google-pages"></i>Pages<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Pages</li>
+        <li><a href="article.html">Article</a></li>
+        <li><a href="coming-soon.html">Coming Soon</a></li>
+        <li><a href="confirm-email.html">Confirm Email</a></li>
+        <li><a href="contacts.html">Contacts</a></li>     
+        <li><a href="faq-page.html">FAQ</a></li>
+        <li><a href="file-upload.html">File Upload</a></li>
+        <li><a href="idle-timer.html">Idle Timer</a></li>
+        <li><a href="image-slider.html">Image Slider</a></li>
+        <li><a href="lock-screen.html">Lock Screen</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="nestable.html">Nestable Lists</a></li>           
+        <li><a href="projects.html">Projects</a></li>             
+        <li><a href="resizable-panels.html">Resizable Panels</a></li>
+        <li><a href="draggable-panels.html">Draggable panels</a></li>
+        <li><a href="search.html">Search Results</a></li>
+        <li><a href="tour-page.html">Tour</a></li>
+        <li><a href="vote-list.html">Vote list</a></li>
+        <li><a href="widgets.html">Widgets</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-flower"></i>UI Kits<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">UI Kits</li>
+        <li><a href="animation.html">Animations</a></li>
+        <li><a href="box-shadow.html">Box-shadow</a></li>
+        <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+        <li><a href="buttons.html">Buttons</a></li>
+        <li><a href="typography.html">Typography</a></li>
+        <li><a href="checkboxes-radio.html">Checkboxes & Radio</a></li>
+        <li><a href="checkboxes-radio-material.html">Checkboxes & Radio Material</a></li>
+        <li><a href="labels-badges.html">Labels & Badges</a></li>
+        <li><a href="colors.html">Colors</a></li>
+        <li><a href="ui-colors.html">UI Colors</a></li>
+        <li><a href="components.html">Components</a></li>
+        <li><a href="dropdowns.html">Dropdowns</a></li>
+        <li><a href="grids.html">Grids</a></li>        
+        <li><a href="media.html">Media</a></li>
+        <li><a href="progressbars.html">Progressbars</a></li>
+        <li><a href="tabs.html">Tabs</a></li>     
+        <li><a href="ui-material-icons.html">Material Icons</a></li>
+        <li><a href="ui-cards.html">Ui Cards</a></li>
+        <li><a href="ui-treeview.html">Tree View</a></li>
+        <li><a href="ui-range-slider.html">Range Slider</a></li> 
+      </ul>
+    </li>  
+    <li>
+      <a href="#"><i class="zmdi zmdi-comment-text-alt"></i>Forms<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Forms</li>
+        <li><a href="form-elements.html">Form Elements</a></li>
+        <li><a href="form-elements-material.html">Form Elements Material</a></li>
+        <li><a href="form-components.html">Form Components</a></li>
+        <li><a href="form-examples.html">Form Examples</a></li>
+        <li><a href="form-wizard.html">Form Wizard</a></li>
+        <li><a href="form-wysiwig.html">Form Wysiwig</a></li>
+        <li><a href="x-editable.html">X-Editable</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-border-all"></i>Tables<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Tables</li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="datatables.html">Data Tables</a></li>
+        <li><a href="tables-editable.html">Editable Tables</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-chart"></i>Charts<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Charts</li>
+        <li><a href="chartjs.html">Chart.js</a></li>
+        <li><a href="morrisjs.html">Morris.js</a></li>
+        <li><a href="flot-chart.html">Flot Chart</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-money"></i>E-commerce<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">E-commerce</li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="create-order.html">Create Order</a></li>
+        <li><a href="invoice-list.html">Invoice list</a></li>
+        <li><a href="invoice-details.html">Invoice Details</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="pricing-tables.html">Pricing Tables</a></li>
+        <li><a href="products-page.html">Products Page</a></li>
+        <li><a href="product-view.html">Product View</a></li>
+        <li><a href="search-products.html">Search Products</a></li>
+      </ul>
+    </li>
+    <li>
+      <a aria-expanded="false" href="#"><i class="zmdi zmdi-apps"></i>Apps<span class="zmdi arrow"></span></a>
+      <ul aria-expanded="false" class="nav nav-inside collapse">
+        <li class="inside-title">Apps</li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li><a href="file-manager.html">File Manager</a></li>
+        <li><a href="issue-list.html">Issue List</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li class="menu-child">
+          <a aria-expanded="false" href="#"><i class="zmdi zmdi-email"></i>Mailbox<span class="zmdi arrow"></span></a>
+          <ul aria-expanded="false" class="nav nav-inside collapse">
+            <li class="inside-title">Mailbox</li>
+            <li><a href="email-inbox.html">Email Inbox</a></li>
+            <li><a href="email-view.html">Email View</a></li>
+            <li><a href="email-compose.html">Email Compose</a></li>
+            <li><a href="email-templates.html">Email Templates</a></li>
+          </ul>
+        </li>
+        <li class="menu-child">
+          <a aria-expanded="false" href="#"><i class="zmdi zmdi-format-list-numbered"></i>Tasks<span class="zmdi arrow"></span></a>
+          <ul aria-expanded="false" class="nav nav-inside collapse">
+            <li class="inside-title">Tasks</li>
+            <li><a href="task-list.html">Task List</a></li>
+            <li><a href="task-detail.html">Task Detail</a></li>
+            <li><a href="taskboard.html">Taskboard</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-notifications"></i>Notifications<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Notifications</li>
+        <li><a href="notifications.html">Notifications</a></li>
+        <li><a href="modals.html">Modals</a></li>
+        <li><a href="sweet-alerts.html">Sweet-alerts</a></li>
+        <li><a href="toastr-notifications.html">Toastr</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-alert-circle"></i>Error pages<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Error pages</li>
+        <li><a href="400.html">400</a></li>
+        <li><a href="401.html">401</a></li>
+        <li><a href="403.html">403</a></li>
+        <li><a href="404.html">404</a></li>
+        <li><a href="500.html">500</a></li>
+        <li><a href="503.html">503</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="zmdi zmdi-view-dashboard"></i>Three Level Menu<span class="zmdi arrow"></span></a>
+      <ul class="nav nav-inside collapse">
+        <li class="inside-title">Level 2</li>
+        <li><a href="#">Level 2</a></li>
+        <li>
+          <a class="third-level" href="#">Level 2<span class="zmdi arrow"></span></a>
+          <ul class="nav nav-inside collapse">
+            <li class="inside-title">Level 3</li>
+            <li><a href="#">Level 3</a></li>
+            <li><a href="#">Level 3</a></li>
+            <li><a href="#">Level 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Level 2</a></li>
+        <li><a href="#">Level 2</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="starter-page.html"><i class="zmdi zmdi-copy"></i>Starter Page</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="side-panel">
+    <ul class="nav nav-tabs nav-justified m-0">
+      <li class="active">
+        <a href="#tab-side-1" data-toggle="tab"><i class="zmdi zmdi-comment-text"></i></a>
+      </li>
+      <li>
+        <a href="#tab-side-2" data-toggle="tab"><i class="zmdi zmdi-settings"></i></a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="tab-side-1">
+       <div class="side-title">Activities</div>
+        <div class="p-15"> 
+          <ul class="timeline">
+              <li>
+                  <div class="timeline-icon primary-bg"><i class="zmdi zmdi-plus"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Jana Pena is now Follwing you</span>
+                          <span class="date">2 min ago</span>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-icon success-bg"><i class="zmdi zmdi-favorite"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Helen likes your photo</span>
+                          <span class="date">23 min ago</span>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-icon warning-bg"><i class="zmdi zmdi-email"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Colin send email</span>
+                          <span class="date">34 min ago</span>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-icon success-bg"><i class="zmdi zmdi-coffee"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Starbucks invites you</span>
+                          <span class="date">44 min ago</span>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-icon info-bg"><i class="zmdi zmdi-videocam"></i></div>
+                  <div class="timeline-body">
+                      <div class="timeline-header">
+                          <span class="author">Peter added new video</span>
+                          <span class="date">56 min ago</span>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+        </div>
+         
+          <div class="side-title">Contacts</div>
+          <div class="p-15"> 
+          <ul class="media-list side-contacts">
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/3.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Katerina Dankovich</span><br>
+                      <span class="contact-status text-success">Online</span>
+                  </div>
+              </li>
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/4.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Helen Doe</span><br>
+                      <span class="contact-status text-warning">Away</span>
+                  </div>
+              </li>
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/2.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Phil Simons</span><br>
+                      <span class="contact-status text-success">Online</span>
+                  </div>
+              </li>
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/1.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Peter Johnson</span><br>
+                      <span class="contact-status text-muted">Offline</span>
+                  </div>
+              </li>
+              <li class="media notification-message">
+                  <div class="media-left">
+                      <img class="img-circle avatar" src="img/contacts/5.png" alt="user">
+                  </div>
+                  <div class="media-body">
+                    <span>Kate Owl</span><br>
+                      <span class="contact-status text-danger">Busy</span>
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab-side-2">
+         <table class="table table-settings">
+            <tbody><tr>
+                    <td>
+                        <h5>Alerts</h5>
+                        <p>Sets alerts to get notified when changes occur to get new alerming items</p>
+                    </td>
+                    <td><div class="checkbox checkbox-primary">
+                        <label><input type="checkbox">
+                          <i></i></label>
+                      </div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Notifications</h5>
+                        <p>You will receive notification email for any notifications if you set notification</p>
+                    </td>
+                    <td>
+                    <div class="checkbox checkbox-primary">
+                      <label><input type="checkbox" checked>
+                        <i></i></label>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Messages</h5>
+                        <p>You will receive notification on email after setting messages notifications</p>                            
+                    </td>
+                    <td>
+                    <div class="checkbox checkbox-primary">
+                      <label><input type="checkbox">
+                        <i></i></label>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Warnings</h5>
+                        <p>You will get warnning only some specific setttings or alert system</p>
+                    </td>
+                    <td>
+                    <div class="checkbox checkbox-primary">
+                      <label><input type="checkbox" checked>
+                        <i></i></label>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Sidebar</h5>
+                        <p>You can hide/show use with sidebar collapsw settings</p>
+                    </td>
+                    <td>
+                    <div class="checkbox checkbox-primary">
+                      <label><input type="checkbox" checked>
+                        <i></i></label>
+                    </div>
+                    </td>
+                </tr>
+
+        </tbody></table>
+      </div>
+    </div>
+</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>34</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          Increasing impression interested expression he my at
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (56)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">2 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">Bob Chan</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs ">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-language-css3"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>75</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          Consulted perpetual of pronounce me delivered
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (99)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">2 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">Helen Doe</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs ">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-paypal"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>12</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          Case read they must it of cold that
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (26)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">1 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">Peter Jones</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs ">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-blogger"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>14</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          Own books built put civil fully blind fanny
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (15)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">1 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">Peter Jones</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-twitch"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>78</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          Sudden looked elinor off gay estate nor silent
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (93)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">3 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">Helen Doe</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs ">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-xbox"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>9</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          Now seven world think timed while her
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (31)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">16 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">George Michael</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs ">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-skype"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>34</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          From they fine john he give of rich he
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (17)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">4 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">Peter Jones</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs ">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-linkedin"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>18</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          Put rest and must set kind next many near nay
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (156)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">8 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">Katerina Dankovich</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs ">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-amazon"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>90</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          Between had observe pretend delight for believe
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (72)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">10 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">Helen Doe</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs ">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-steam"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="vote-item">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="vote-actions">
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-up primary-color"> </i>
+                          </a>
+                          <div>7</div>
+                          <a href="#">
+                              <i class="zmdi zmdi-chevron-down primary-color"> </i>
+                          </a>
+                      </div>
+                      <a href="#" class="vote-title">
+                          Nay preference dispatched difficulty continuing joy one. Songs it be if ought hoped of
+                      </a>
+                      <div class="vote-info">
+                          <i class="zmdi zmdi-comment-text"></i> <a href="#">Comments (13)</a>
+                          <i class="zmdi zmdi-time"></i> <a href="#">1 Hours ago</a>
+                          <i class="zmdi zmdi-account"></i> <a href="#">Victor Jones</a>
+                      </div>
+                      
+                  </div>
+                  <div class="col-sm-2 hidden-xs ">
+                      <div class="vote-icon">
+                          <i class="zmdi zmdi-dropbox"> </i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">© 2016 Copyright</footer>
+  </div>
+
+
+    
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+  <script src="bower_components/Waves/dist/waves.min.js"></script>
+  <script src="bower_components/toastr/toastr.js"></script>
+
+    <script src="js/common.js"></script>
+  
+
+</body>
+</html>
